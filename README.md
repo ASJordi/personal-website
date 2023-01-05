@@ -1,11 +1,17 @@
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![Deploy][deploy-shield]][deploy-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<div align="center">
+
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url]
+  [![Build][build-shield]][build-url]
+  [![Deploy][deploy-shield]][deploy-url]
+  [![Size][size-shield]][deploy-url]
+  [![LinkedIn][linkedin-shield]][linkedin-url]
+
+</div>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -38,7 +44,7 @@ This is my personal website, where I share my portfolio and blog. Built with Ast
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
@@ -60,8 +66,11 @@ Template by [https://github.com/manuelernestog/astro-modern-personal-website](ht
 [issues-url]: https://github.com/ASJordi/personal-website/issues
 [license-shield]: https://img.shields.io/github/license/ASJordi/personal-website.svg
 [license-url]: https://github.com/ASJordi/personal-website/blob/master/LICENSE.txt
+[build-shield]: https://img.shields.io/github/actions/workflow/status/asjordi/personal-website/firebase-hosting-merge.yml
+[build-url]: https://github.com/ASJordi/personal-website/actions
 [deploy-shield]: https://img.shields.io/github/deployments/asjordi/personal-website/production?label=deploy
 [deploy-url]: https://personal-website-asjordi.web.app/
+[size-shield]: https://img.shields.io/github/repo-size/asjordi/personal-website
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ASJordi
 [product-screenshot]: public/screenshot.png
