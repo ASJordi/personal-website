@@ -1,0 +1,19 @@
+{
+  "cSpell.words": [
+    "asjordi",
+    "astro",
+    "astrojs",
+    "daisyui",
+    "Desing",
+    "hostingchannels",
+    "Jordi",
+    "tailwindcss",
+    "tsconfigs"
+  ],
+  "cSpell.enableFiletypes": [
+    "!markdown"
+  ],
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": false
+}
