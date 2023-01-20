@@ -11,8 +11,9 @@
     "tsconfigs"
   ],
   "cSpell.enableFiletypes": [
-    "!markdown"
-  ],
+		"!markdown",
+		"astro"
+	],
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "editor.insertSpaces": false,
   "editor.detectIndentation": false
