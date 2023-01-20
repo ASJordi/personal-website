@@ -16,5 +16,8 @@
 	],
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "editor.insertSpaces": false,
-  "editor.detectIndentation": false
+	"editor.detectIndentation": false,
+	"conventionalCommits.scopes": [
+		"cv"
+	]
 }
