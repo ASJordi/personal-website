@@ -18,6 +18,9 @@
   "editor.insertSpaces": false,
 	"editor.detectIndentation": false,
 	"conventionalCommits.scopes": [
-		"cv"
+		"cv",
+		"projects",
+		"home",
+		"blog",
 	]
 }

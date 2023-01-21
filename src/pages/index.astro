@@ -11,65 +11,65 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout>
 
-    <div class="pb-12 mt-5">
-      <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Jordi Ayala</div>
-      <div class="text-3xl py-3 font-bold">Computer Systems Engineer & Software Developer</div>
-      <div class="py-2">
-        <text class="text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </text
-        >
-      </div>
-      <div class="mt-8">
-        <a class="btn" href="https://www.linkedin.com/in/asjordi/" target="_blank"> Let's connect!</a>
-        <a href="/cv.pdf" target="_blank" class="btn btn-outline ml-5"> Download CV</a>
-      </div>
-    </div>
+	<div class="pb-12 mt-5">
+		<div class="text-xl py-1">Hey there 👋</div>
+		<div class="text-5xl font-bold">I'm Jordi Ayala</div>
+		<div class="text-3xl py-3 font-bold">Computer Systems Engineer & Software Developer</div>
+		<div class="py-2">
+			<text class="text-lg">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</text
+			>
+		</div>
+		<div class="mt-8">
+			<a class="btn" href="https://www.linkedin.com/in/asjordi/" target="_blank"> Let's connect!</a>
+			<a href="/cv.pdf" target="_blank" class="btn btn-outline ml-5"> Download CV</a>
+		</div>
+	</div>
 
-    <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-    </div>
+	<div>
+		<div class="text-3xl w-full font-bold mb-2">Últimos Proyectos {"</>"}</div>
+	</div>
 
-    <HorizontalCard
-      title="Demo Project 1"
-      img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
-      badge="NEW"
-    />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-    <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
+	<HorizontalCard
+		title="Portfolio"
+		img="/projects/porfolio.jpg"
+		desc="Sitio web personal que permite mostrar información sobre mi persona, mis proyectos y habilidades. Esta 	desarrollado utilizando Astro y TailwindCSS. El proyecto está desplegado en Firebase utilizando CI."
+		url="https://asjordi.dev"
+		badge="Astro, TailwindCSS, Firebase"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="URL Shortener"
+		img="/projects/urls.jpg"
+		desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. Cuenta con un backend desarrollado en NodeJS y Express, y una base de datos MongoDB. El frontend está desarrollado en HTML, CSS y JS. El proyecto está desplegado en Netlify y Railway."
+		url="https://link-shortly.netlify.app"
+		badge="HTML, CSS, JS, NodeJS, Express, MongoDB"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Weather App"
+		img="/projects/weather.jpg"
+		desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather. Cuenta con un backend desarrollado en NodeJS y Express. El frontend está desarrollado en HTML, CSS y JS. El proyecto está desplegado en Netlify y Railway."
+		url="https://weather-app-nodejs.netlify.app"
+		badge="HTML, CSS, JS, NodeJS, Express"
+	/>
 
+	<div>
+		<div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+	</div>
 
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-    </div>
-
-    {
-      last_posts.map((post) => (
-        <HorizontalCard
-          title={post.frontmatter.title}
-          img={post.frontmatter.heroImage}
-          desc={post.frontmatter.description}
-          url={post.url}
-          target="_self"
-        />
-        <div class="divider my-0"></div>
-      ))
-    }
+	{
+		last_posts.map((post) => (
+			<HorizontalCard
+				title={post.frontmatter.title}
+				img={post.frontmatter.heroImage}
+				desc={post.frontmatter.description}
+				url={post.url}
+				target="_self"
+			/>
+			<div class="divider my-0"></div>
+		))
+	}
 
 </BaseLayout>
