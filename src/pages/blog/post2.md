@@ -1,17 +1,109 @@
 ---
 layout: "../../layouts/PostLayout.astro"
-title: "Demo Post 2"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 11 2022"
-heroImage: "/post_img.webp"
+title: "Instalar y Configurar Git en Windows"
+description: "Cómo instalar y configurar Git en Windows"
+pubDate: "Oct 01 2022"
+heroImage: "/blog/images/post2/cover.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+Git es un sistema de control de versiones distribuido. Actualmente es el más popular dentro del mundo de desarrollo de software. Fue creado por Linux Torvalds y el equipo de desarrollo del Kernel de Linux como una alternativa de código abierto. 
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Un sistema de control de versiones permite la administración de un proyecto de desarrollo de software en general, sin importar el tamaño o número de personas que lo integren. De esta manera, permite controlar los distintos cambios realizados a cualquier archivo de un proyecto, teniendo la posibilidad de comparar estados de archivos a lo largo del tiempo, trabajar de manera colaborativa, entre muchas más características. 
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+Git es multiplataforma, por lo que se puede usar en Windows, Linux o Mac. Así mismo, existen alternativas que proveen de una interfaz gráfica o GUI para trabajar con él, dado que por defecto se utiliza empleando Git Bash, es decir, la interfaz de Git por línea de comandos o, la propia línea de comandos del sistema operativo. 
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+En este tutorial se muestra como **instalar y configurar Git en Windows**, de una manera fácil y rápida. 
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+## ¿Qué es la terminal?
+
+La línea de comandos o Command Line Interface (CLI) en inglés, es una herramienta que permite dar instrucciones al ordenador a través de comandos en formato texto.
+
+Comúnmente, cuando se utiliza un sistema operativo, se realiza a través de una interfaz grafica que es mas amigable con el usuario, aunque existen muchas razones para utilizar la línea de comandos, por ejemplo, para utilizar **Git** en un proyecto de desarrollo de software. En Windows existe el *Símbolo de Sistema (Command Prompt)*, o *PowerShell*. 
+
+# Descargar Git
+ 
+Antes de comenzar con el proceso de instalación, es necesario asegurarse de que no está instalado Git en la computadora. Para ello es necesario ejecutar el siguiente comando en la línea de comandos de Windows. 
+
+```bash
+git --version
+```
+
+En caso de estar instalado, aparecerá un mensaje con la versión de Git actual en el sistema y ya puede pasar a la sección de *configuración de Git*, en caso contrario es necesario seguir con los pasos siguientes. 
+
+```bash
+git version 2.37.3.windows.1
+```
+
+Para realizar la descarga es necesario dirigirse al sitio oficial de Git en la sección de *Descargas* o simplemente hacer [clic aquí](https://git-scm.com/downloads). 
+
+A continuación, seleccionar **Download for Windows**, posteriormente hacer clic en **click here to download** y en automático comenzará la descarga del asistente de instalación de Git. 
+
+![Descargar Git](/blog/images/post2/download-git.png)
+
+# Instalar Git
+
+Para instalar Git, basta con *ejecutar como administrador* el archivo de instalación que se descargo en el paso anterior.  
+
+![Archivo de instalación](/blog/images/post2/installation-file.png)
+
+A continuación, se abrirá el asistente de instalación, para lo cual solo es necesario hacer clic en **Next** en cada uno de los pasos siguientes para continuar con la instalación.
+
+![Asistente de instalación](/blog/images/post2/assistant.png)
+
+Una vez finalizada la instalación, se mostrara la siguiente ventana, solo es necesario hacer clic en **Finish**.
+
+![Instalación finalizada](/blog/images/post2/finish.png)
+
+Para verificar la instalación y versión de Git instalada, abrir la línea de comandos del sistema, solo es necesario dirigirse a Inicio y escribir *cmd*. O en caso de querer utilizar la propia línea de comandos de Git, escribir *git bash*. Nuevamente ejecutar el comando *git --version*.
+
+![Verificar instalación](/blog/images/post2/git-version.png)
+
+# Configurar Git
+
+A continuación, se muestran los comandos básicos de configuración para Git. Es necesario ejecutar uno por uno dentro de la línea de comandos. 
+
+```bash
+git config --global user.name "Nombre de usuario"
+```
+
+```bash
+git config --global user.email "Email de usuario"
+```
+
+```bash
+git config --global init.defaultBranch main
+```
+
+```bash
+git config --global user.ui true
+```
+
+```bash
+# Estandizar saltos de línea en Windows
+git config --global core.autocrlf true
+```
+
+```bash
+# Asignar VS Code como editor de texto por defecto
+git config --global core.editor "code --wait"
+git config --global -e
+```
+
+```bash
+# Listar todas las opciones de configuración
+git config -h
+```
+
+Es necesario sustituir los datos entre comillas por el nombre y correo electrónico a utilizar, ya que estos se verán reflejados al momento de utilizar Git en un proyecto. 
+
+Por último, para poder ver la lista de configuraciones actuales, ejecutar el siguiente comando. 
+
+```bash
+git config --list
+```
+
+Una vez terminados todos los pasos anteriores, Git se encuentra instalado y configurado dentro del sistema. En caso de tener alguna duda, recordar que siempre está disponible la documentación de Git en el sitio [`https://git-scm.com/doc`](https://git-scm.com/doc).
+
+**Sugerencias para trabajar con Git**
+1. Utilizar **[Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=es-mx&gl=mx)** como línea de comandos. Considerando que es una nueva terminal de Windows que permite abrir múltiples sesiones de línea de comandos, como PowerShell, CMD, WSL y más, en una sola ventana.
+2. Utilizar como editor de código **[Visual Studio Code](https://code.visualstudio.com)**. Considerando que tiene una línea de comandos integrada y múltiples extensiones que permiten trabajar con Git de manera gráfica. Puedes ver como instalar Visual Studio Code en Windows [en este tutorial](https://personal-website-asjordi.web.app/blog/post1/).  
