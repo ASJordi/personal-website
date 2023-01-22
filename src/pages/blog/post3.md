@@ -1,17 +1,85 @@
 ---
 layout: "../../layouts/PostLayout.astro"
-title: "Demo Post 3"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
-heroImage: "/post_img.webp"
+title: "Instalar Node.js en Windows"
+description: "Cómo instalar Node.js en Windows"
+pubDate: "Oct 05 2022"
+heroImage: "/blog/images/post3/cover.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+Node.js es un entorno de tiempo de ejecución de JavaScript. Es de código abierto y multiplataforma. Node.js se ejecuta del lado del servidor o backend. Su desarrollo permitió la ejecución de código de JavaScript fuera de un navegador web. 
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Una de sus principales características es que permite una programación asincróna, además de que, permite crear sitios web dinámicos eficientes con JavaScript. 
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+Node.js está basado en el motor V8 de Google, uno de los intérpretes de lenguaje de programación que existen. Este motor se encarga de compilar el código de JavaScript en código de máquina, un código de nivel más bajo que no hace falta que sea interpretado por el navegador.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Node.js puede ser instalado de diferentes maneras, a continuación, se muestran los pasos para su instalación en Windows. 
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+1. Descargar el instalador .MSI de Node.js del sitio web oficial (https://nodejs.org/es/download/) de acuerdo con la arquitectura de la computadora (32 o 64 bits). Se puede elegir entre la versión LTS o la actual, para el tutorial se eligió la versión **Actual**.
+
+![Descargar Node.js](/blog/images/post3/download.png)
+
+2. Ejecutar el archivo de instalación. 
+
+![Ejecutar instalador](/blog/images/post3/installer.png)
+
+3. A continuación, el asistente de instalación se abrirá, hacer clic en **Next**.
+
+![Asistente de instalación](/blog/images/post3/install.png)
+
+4. Es necesario aceptar la ***Licencia de Uso***, para lo cual basta con marcar la casilla correspondiente y clic en **Next**.
+
+![Aceptar licencia de uso](/blog/images/post3/license.png)
+
+5. Seleccionar la carpeta de instalación, por defecto se instala en **C:\Program Files\nodejs**. Se puede cambiar la ruta de instalación, para lo cual, se debe marcar la casilla **Customize** y clic en **Browse** para seleccionar la ruta de instalación. Posteriormente, clic en **Next**.
+   
+![Seleccionar ruta de instalación](/blog/images/post3/path.png)
+
+6. En la sección de **Configuración personalizada** se puede elegir la instalación de los componentes adicionales, para el tutorial se seleccionó la opción **Default** y se realizó clic en **Next**.
+
+![Configuración personalizada](/blog/images/post3/custom.png)
+   
+7. En la sección de **Herramientas para módulos nativos** marcar la casilla para que el instalador realice la instalación de los componentes necesarios para módulos nativos y hacer clic en **Next**.
+ 
+![Herramientas adicionales](/blog/images/post3/tools.png)
+
+8. Para comenzar la instalación de Node.js hacer clic en **Install** (el asistente solicitará permisos de administrador).
+
+![Comenzar instalación](/blog/images/post3/begin-install.png)
+
+9. El proceso de instalación puede tomar unos minutos, no cancelar y esperar hasta que finalice. 
+
+![Proceso de instalación de Node.js](/blog/images/post3/process-install.png)
+
+10.  Una vez finalizada la instalación, se mostrará el mensaje de instalación exitosa. Hacer clic en **Finish**.
+  
+![Instalación finalizada](/blog/images/post3/finish.png)
+
+11.  En caso de haber marcado la casilla del ***Paso 7***, al cerrar la ventana del asistente de instalación se ejecutará en la línea de comandos automáticamente el proceso de descarga e instalación de las herramientas adicionales. 
+
+![Instalación de herramientas adicionales](/blog/images/post3/install-tools.png)
+
+12. Para verificar si Node.js se ha instalado satisfactoriamente en el sistema, ejecutar el siguiente comando en la línea de comandos o terminal de Windows. 
+
+```bash
+node -v
+```
+
+13. Si la instalación fue exitosa, se mostrará la versión de Node.js instalada en el sistema.
+  
+```bash
+v18.9.1
+```
+
+14. Para verificar si npm (manejador de paquetes de node) se ha instalado satisfactoriamente en el sistema, ejecutar el siguiente comando en la línea de comandos o terminal de Windows. 
+
+```bash
+npm -v
+```
+
+15. Si la instalación fue exitosa, se mostrará la versión de npm instalada en el sistema.
+  
+```bash 
+8.19.12
+```
+
+16. Una vez finalizados los pasos anteriores, se ha realizado la instalación completa de Node.js en el sistema. 
