@@ -2,7 +2,7 @@
 layout: "../../layouts/PostLayout.astro"
 title: "Icono de la Bandeja del Sistema en Python"
 description: "Icono de la Bandeja del Sistema en Python"
-pubDate: "Oct 28 2022"
+pubDate: "Nov 28 2022"
 heroImage: "/blog/images/post8/cover.png"
 ---
 
