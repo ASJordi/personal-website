@@ -39,7 +39,7 @@
 
 This is my personal website, where I share my portfolio and blog. Built with Astro, TailwindCSS, daisyUI and deployed with Firebase. 
 
-[![Product Name Screen Shot][product-screenshot]](https://asjordi.dev)
+[![Product Name Screen Shot][product-screenshot]](https://v2.asjordi.dev)
 
 <!-- LICENSE -->
 ## License
