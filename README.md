@@ -20,13 +20,13 @@
     <img src="public/favicon.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center"><a href="https://asjordi.dev">Personal Website </a></h3>
+  <h3 align="center"><a href="https://v2.asjordi.dev">Personal Website </a></h3>
 
   <p align="center">
     Personal Website | Portfolio & Blog
     <br />
     <br />
-    <a href="https://personal-website-asjordi.web.app/">View Demo</a>
+    <a href="https://v2.asjordi.dev">View Demo</a>
     ·
     <a href="https://github.com/ASJordi/personal-website/issues">Report Bug</a>
     ·
@@ -69,7 +69,7 @@ Template by [https://github.com/manuelernestog/astro-modern-personal-website](ht
 [build-shield]: https://img.shields.io/github/actions/workflow/status/asjordi/personal-website/firebase-hosting-merge.yml
 [build-url]: https://github.com/ASJordi/personal-website/actions
 [deploy-shield]: https://img.shields.io/github/deployments/asjordi/personal-website/production?label=deploy
-[deploy-url]: https://personal-website-asjordi.web.app/
+[deploy-url]: https://v2.asjordi.dev
 [size-shield]: https://img.shields.io/github/repo-size/asjordi/personal-website
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ASJordi

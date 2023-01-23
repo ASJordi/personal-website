@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: production
-      url: https://personal-website-asjordi.web.app/
+      url: https://v2.asjordi.dev
     steps:
       - uses: actions/checkout@v3
       - name: Set Node.js
