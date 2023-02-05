@@ -8,6 +8,7 @@
   [![MIT License][license-shield]][license-url]
   [![Build][build-shield]][build-url]
   [![Deploy][deploy-shield]][deploy-url]
+  [![Version][version-shield]][version-url]
   [![Size][size-shield]][deploy-url]
   [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -70,6 +71,8 @@ Template by [https://github.com/manuelernestog/astro-modern-personal-website](ht
 [build-url]: https://github.com/ASJordi/personal-website/actions
 [deploy-shield]: https://img.shields.io/github/deployments/asjordi/personal-website/production?label=deploy
 [deploy-url]: https://asjordi.dev
+[version-shield]: https://img.shields.io/github/v/release/asjordi/personal-website?label=Version
+[version-url]: https://github.com/ASJordi/personal-website/releases/tag/v1.0.0
 [size-shield]: https://img.shields.io/github/repo-size/asjordi/personal-website
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ASJordi
