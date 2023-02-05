@@ -1,4 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
 Allow: /
 
 Sitemap: https://asjordi.dev/sitemap-index.xml
+Host: https://asjordi.dev
