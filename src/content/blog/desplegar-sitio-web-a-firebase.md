@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Cómo desplegar un sitio web a Firebase"
 description: "Cómo desplegar un sitio web a Firebase"
 pubDate: "Oct 17 2022"

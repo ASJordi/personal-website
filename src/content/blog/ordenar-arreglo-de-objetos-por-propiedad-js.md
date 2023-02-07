@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Ordenar un arreglo de objetos por propiedad en JavaScript"
 description: "Cómo ordenar un arreglo de objetos por propiedad en JavaScript"
 pubDate: "Dec 12 2022"

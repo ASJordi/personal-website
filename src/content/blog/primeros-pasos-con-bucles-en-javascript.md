@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Primeros pasos con bucles en JavaScript"
 description: "Primeros pasos con loops en JavaScript"
 pubDate: "Feb 08 2023"

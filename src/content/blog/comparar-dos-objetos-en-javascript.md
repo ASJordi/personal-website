@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Comparar dos Objetos en JavaScript"
 description: "Cómo comparar dos Objetos en JavaScript"
 pubDate: "Dec 14 2022"

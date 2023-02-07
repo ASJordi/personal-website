@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Cómo configurar un entorno virtual en Python"
 description: "Cómo configurar un entorno virtual en Python"
 pubDate: "Dec 05 2022"

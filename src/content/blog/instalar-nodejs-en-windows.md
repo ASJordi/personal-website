@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Instalar Node.js en Windows"
 description: "Cómo instalar Node.js en Windows"
 pubDate: "Oct 05 2022"

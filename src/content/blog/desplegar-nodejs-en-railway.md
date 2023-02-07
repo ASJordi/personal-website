@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Cómo desplegar aplicación Node.js en Railway"
 description: "Cómo desplegar aplicación Node.js en Railway"
 pubDate: "Oct 19 2022"

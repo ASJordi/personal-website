@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Icono de la Bandeja del Sistema en Python"
 description: "Icono de la Bandeja del Sistema en Python"
 pubDate: "Nov 28 2022"

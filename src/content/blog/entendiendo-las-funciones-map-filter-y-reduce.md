@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Entendiendo las funciones Map, Filter & Reduce"
 description: "Las funciones Map, Filter & Reduce en JavaScript"
 pubDate: "Feb 06 2023"

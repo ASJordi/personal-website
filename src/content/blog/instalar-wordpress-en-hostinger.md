@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Cómo Instalar WordPress en Hostinger"
 description: "Cómo Instalar WordPress en Hostinger"
 pubDate: "Oct 12 2022"

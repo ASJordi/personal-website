@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Instalar y Configurar Git en Windows"
 description: "Cómo instalar y configurar Git en Windows"
 pubDate: "Oct 01 2022"

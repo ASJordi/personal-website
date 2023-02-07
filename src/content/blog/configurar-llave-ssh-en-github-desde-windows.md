@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Configurar llave SSH en GitHub desde Windows"
 description: "Configurar llave SSH en GitHub desde Windows"
 pubDate: "Oct 24 2022"

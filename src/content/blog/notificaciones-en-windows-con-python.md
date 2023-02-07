@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Notificaciones de Windows con Python"
 description: "Cómo mostrar notificaciones de Windows con Python"
 pubDate: "Nov 30 2022"

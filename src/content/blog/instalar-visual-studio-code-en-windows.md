@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Instalar Visual Studio Code en Windows"
 description: "Cómo instalar Visual Studio Code en Windows paso a paso"
 pubDate: "Oct 03 2022"
