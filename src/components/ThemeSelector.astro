@@ -6,10 +6,14 @@
 
 <script>
 	const containerIcon = document.querySelector("#themeIcon");
-	updateTheme("business");
-	const theme = window.localStorage.getItem("data-theme");
-
-	if (theme) {
+	let theme = window.localStorage.getItem("data-theme");
+	
+	if(theme === null) {
+		updateTheme("business");
+		theme = window.localStorage.getItem("data-theme");
+	}
+	
+	if (theme === "business") {
 		updateTheme(theme); 
 		setIconTheme("business");
 	}
@@ -18,10 +22,9 @@
 		setIconTheme("light");
 	}
 	
-	containerIcon.addEventListener("click", () => {
+	containerIcon!.addEventListener("click", () => {
 		changeThemeIcon();
   });
-
 
   function updateTheme(newTheme) {
 		let htmlContainer = document.querySelector("html");
@@ -30,12 +33,11 @@
   }
 
 	function changeThemeIcon() {
-	const currentTheme = window.localStorage.getItem("data-theme");
-	const newTheme = currentTheme === "business" ? "light" : "business";
-	updateTheme(newTheme);
-	setIconTheme(newTheme);
-}
-
+		const currentTheme = window.localStorage.getItem("data-theme");
+		const newTheme = currentTheme === "business" ? "light" : "business";
+		updateTheme(newTheme);
+		setIconTheme(newTheme);
+	}
 
 	function setIconTheme(theme){
 		let container = document.querySelector("#themeIcon");
