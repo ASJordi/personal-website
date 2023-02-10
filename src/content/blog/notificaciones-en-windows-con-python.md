@@ -2,7 +2,7 @@
 title: "Notificaciones de Windows con Python"
 description: "Cómo mostrar notificaciones de Windows con Python"
 pubDate: "Nov 30 2022"
-heroImage: "/blog/images/post9/cover.png"
+heroImage: "/blog/images/post9/cover.webp"
 ---
 
 En este artículo se explica cómo crear y mostrar notificaciones de Windows utilizando Python. Para ello se utiliza el módulo ``winotify``, el cual permite mostrar notificaciones personalizables en Windows 10 y Windows 11. 
@@ -55,7 +55,7 @@ toast.show()
 
 Con esto, se mostrará la notificación en el sistema y posteriormente se cerrará, de acuerdo con la duración definida.
 
-![Notificacion simple](/blog/images/post9/1.png)
+![Notificacion simple](/blog/images/post9/1.webp)
 
 ### Agregar Sonido
 
@@ -73,11 +73,11 @@ Para agregar botones a la notificación, se debe utilizar el método ``add_actio
 toast.add_actions(label="Google", launch="https://google.com")
 ```
 
-![Notificacion con botones](/blog/images/post9/2.png)
+![Notificacion con botones](/blog/images/post9/2.webp)
 
 Como se mencionó anteriormente, las notificaciones permanecen en el centro de notificaciones del sistema.
 
-![Notificacion en el centro de notificaciones](/blog/images/post9/3.png)
+![Notificacion en el centro de notificaciones](/blog/images/post9/3.webp)
 
 A continuación se muestra el codigo completo utilizado para mostrar la notificación: 
 

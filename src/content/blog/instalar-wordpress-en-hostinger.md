@@ -2,7 +2,7 @@
 title: "Cómo Instalar WordPress en Hostinger"
 description: "Cómo Instalar WordPress en Hostinger"
 pubDate: "Oct 12 2022"
-heroImage: "/blog/images/post4/cover.png"
+heroImage: "/blog/images/post4/cover.webp"
 ---
 
 WordPress es un sistema de gestión de contenidos o CMS gratuito y de código abierto. Permite construir, modificar y mantener diversos tipos de sitios web, por ejemplo, un blog, portafolio o tiendas online. 
@@ -19,31 +19,31 @@ A continuación, se describe el proceso de instalación de WordPress utilizando 
 
 * Para comenzar es necesario *iniciar sesión* dentro de [Hostinger]( https://www.hostinger.mx) seleccionando la opción de **Ingresar** en la parte superior derecha. 
 
-![Página principal de Hostinger](/blog/images/post4/01.png)
+![Página principal de Hostinger](/blog/images/post4/01.webp)
 
 * Ingresar los datos de inicio de sesión o utilizar alguno de los métodos adicionales. 
 
-![Iniciar sesión en Hostinger](/blog/images/post4/02.png)
+![Iniciar sesión en Hostinger](/blog/images/post4/02.webp)
 
 * Una vez iniciada la sesión, nos dirige al panel de administración o hPanel. Seleccionar la opción **Hosting** del menú principal.
 
-![Seleccionar Hosting](/blog/images/post4/03.png)
+![Seleccionar Hosting](/blog/images/post4/03.webp)
 
 * Elegir el **nombre de dominio** para el sitio de WordPress y hacer clic en el botón **Administrar**. 
 
-![Seleccionar dominio](/blog/images/post4/04.png)
+![Seleccionar dominio](/blog/images/post4/04.webp)
 
 * Dentro del hPanel, localizar y realizar clic sobre el botón de **Auto instalador**. 
 
-![Seleccionar auto instalador](/blog/images/post4/05.png)
+![Seleccionar auto instalador](/blog/images/post4/05.webp)
 
 * En caso de que no se muestre en la pantalla principal, dirigirse al menú lateral y hacer clic en **Sitio web** y clic en **Auto instalador**. 
 
-![Seleccionar auto instalador](/blog/images/post4/06.png)
+![Seleccionar auto instalador](/blog/images/post4/06.webp)
 
 * Elegir **WordPress** y clic en **Seleccionar**.
 
-![Seleccionar WordPress](/blog/images/post4/07.png)
+![Seleccionar WordPress](/blog/images/post4/07.webp)
 
 * Es necesario completar todos los campos del formulario **Instalar WordPress**. Para lo cual se debe ingresar: 
 
@@ -57,22 +57,22 @@ A continuación, se describe el proceso de instalación de WordPress utilizando 
 
 * Una vez completados los campos anteriores, hacer clic en **Siguiente**. 
 
-![Formulario de instalación de WordPress](/blog/images/post4/08.png)
+![Formulario de instalación de WordPress](/blog/images/post4/08.webp)
 
 * En la siguiente ventana, dejar las opciones por defecto, o en caso contrario seleccionar las deseadas. Clic en **Instalar**.
 
-![Opciones de instalación de WordPress](/blog/images/post4/09.png)
+![Opciones de instalación de WordPress](/blog/images/post4/09.webp)
 
 * Una vez terminado el proceso, nos redirige al tablero principal de WordPress. 
 
-![Tablero de WordPress](/blog/images/post4/10.png)
+![Tablero de WordPress](/blog/images/post4/10.webp)
 
 * En el tablero, hacer clic en el botón **Editar sitio web** para acceder al escritorio de WordPress.
 
-![Escritorio de WordPress](/blog/images/post4/11.png)
+![Escritorio de WordPress](/blog/images/post4/11.webp)
 
 En este punto, ha terminado la instalación de WordPress en Hostinger. En caso de no notar ningún cambio al momento de acceder al dominio, asegurarse de borrar la caché del navegador. 
 
 > Nota: En caso de que se haya instalado en una subcarpeta, es necesario agregar la ruta de la subcarpeta al final del dominio. Por ejemplo, si se instaló en la carpeta **blog**, el dominio sería **www.ejemplo.com/blog**.
 
-![Acceder al sitio de WordPress](/blog/images/post4/12.png)
+![Acceder al sitio de WordPress](/blog/images/post4/12.webp)

@@ -2,7 +2,7 @@
 title: "Shortcuts HTML en Visual Studio Code"
 description: "Conoce los Shortcuts HTML que harán tu vida más fácil"
 pubDate: "Feb 01 2023"
-heroImage: "/blog/images/post15/cover.png"
+heroImage: "/blog/images/post15/cover.webp"
 ---
 
 ## ¿Qué son los Shortcuts?

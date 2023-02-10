@@ -2,7 +2,7 @@
 title: "Configurar llave SSH en GitHub desde Windows"
 description: "Configurar llave SSH en GitHub desde Windows"
 pubDate: "Oct 24 2022"
-heroImage: "/blog/images/post7/cover.png"
+heroImage: "/blog/images/post7/cover.webp"
 ---
 
 Al trabajar con repositorios de manera local y remota utilizando GitHub, habitualmente cuando insertamos cambios (git push), obtenemos nuevos cambios (git pull) o simplemente al clonar (git clone) un repositorio, se realiza a través de internet y el protocolo HTTPS. 

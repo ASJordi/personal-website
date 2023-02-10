@@ -2,7 +2,7 @@
 title: "Ordenar un arreglo de objetos por propiedad en JavaScript"
 description: "Cómo ordenar un arreglo de objetos por propiedad en JavaScript"
 pubDate: "Dec 12 2022"
-heroImage: "/blog/images/post11/cover.png"
+heroImage: "/blog/images/post11/cover.webp"
 ---
 
 Ordenar un arreglo de objetos a partir de una propiedad en JavaScript es una tarea muy común y relativamente sencilla. En este artículo veremos cómo hacerlo. 
@@ -28,7 +28,7 @@ let computadoras = [
 
 Al hacer un `console.table(computadoras);` obtenemos un arreglo de objetos tal y como se define, y sin ordenar:
 
-![Arreglo de objetos original](/blog/images/post11/1.png)
+![Arreglo de objetos original](/blog/images/post11/1.webp)
 
 ## Ordenar un arreglo de objetos por propiedad
 
@@ -44,9 +44,9 @@ computadoras.sort((a, b) => a.precio - b.precio);
 computadoras.sort((a, b) => b.precio - a.precio);
 ```
 
-![Arreglo de objetos ordenado por precio](/blog/images/post11/2.png)
+![Arreglo de objetos ordenado por precio](/blog/images/post11/2.webp)
 
-![Arreglo de objetos ordenado por precio descendente](/blog/images/post11/3.png)
+![Arreglo de objetos ordenado por precio descendente](/blog/images/post11/3.webp)
 
 Para ordenar nuestro arreglo de objetos por marca, podemos usar la función `(a, b) => a.marca.localeCompare(b.marca)`, considerando un orden ascendente. Si queremos un orden descendente, podemos usar la función `(a, b) => b.marca.localeCompare(a.marca)`. 
 
@@ -56,9 +56,9 @@ computadoras.sort((a, b) => a.marca.localeCompare(b.marca));
 computadoras.sort((a, b) => b.marca.localeCompare(a.marca));
 ```
 
-![Arreglo de objetos ordenado por marca](/blog/images/post11/4.png)
+![Arreglo de objetos ordenado por marca](/blog/images/post11/4.webp)
 
-![Arreglo de objetos ordenado por marca descendente](/blog/images/post11/5.png)
+![Arreglo de objetos ordenado por marca descendente](/blog/images/post11/5.webp)
 
 De esta manera ya hemos ordenado un arreglo de objetos por distintas propiedades, tanto numéricas como alfabéticas, y de forma ascendente y descendente. 
 

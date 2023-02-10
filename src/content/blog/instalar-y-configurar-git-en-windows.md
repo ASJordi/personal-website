@@ -2,7 +2,7 @@
 title: "Instalar y Configurar Git en Windows"
 description: "Cómo instalar y configurar Git en Windows"
 pubDate: "Oct 01 2022"
-heroImage: "/blog/images/post2/cover.png"
+heroImage: "/blog/images/post2/cover.webp"
 ---
 
 Git es un sistema de control de versiones distribuido. Actualmente es el más popular dentro del mundo de desarrollo de software. Fue creado por Linux Torvalds y el equipo de desarrollo del Kernel de Linux como una alternativa de código abierto. 
@@ -37,25 +37,25 @@ Para realizar la descarga es necesario dirigirse al sitio oficial de Git en la s
 
 A continuación, seleccionar **Download for Windows**, posteriormente hacer clic en **click here to download** y en automático comenzará la descarga del asistente de instalación de Git. 
 
-![Descargar Git](/blog/images/post2/download-git.png)
+![Descargar Git](/blog/images/post2/download-git.webp)
 
 # Instalar Git
 
 Para instalar Git, basta con *ejecutar como administrador* el archivo de instalación que se descargo en el paso anterior.  
 
-![Archivo de instalación](/blog/images/post2/installation-file.png)
+![Archivo de instalación](/blog/images/post2/installation-file.webp)
 
 A continuación, se abrirá el asistente de instalación, para lo cual solo es necesario hacer clic en **Next** en cada uno de los pasos siguientes para continuar con la instalación.
 
-![Asistente de instalación](/blog/images/post2/assistant.png)
+![Asistente de instalación](/blog/images/post2/assistant.webp)
 
 Una vez finalizada la instalación, se mostrara la siguiente ventana, solo es necesario hacer clic en **Finish**.
 
-![Instalación finalizada](/blog/images/post2/finish.png)
+![Instalación finalizada](/blog/images/post2/finish.webp)
 
 Para verificar la instalación y versión de Git instalada, abrir la línea de comandos del sistema, solo es necesario dirigirse a Inicio y escribir *cmd*. O en caso de querer utilizar la propia línea de comandos de Git, escribir *git bash*. Nuevamente ejecutar el comando *git --version*.
 
-![Verificar instalación](/blog/images/post2/git-version.png)
+![Verificar instalación](/blog/images/post2/git-version.webp)
 
 # Configurar Git
 

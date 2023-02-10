@@ -2,7 +2,7 @@
 title: "Cómo desplegar un sitio web a Firebase"
 description: "Cómo desplegar un sitio web a Firebase"
 pubDate: "Oct 17 2022"
-heroImage: "/blog/images/post5/cover.png"
+heroImage: "/blog/images/post5/cover.webp"
 ---
 
 Firebase Hosting es un servicio de hosting rápido y seguro para aplicaciones web con contenido estático o dinámico. Entre sus principales características se encuentran la facilidad de despliegue, un plan gratis de alojamiento, dominio con certificado SSL gratis y una visualización previa del contenido antes de su publicación. 
@@ -19,33 +19,33 @@ Para poder desplegar un sitio web en Firebase Hosting es necesario contar con un
 
 * Ingresar al sitio web de Firebase disponible en [firebase.com](https://firebase.google.com/) e iniciar sesión. 
   
-![Crear proyecto en Firebase](/blog/images/post5/01.png)
+![Crear proyecto en Firebase](/blog/images/post5/01.webp)
 
 * Hacer clic en el botón de **Ir a la consola** en la parte superior.
   
 * Para crear un nuevo proyecto hacer clic en el botón **Add project**.
 
-![Crear proyecto en Firebase](/blog/images/post5/02.png)
+![Crear proyecto en Firebase](/blog/images/post5/02.webp)
 
 * Definir un nombre de proyecto y clic en **Continue**. De esta manera se asigna un identificador y URL único del proyecto.
 
-![Crear proyecto en Firebase](/blog/images/post5/03.png)
+![Crear proyecto en Firebase](/blog/images/post5/03.webp)
 
 * En la siguiente ventana desactivar la opción de ***Enable Google Analytics for this project*** y hacer clic en **Create project**. 
 
-![Crear proyecto en Firebase](/blog/images/post5/04.png)
+![Crear proyecto en Firebase](/blog/images/post5/04.webp)
 
 * Una vez creado el proyecto hacer clic en **Continue**. Esto automáticamente nos redirige al panel principal del proyecto. 
 
-![Crear proyecto en Firebase](/blog/images/post5/05.png)
+![Crear proyecto en Firebase](/blog/images/post5/05.webp)
 
 ## Configurar el proyecto
 
 * Seleccionar el apartado **Hosting** del panel izquierdo y clic en **Get started**.
 
-![Seleccionar Hosting](/blog/images/post5/06.png)
+![Seleccionar Hosting](/blog/images/post5/06.webp)
 
-![Seleccionar Hosting](/blog/images/post5/07.png)
+![Seleccionar Hosting](/blog/images/post5/07.webp)
 
 * A continuación, se despliega una ventana con las instrucciones necesarias para subir nuestra página o aplicación web a Firebase Hosting. 
   
@@ -53,7 +53,7 @@ Para poder desplegar un sitio web en Firebase Hosting es necesario contar con un
   
 * Ingresamos a la ruta del proyecto utilizando la terminal del sistema operativo para ejecutar los comandos mostrados a continuación. 
 
-![CLI](/blog/images/post5/08.png)
+![CLI](/blog/images/post5/08.webp)
 
 * Ejecutar el siguiente comando para instalar la herramienta de línea de comandos de Firebase.
 
@@ -82,7 +82,7 @@ firebase init
   * Ingresar **n** para el punto de single-page app.
   * Ingresar **n** para evitar que se sobre escriba el archivo index.html.
 
-![CLI](/blog/images/post5/09.png)
+![CLI](/blog/images/post5/09.webp)
 
 ## Desplegar el sitio web
 
@@ -92,12 +92,12 @@ firebase init
 firebase deploy
 ```
 
-![Desplegar sitio](/blog/images/post5/10.png)
+![Desplegar sitio](/blog/images/post5/10.webp)
 
 * De esta forma, todo el contenido de nuestra página o aplicación web se ha desplegado en el hosting y es accesible a través de la URL que nos proporciona Firebase. 
 
 * En caso de no conocer la URL del proyecto, dirigirse a la sección **Hosting** en el panel de Firebase y en el apartado **Domain** se encuentra. 
   
-![URL del proyecto](/blog/images/post5/11.png)
+![URL del proyecto](/blog/images/post5/11.webp)
 
-![Proyecto desplegado](/blog/images/post5/12.png)
+![Proyecto desplegado](/blog/images/post5/12.webp)

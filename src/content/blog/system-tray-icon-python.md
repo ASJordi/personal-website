@@ -2,7 +2,7 @@
 title: "Icono de la Bandeja del Sistema en Python"
 description: "Icono de la Bandeja del Sistema en Python"
 pubDate: "Nov 28 2022"
-heroImage: "/blog/images/post8/cover.png"
+heroImage: "/blog/images/post8/cover.webp"
 ---
 
 En este artículo se explica cómo crear y utilizar iconos en la bandeja del sistema con Python, básicamente, es poder tener en la parte inferior derecha de la barra de tareas un icono que permita una serie de interacciones y de esta manear proveer funcionalidades extra para una aplicación.   
@@ -73,11 +73,11 @@ icon.run()
 
 Ahora solo es necesario ejecutar el archivo principal y se mostrará el icono en la bandeja del sistema.
 
-![Icono del sistema](/blog/images/post8/1.png)
+![Icono del sistema](/blog/images/post8/1.webp)
 
 Al hacer clic derecho sobre el icono, se mostrará el menú con los elementos definidos.
 
-![Elementos del menú](/blog/images/post8/2.png)
+![Elementos del menú](/blog/images/post8/2.webp)
 
 ## Agregar Submenús
 
@@ -95,7 +95,7 @@ icon = pystray.Icon('Windows Menu', image, 'Windows Menu', menu=pystray.Menu(
 ```
 Una vez ejecutado el archivo principal, se mostrará el icono en la bandeja del sistema con el nuevo submenú.
 
-![Elementos del submenú](/blog/images/post8/3.png)
+![Elementos del submenú](/blog/images/post8/3.webp)
 
 Al hacer clic sobre el elemento del submenú, se ejecutará la función definida en el paso anterior. 
 

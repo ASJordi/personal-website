@@ -2,7 +2,7 @@
 title: "Cómo evitar bucles anidados en JavaScript"
 description: "Cómo evitar bucles anidados en JavaScript"
 pubDate: "Dec 21 2022"
-heroImage: "/blog/images/post14/cover.png"
+heroImage: "/blog/images/post14/cover.webp"
 ---
 
 Cuando tenemos dos arreglos y queremos combinarlos, podemos usar un bucle anidado. Pero, ¿qué pasa si cada arreglo tiene demasiados elementos? ¿Cómo podemos evitar los bucles anidados en JavaScript? 
