@@ -1,7 +1,7 @@
 ---
 title: "Desestructurar objetos en JavaScript "
 description: "Desestructuración de objetos en JavaScript"
-pubDate: "Feb 23 2023"
+pubDate: "Feb 22 2023"
 heroImage: "/blog/images/post21/cover.webp"
 ---
 
