@@ -9,7 +9,7 @@ heroImage: "/blog/images/post15/cover.webp"
 
 Los Shortcuts son atajos de teclado que nos permiten realizar acciones de forma más rápida y eficiente. En Visual Studio Code podemos encontrar una gran cantidad de Shortcuts que nos ayudarán a mejorar nuestra productividad.
 
-Dentro de Visual Studio Code, [Emmet](https://code.visualstudio.com/docs/editor/emmet) proporciona abreviaciones para muchos lenguajes de programación, incluyendo HTML y CSS. 
+Dentro de Visual Studio Code, [Emmet](https://code.visualstudio.com/docs/editor/emmet) proporciona abreviaciones para muchos lenguajes de programación, incluyendo HTML y CSS.
 
 ## HTML Boilerplate
 
@@ -29,7 +29,7 @@ Al escribir el simbolo de exclamación `!` y presionar la tecla `TAB` dentro de 
 </html>
 ```
 
-La estructura del HTML Boilerplate por defecto no contiene la mayoria de etiquetas que utilizamos en nuestros proyectos, por lo que podemos modificarla a nuestro gusto. Para ello, se debe ir a File > Preferences > Configure User Snippets. A continuación, seleccionar *New Global Snippets File* e ingresar la combinación de teclas necesarias para ejecutar el boilerplate, en este caso doble signo de exclamación `!!`. 
+La estructura del HTML Boilerplate por defecto no contiene la mayoria de etiquetas que utilizamos en nuestros proyectos, por lo que podemos modificarla a nuestro gusto. Para ello, se debe ir a File > Preferences > Configure User Snippets. A continuación, seleccionar *New Global Snippets File* e ingresar la combinación de teclas necesarias para ejecutar el boilerplate, en este caso doble signo de exclamación `!!`.
 
 En el archivo `.json` generado se debe agregar la siguiente estructura:
 
@@ -101,7 +101,7 @@ Al momento de escribir código HTML, es común que se repitan ciertas estructura
 <a href="https://www.google.com">Google</a>
 ```
 
-Algunos de los Shortcuts de Emmet pueden ser combinados en combinaciones más complejas, por ejemplo: 
+Algunos de los Shortcuts de Emmet pueden ser combinados en combinaciones más complejas, por ejemplo:
 
 - `div>(header>ul>li*2>a)+footer>p`
 

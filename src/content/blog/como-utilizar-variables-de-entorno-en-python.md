@@ -5,7 +5,7 @@ pubDate: "Dec 19 2022"
 heroImage: "/blog/images/post13/cover.webp"
 ---
 
-La mayoria de las aplicaciones que desarrollamos tiene como objetivo ser desplegadas en un servidor, por lo que es necesario que estas puedan ser configuradas de manera dinámica. Para esto, es común que utilicemos variables de entorno para almacenar información sensible como credenciales de acceso a bases de datos, claves de API, etc. 
+La mayoria de las aplicaciones que desarrollamos tiene como objetivo ser desplegadas en un servidor, por lo que es necesario que estas puedan ser configuradas de manera dinámica. Para esto, es común que utilicemos variables de entorno para almacenar información sensible como credenciales de acceso a bases de datos, claves de API, etc.
 
 En este artículo veremos cómo utilizar variables de entorno en Python.
 
@@ -48,7 +48,7 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-`load_dotenv` primero busca un archivo `.env` en la raíz del proyecto y luego carga las variables de entorno que se encuentren en el mismo. Si no encuentra un archivo `.env` en la raíz del proyecto, entonces buscará un archivo `.env` en el directorio actual. 
+`load_dotenv` primero busca un archivo `.env` en la raíz del proyecto y luego carga las variables de entorno que se encuentren en el mismo. Si no encuentra un archivo `.env` en la raíz del proyecto, entonces buscará un archivo `.env` en el directorio actual.
 
 ```python
 # app.py

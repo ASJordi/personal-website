@@ -5,9 +5,9 @@ pubDate: "Dec 21 2022"
 heroImage: "/blog/images/post14/cover.webp"
 ---
 
-Cuando tenemos dos arreglos y queremos combinarlos, podemos usar un bucle anidado. Pero, ¿qué pasa si cada arreglo tiene demasiados elementos? ¿Cómo podemos evitar los bucles anidados en JavaScript? 
+Cuando tenemos dos arreglos y queremos combinarlos, podemos usar un bucle anidado. Pero, ¿qué pasa si cada arreglo tiene demasiados elementos? ¿Cómo podemos evitar los bucles anidados en JavaScript?
 
-En este caso tenemos dos arreglos, el arreglo `carros` y el arreglo `precios`. En el primer arreglo tenemos los atributos `modelo` y `marca` y en el segundo arreglo tenemos los atributos `precio` y `marca`. 
+En este caso tenemos dos arreglos, el arreglo `carros` y el arreglo `precios`. En el primer arreglo tenemos los atributos `modelo` y `marca` y en el segundo arreglo tenemos los atributos `precio` y `marca`.
 
 ```js
 const carros = [
@@ -33,13 +33,13 @@ const precios = [
 ];
 ```
 
-Si necesitamos saber los precios de los carros que tenemos en el arreglo `carros` se deben relacionar ambos arreglos, para esto podemos usar un bucle anidado como solución. 
+Si necesitamos saber los precios de los carros que tenemos en el arreglo `carros` se deben relacionar ambos arreglos, para esto podemos usar un bucle anidado como solución.
 
 ```js
 const carrosConPrecio = carros.map(carro => {
   const precio = precios.find((precioMap) => {
     return precioMap.marca === carro.marca
-  }).precio 
+  }).precio
   return {
     ...{...carro, precio}
   }
@@ -58,11 +58,11 @@ const carrosConPrecio = carros.map(carro => {
 ]
 ```
 
-En el código anterior, primero usamos el método `map` para recorrer el arreglo `carros` y luego usamos el método `find` para recorrer el arreglo `precios` y encontrar el precio del carro. 
+En el código anterior, primero usamos el método `map` para recorrer el arreglo `carros` y luego usamos el método `find` para recorrer el arreglo `precios` y encontrar el precio del carro.
 
-Este código funciona, pero si tenemos muchos elementos en los arreglos, el código se vuelve muy lento, por ejemplo, las iteraciones que se hacen en el bucle anidado son 36 en un principio. Si los comienzan a aumentar, el código se vuelve relativamente lento. 
+Este código funciona, pero si tenemos muchos elementos en los arreglos, el código se vuelve muy lento, por ejemplo, las iteraciones que se hacen en el bucle anidado son 36 en un principio. Si los comienzan a aumentar, el código se vuelve relativamente lento.
 
-Una solución para reducir el numero de iteraciones es realizar una búsqueda por referencia en lugar de una búsqueda iterativa. Para ello se debe transformar el arreglo `precios` en un objeto. 
+Una solución para reducir el numero de iteraciones es realizar una búsqueda por referencia en lugar de una búsqueda iterativa. Para ello se debe transformar el arreglo `precios` en un objeto.
 
 ```js
 const nuevaListaPrecios = precios.reduce((acc, act) => {
@@ -73,7 +73,7 @@ const nuevaListaPrecios = precios.reduce((acc, act) => {
 }, {});
 ```
 
-Obtenemos el siguiente objeto. 
+Obtenemos el siguiente objeto.
 
 ```js
 {
@@ -88,7 +88,7 @@ Obtenemos el siguiente objeto.
 }
 ```
 
-Ahora podemos usar el objeto `nuevaListaPrecios` para obtener el precio de los carros a partir del método `map`. 
+Ahora podemos usar el objeto `nuevaListaPrecios` para obtener el precio de los carros a partir del método `map`.
 
 ```js
 const carrosConPrecioActual = carros.map(carro => {

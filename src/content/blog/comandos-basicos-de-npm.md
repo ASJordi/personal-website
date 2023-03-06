@@ -5,7 +5,7 @@ pubDate: "Feb 20 2023"
 heroImage: "/blog/images/post20/cover.webp"
 ---
 
-Si estás empezando a trabajar con JavaScript, probablemente en algún momento tendrás que utilizar Node.js y NPM. La mayoría de los proyectos de JavaScript utilizan NPM para instalar dependencias y paquetes de terceros, y para ejecutar scripts de desarrollo. 
+Si estás empezando a trabajar con JavaScript, probablemente en algún momento tendrás que utilizar Node.js y NPM. La mayoría de los proyectos de JavaScript utilizan NPM para instalar dependencias y paquetes de terceros, y para ejecutar scripts de desarrollo.
 
 En este artículo, vamos a ver los comandos básicos de NPM, y algunos shortcuts que te pueden ayudar a ahorrar tiempo.
 
@@ -53,7 +53,7 @@ Al utilizar Node.js, las dependencias de un proyecto se dividen en dos tipos:
 Cuando instalamos un paquete con NPM, por defecto se instala la última versión disponible. Sin embargo, podemos instalar una versión específica de un paquete utilizando el comando `npm install` seguido del nombre del paquete y la versión que queremos instalar. La versión del paquete es declarada en el archivo `package.json` y tiene la siguiente estructura:
 
 ```json
-"dependencies": 
+"dependencies":
 {
 	"express": "^4.17.1"
 }
@@ -154,7 +154,7 @@ Conforme aumenta el tamaño de un proyecto, el directorio `node_modules` puede l
 npm dedupe
 ```
 
-Este comando realiza una busqueda dentro del árbol de dependencias y busca la manera en la que se pueden eliminar los paquetes duplicados y compartirlos entre las dependencias, de esta manera se reduce el tamaño del directorio `node_modules` y la redundancia de los paquetes. 
+Este comando realiza una busqueda dentro del árbol de dependencias y busca la manera en la que se pueden eliminar los paquetes duplicados y compartirlos entre las dependencias, de esta manera se reduce el tamaño del directorio `node_modules` y la redundancia de los paquetes.
 
 Al ser un árbol de dependencias las ramas son en su mayoria independientes, el siguiente comando intenta reorganizar esas ramas para identificar los paquetes innecesarios y eliminarlos.
 

@@ -5,7 +5,7 @@ pubDate: "Nov 28 2022"
 heroImage: "/blog/images/post8/cover.webp"
 ---
 
-En este artículo se explica cómo crear y utilizar iconos en la bandeja del sistema con Python, básicamente, es poder tener en la parte inferior derecha de la barra de tareas un icono que permita una serie de interacciones y de esta manear proveer funcionalidades extra para una aplicación.   
+En este artículo se explica cómo crear y utilizar iconos en la bandeja del sistema con Python, básicamente, es poder tener en la parte inferior derecha de la barra de tareas un icono que permita una serie de interacciones y de esta manear proveer funcionalidades extra para una aplicación.
 
 ## ¿Qué es un icono de la bandeja del sistema?
 
@@ -19,33 +19,33 @@ Para poder implementar el icono en la bandeja del sistema, se utilizará la bibl
 pip install pystray
 ```
 
-A parte de pystray, se utilizará la biblioteca de ``pillow``, la cual permitirá agregar una imagen y esta será la que aparecerá como icono en la barra de tareas. 
+A parte de pystray, se utilizará la biblioteca de ``pillow``, la cual permitirá agregar una imagen y esta será la que aparecerá como icono en la barra de tareas.
 
 ```python
 pip install pillow
 ```
 
-Una vez instaladas ambas bibliotecas, es necesario importarlas dentro del archivo principal. 
+Una vez instaladas ambas bibliotecas, es necesario importarlas dentro del archivo principal.
 
 ```python
 import pystray
 import PIL.Image
 ```
 
-Posteriormente, se carga la imagen a utilizar como icono. 
+Posteriormente, se carga la imagen a utilizar como icono.
 
 ```python
 image = PIL.Image.open('icon.png')
 ```
 
-Antes de crear el icono del sistema, es necesario definir una función que se ejecutará de manera general al momento de hacer clic sobre cada uno de los elementos individuales del menú. Misma que recibe los parámetros icon e item, donde icon hace referencia a la instancia del menú e item a cada uno de los elementos del menú. 
+Antes de crear el icono del sistema, es necesario definir una función que se ejecutará de manera general al momento de hacer clic sobre cada uno de los elementos individuales del menú. Misma que recibe los parámetros icon e item, donde icon hace referencia a la instancia del menú e item a cada uno de los elementos del menú.
 
 ```python
   def on_clicked(icon, item):
     print('Hello World!')
 ```
 
-Es necesario crear una segunda función, cuyo único propósito será terminar la ejecución del icono. 
+Es necesario crear una segunda función, cuyo único propósito será terminar la ejecución del icono.
 
 ```python
 def on_quit(icon):
@@ -54,7 +54,7 @@ def on_quit(icon):
 
 La instancia del icono se crea a partir de ``pystray.Icon`` y el menú principal a partir de ``pystray.Menu``. Se puede definir un nombre, imagen de icono (imagen definida en pasos anteriores) y tooltip (texto que aparece al posicionar el cursor sobre el icono) para el icono resultante.
 
-La definición de los elementos del menú principal se realiza a partir de ``pystray.MenuItem``, misma que recibe el nombre del elemento a mostrar y la función a ejecutar al realizar clic. 
+La definición de los elementos del menú principal se realiza a partir de ``pystray.MenuItem``, misma que recibe el nombre del elemento a mostrar y la función a ejecutar al realizar clic.
 
 ```python
 icon = pystray.Icon('Windows Menu', image, 'Windows Menu', menu=pystray.Menu(
@@ -65,7 +65,7 @@ icon = pystray.Icon('Windows Menu', image, 'Windows Menu', menu=pystray.Menu(
 
 En este caso se definieron dos elementos del menú, el primero ejecutará la función ***on_clicked*** mostrando un mensaje por consola, y el segundo la función ***on_quit***.
 
-Para ejecutar y mostrar el icono en la bandeja del sistema, se utiliza el método run. 
+Para ejecutar y mostrar el icono en la bandeja del sistema, se utiliza el método run.
 
 ```python
 icon.run()
@@ -81,7 +81,7 @@ Al hacer clic derecho sobre el icono, se mostrará el menú con los elementos de
 
 ## Agregar Submenús
 
-Para agregar submenús, se debe definir un nuevo menú a partir de ``pystray.Menu`` dentro de un elemento del tipo ``pystray.MenuItem`` y agregarlo como elemento del menú principal del icono. 
+Para agregar submenús, se debe definir un nuevo menú a partir de ``pystray.Menu`` dentro de un elemento del tipo ``pystray.MenuItem`` y agregarlo como elemento del menú principal del icono.
 
 ```python
 icon = pystray.Icon('Windows Menu', image, 'Windows Menu', menu=pystray.Menu(
@@ -97,7 +97,7 @@ Una vez ejecutado el archivo principal, se mostrará el icono en la bandeja del 
 
 ![Elementos del submenú](/blog/images/post8/3.webp)
 
-Al hacer clic sobre el elemento del submenú, se ejecutará la función definida en el paso anterior. 
+Al hacer clic sobre el elemento del submenú, se ejecutará la función definida en el paso anterior.
 
 En este punto cualquiera de los elementos del menú principal o submenú ejecutará la función ``on_clicked`` mostrando un mensaje por consola. Para poder diferenciar entre los elementos del menú principal y submenú, se puede agregar un condicional de la siguiente manera haciendo uso de los parametros que recibe la función.
 
@@ -113,7 +113,7 @@ def on_clicked(icon, item):
       print('Not implemented yet')
 ```
 
-De esta manera ya se ha creado un icono de la bandeja del sistema con un menú principal y un submenú. Mismos que pueden ser modificados a gusto del desarrollador, agregando más elementos, cambiando el nombre, imagen, o incluso las funciones que pueden ejecutar. 
+De esta manera ya se ha creado un icono de la bandeja del sistema con un menú principal y un submenú. Mismos que pueden ser modificados a gusto del desarrollador, agregando más elementos, cambiando el nombre, imagen, o incluso las funciones que pueden ejecutar.
 
 A continuación se muestra el código completo del ejemplo.
 

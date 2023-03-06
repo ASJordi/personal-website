@@ -5,16 +5,16 @@ pubDate: "Nov 30 2022"
 heroImage: "/blog/images/post9/cover.webp"
 ---
 
-En este artículo se explica cómo crear y mostrar notificaciones de Windows utilizando Python. Para ello se utiliza el módulo ``winotify``, el cual permite mostrar notificaciones personalizables en Windows 10 y Windows 11. 
+En este artículo se explica cómo crear y mostrar notificaciones de Windows utilizando Python. Para ello se utiliza el módulo ``winotify``, el cual permite mostrar notificaciones personalizables en Windows 10 y Windows 11.
 
-Este módulo proporciona las siguientes características, mismas que lo diferencian de otros: 
-- Permite mantener las notificaciones en el centro de notificaciones del sistema. 
-- Puede incluir hasta 5 botones por notificación. 
-- Ejecuta acciones a través de la propia notificación. 
+Este módulo proporciona las siguientes características, mismas que lo diferencian de otros:
+- Permite mantener las notificaciones en el centro de notificaciones del sistema.
+- Puede incluir hasta 5 botones por notificación.
+- Ejecuta acciones a través de la propia notificación.
 
 ## Instalación
 
-Para instalar el módulo ``winotify``, se debe ejecutar el siguiente comando en la terminal: 
+Para instalar el módulo ``winotify``, se debe ejecutar el siguiente comando en la terminal:
 
 ```bash
 pip install winotify
@@ -22,13 +22,13 @@ pip install winotify
 
 ## Uso
 
-Para comenzar es necesario importar el módulo ``winotify`` en el archivo principal: 
+Para comenzar es necesario importar el módulo ``winotify`` en el archivo principal:
 
 ```python
 from winotify import Notification, audio, Notifier
 ```
 
-### Crear Notificación 
+### Crear Notificación
 
 Para crear una notificación, se debe crear una instancia de la clase ``Notification``, la cual recibe los siguiente parámetros:
 - Identificador
@@ -47,7 +47,7 @@ toast = Notification(app_id="Windows app",
 
 ### Mostrar Notificación
 
-Para mostrar la notificación, se debe ejecutar el método ``show`` de la instancia de la clase ``Notification``: 
+Para mostrar la notificación, se debe ejecutar el método ``show`` de la instancia de la clase ``Notification``:
 
 ```python
 toast.show()
@@ -79,7 +79,7 @@ Como se mencionó anteriormente, las notificaciones permanecen en el centro de n
 
 ![Notificacion en el centro de notificaciones](/blog/images/post9/3.webp)
 
-A continuación se muestra el codigo completo utilizado para mostrar la notificación: 
+A continuación se muestra el codigo completo utilizado para mostrar la notificación:
 
 ```python
 from winotify import Notification, audio, Notifier

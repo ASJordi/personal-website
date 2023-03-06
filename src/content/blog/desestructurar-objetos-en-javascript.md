@@ -9,7 +9,7 @@ Al trabajar con JavaScript, es posible que se necesite trabajar con objetos que 
 
 ## ¿Qué es la desestructuración de objetos?
 
-La desestructuración de objetos es una forma de extraer datos de un objeto y almacenarlos en variables. Se puede realizar en una sola línea de código, lo que hace que el código sea más legible y fácil de mantener. 
+La desestructuración de objetos es una forma de extraer datos de un objeto y almacenarlos en variables. Se puede realizar en una sola línea de código, lo que hace que el código sea más legible y fácil de mantener.
 
 Se realiza utilizando la sintaxis de asignación de desestructuración que permite desempaquetar valores de matrices o propiedades de objetos en distintas variables.
 
@@ -184,7 +184,7 @@ for (const { nombre, edad } of usuarios) {
 
 ## Desestructuración dinámica
 
-¿Qué pasa si solo conocemos el nombre de la propiedad que queremos desestructurar en tiempo de ejecución? 
+¿Qué pasa si solo conocemos el nombre de la propiedad que queremos desestructurar en tiempo de ejecución?
 
 Por ejemplo, un usuario puede hacer clic en un botón para mostrar su perfil. El handler tendría la siguiente sintaxis:
 

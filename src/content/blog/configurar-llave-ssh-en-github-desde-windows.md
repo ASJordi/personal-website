@@ -5,11 +5,11 @@ pubDate: "Oct 24 2022"
 heroImage: "/blog/images/post7/cover.webp"
 ---
 
-Al trabajar con repositorios de manera local y remota utilizando GitHub, habitualmente cuando insertamos cambios (git push), obtenemos nuevos cambios (git pull) o simplemente al clonar (git clone) un repositorio, se realiza a través de internet y el protocolo HTTPS. 
+Al trabajar con repositorios de manera local y remota utilizando GitHub, habitualmente cuando insertamos cambios (git push), obtenemos nuevos cambios (git pull) o simplemente al clonar (git clone) un repositorio, se realiza a través de internet y el protocolo HTTPS.
 
-Existe un protocolo más seguro a través del cual podemos establecer una vía de comunicación más segura con GitHub para cualquier operación, se trata de SSH. 
+Existe un protocolo más seguro a través del cual podemos establecer una vía de comunicación más segura con GitHub para cualquier operación, se trata de SSH.
 
-En este tutorial se describe el proceso para crear y configurar una llave SSH con GitHub desde Windows utilizando la herramienta de OpenSSH. 
+En este tutorial se describe el proceso para crear y configurar una llave SSH con GitHub desde Windows utilizando la herramienta de OpenSSH.
 
 ## ¿Qué es SSH?
 
@@ -27,11 +27,11 @@ OpenSSH es una herramienta de conectividad para el inicio de sesión remoto que 
 
 Para realizar la instalación de OpenSSH ejecutar PowerShell como administrador. Para verificar si ya está instalado, ejecutar el siguiente comando:
 
-```powershell 
+```powershell
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 ```
 
-Este comando devuelve como salida si ya se encuentran instalados o no, tanto el cliente como el servidor de OpenSSH. 
+Este comando devuelve como salida si ya se encuentran instalados o no, tanto el cliente como el servidor de OpenSSH.
 
 ```powershell
 Name  : OpenSSH.Client~~~~0.0.1.0
@@ -41,7 +41,7 @@ Name  : OpenSSH.Server~~~~0.0.1.0
 State : NotPresent
 ```
 
-A continuación, es necesario instalar los componentes del servidor o cliente necesarios, basta con ejecutar el comando que corresponda. 
+A continuación, es necesario instalar los componentes del servidor o cliente necesarios, basta con ejecutar el comando que corresponda.
 
 ```powershell
 # Instalar OpenSSH Client
@@ -51,7 +51,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
 
-Una vez ejecutados los comandos, ambos deben devolver la siguiente salida. 
+Una vez ejecutados los comandos, ambos deben devolver la siguiente salida.
 
 ```powershell
 Path          :
@@ -61,7 +61,7 @@ RestartNeeded : False
 
 ## Configurar OpenSSH
 
-Para configurar el servidor de OpenSSH por primera vez, abrir PowerShell como administrador y ejecutar los siguientes comandos.  
+Para configurar el servidor de OpenSSH por primera vez, abrir PowerShell como administrador y ejecutar los siguientes comandos.
 
 ```powershell
 # Iniciar el servicio de sshd
@@ -83,13 +83,13 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 }
 ```
 
-Ejecutar el siguiente comando para definir el servicio de OpenSSH con arranque automático, es decir, se iniciará junto con el sistema sin la necesidad de ejecutar ningún comando.   
+Ejecutar el siguiente comando para definir el servicio de OpenSSH con arranque automático, es decir, se iniciará junto con el sistema sin la necesidad de ejecutar ningún comando.
 
 ```powershell
 Get-Service ssh-agent | Set-Service -StartupType Automatic
 ```
 
-En caso contrario, con el siguiente comando se puede iniciar el servicio de OpenSSH. 
+En caso contrario, con el siguiente comando se puede iniciar el servicio de OpenSSH.
 
 ```powershell
 Start-Service ssh-agent
@@ -100,20 +100,20 @@ Para ver el estado actual del servicio ejecutar el siguiente comando.
 Get-Service ssh-agent
 ```
 
-Para más información sobre el servicio de OpenSSH, se puede consultar la documentación oficial de Microsoft en [Instalación de OpenSSH](https://learn.microsoft.com/es-mx/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). 
+Para más información sobre el servicio de OpenSSH, se puede consultar la documentación oficial de Microsoft en [Instalación de OpenSSH](https://learn.microsoft.com/es-mx/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
 
 
 ## Crear llave SSH
 
-Antes de generar una nueva clave SSH, verificar si hay claves existentes en la máquina local. Para ello dirigirse a la ruta `C:\Users\user\.ssh` y verificar si ya existe un archivo con extensión .pub. 
+Antes de generar una nueva clave SSH, verificar si hay claves existentes en la máquina local. Para ello dirigirse a la ruta `C:\Users\user\.ssh` y verificar si ya existe un archivo con extensión .pub.
 
-En caso de no existir, abrir la terminal de Windows o PowerShell y ejecutar el siguiente comando para generar una nueva llave SSH. Solo es necesario sustituir el correo electrónico por el que se utiliza en GitHub. 
+En caso de no existir, abrir la terminal de Windows o PowerShell y ejecutar el siguiente comando para generar una nueva llave SSH. Solo es necesario sustituir el correo electrónico por el que se utiliza en GitHub.
 
 ```powershell
 ssh-keygen -t ed25519 -C "email@dominio.com"
 ```
 
-A continuación es necesario definir donde se almacenará la llave, en este caso se utilizará la ruta por defecto, solo es necesario presionar la tecla Enter. 
+A continuación es necesario definir donde se almacenará la llave, en este caso se utilizará la ruta por defecto, solo es necesario presionar la tecla Enter.
 
 ```powershell
 Generating public/private ed25519 key pair.
@@ -127,7 +127,7 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 
-Se obtiene una salida similar a la siguiente. Lo cual indica que la llave se ha generado correctamente. 
+Se obtiene una salida similar a la siguiente. Lo cual indica que la llave se ha generado correctamente.
 
 ```powershell
 Your identification has been saved in C:\Users\user/.ssh/key-github
@@ -148,24 +148,24 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-Para ver las llaves que se han creado, posicionarse en la ruta `C:\Users\user\.ssh` y ejecutar el siguiente comando. 
+Para ver las llaves que se han creado, posicionarse en la ruta `C:\Users\user\.ssh` y ejecutar el siguiente comando.
 
 ```powershell
 ls
 ```
 
-Se obtiene una salida similar a la siguiente. 
+Se obtiene una salida similar a la siguiente.
 
 ```powershell
 id_ed25519
 id_ed25519.pub
 ```
 
-La llave con extensión .pub es la llave pública y la que no tiene extensión es la llave privada. 
+La llave con extensión .pub es la llave pública y la que no tiene extensión es la llave privada.
 
 ## Agregar llave SSH a OpenSSH
 
-Una vez creadas las llaves SSH, es necesario agregarlas al agente SSH, en este caso OpenSSH. Para ello, ejecutar el siguiente comando. Recordando que se debe estar posicionado en la ruta donde se almacenan las llaves, o bien, se puede especificar la ruta completa.  
+Una vez creadas las llaves SSH, es necesario agregarlas al agente SSH, en este caso OpenSSH. Para ello, ejecutar el siguiente comando. Recordando que se debe estar posicionado en la ruta donde se almacenan las llaves, o bien, se puede especificar la ruta completa.
 
 ```powershell
 ssh-add .\id_ed25519
@@ -173,7 +173,7 @@ ssh-add .\id_ed25519
 
 ## Agregar llave SSH a GitHub
 
-* Para agregar las llaves SSH a GitHub, es necesario copiar el contenido de la llave pública, para ello, ejecutar cualquiera de los siguientes dos comandos, y copiar el contenido que se muestra en pantalla.  
+* Para agregar las llaves SSH a GitHub, es necesario copiar el contenido de la llave pública, para ello, ejecutar cualquiera de los siguientes dos comandos, y copiar el contenido que se muestra en pantalla.
 
 ```powershell
 Get-Content .\id_ed25519.pub

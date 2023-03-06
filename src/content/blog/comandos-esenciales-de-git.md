@@ -7,9 +7,9 @@ heroImage: "/blog/images/post19/cover.webp"
 
 El control de versiones es una herramienta muy útil para el desarrollo de software, y Git es uno de los sistemas de control de versiones más populares. Este permite que los desarrolladores puedan trabajar en equipo en un mismo proyecto, y que puedan realizar cambios en el código sin temor a perderlo, o simplemente para trabajar en proyectos personales.
 
-Si cuentas con experiencia en programación puede que aprender Git no sea muy complicado.  
+Si cuentas con experiencia en programación puede que aprender Git no sea muy complicado.
 
-En caso de que no se haya instalado Git, se puede consultar el siguiente artículo: [Instalar y Configurar Git en Windows](https://asjordi.dev/blog/instalar-y-configurar-git-en-windows). 
+En caso de que no se haya instalado Git, se puede consultar el siguiente artículo: [Instalar y Configurar Git en Windows](https://asjordi.dev/blog/instalar-y-configurar-git-en-windows).
 
 A continuación se listan los comandos más esenciales para comenzar a usar Git.
 
@@ -228,7 +228,7 @@ git pull <nombre_repositorio_remoto> <nombre_rama>
 
 ### git fetch
 
-Este comando permite traer los cambios realizados en un repositorio remoto al repositorio local, pero sin realizar un merge. 
+Este comando permite traer los cambios realizados en un repositorio remoto al repositorio local, pero sin realizar un merge.
 
 ```bash
 git fetch <nombre_repositorio_remoto> <nombre_rama>

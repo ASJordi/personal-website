@@ -1,11 +1,11 @@
 ---
 title: "¿Cómo comparar el contenido de dos repositorios usando Git?"
-description: "Enteniendo el comando git diff"
+description: "Entendiendo el comando git diff"
 pubDate: "Feb 13 2023"
 heroImage: "/blog/images/post18/cover.webp"
 ---
 
-Cuando estamos trabajando con Git, a veces nos encontramos con la necesidad de comparar el contenido de dos repositorios. Por ejemplo, para comparar el contenido de dos ramas, dos commits o dos archivos. 
+Cuando estamos trabajando con Git, a veces nos encontramos con la necesidad de comparar el contenido de dos repositorios. Por ejemplo, para comparar el contenido de dos ramas, dos commits o dos archivos.
 
 En este post vamos a ver como comparar el contenido de dos repositorios usando Git. Para ello vamos a utilizar el comando `git diff`.
 
@@ -48,7 +48,7 @@ git diff main remotes/b/main <archivo>
 # git diff main remotes/b/main README.md
 ```
 
-En general estos son los pasos necesarios para comparar el contenido de dos repositorios, considerando que uno de ellos se encuentra de manera local y el otro de manera remota. 
+En general estos son los pasos necesarios para comparar el contenido de dos repositorios, considerando que uno de ellos se encuentra de manera local y el otro de manera remota.
 
 A continuación se muestran algunos ejemplos de como utilizar el comando `git diff`.
 

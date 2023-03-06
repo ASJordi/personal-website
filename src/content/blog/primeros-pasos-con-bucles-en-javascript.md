@@ -13,7 +13,7 @@ Antes de seguir adelante, es necesario entender que es una estructura de control
 
 ## ¿Qué es una estructura de control de flujo?
 
-Como su nombre lo indica, es una estructura que controla el flujo de nuestro código, es decir, el orden en el que se ejecutan las instrucciones. Tambien permite ejecutar tareas repetitivas o complejas. 
+Como su nombre lo indica, es una estructura que controla el flujo de nuestro código, es decir, el orden en el que se ejecutan las instrucciones. Tambien permite ejecutar tareas repetitivas o complejas.
 
 ## Bucle for
 
@@ -43,7 +43,7 @@ for (let i = 0; i < array.length; i++) {
 // Elemento 4: 5
 ```
 
-En este ejemplo, la variable `i` es la variable de control del bucle, la cual se inicializa en 0, la condición es que `i` sea menor que el tamaño del array, y el incremento es que `i` se incremente en 1 cada vez que se ejecute el bucle. 
+En este ejemplo, la variable `i` es la variable de control del bucle, la cual se inicializa en 0, la condición es que `i` sea menor que el tamaño del array, y el incremento es que `i` se incremente en 1 cada vez que se ejecute el bucle.
 
 En caso de que, no se conozca el número de iteraciones que se van a realizar, se puede utilizar el bucle `while`.
 
@@ -78,7 +78,7 @@ while (i <= 5) {
 // 5
 ```
 
-En este ejemplo, la variable `i` es la variable de control del bucle, la cual se inicializa en 1, la condición es que `i` sea menor o igual a 5, y el incremento es que `i` se incremente en 1 cada vez que se ejecute el bucle. 
+En este ejemplo, la variable `i` es la variable de control del bucle, la cual se inicializa en 1, la condición es que `i` sea menor o igual a 5, y el incremento es que `i` se incremente en 1 cada vez que se ejecute el bucle.
 
 > **Nota:** Es importante tener en cuenta que el bucle `while` puede ejecutarse infinitamente si la condición nunca se vuelve falsa. Por lo tanto, es importante asegurarse de que la condición se vuelva falsa en algún momento.
 
@@ -86,7 +86,7 @@ En este punto, se conocen los 2 bucles más utilizados en JavaScript, pero ¿qu�
 
 ## Bucle do while
 
-El bucle `do while` es una estructura de control de flujo que nos permite ejecutar un bloque de código al menos una vez, y luego repetirlo mientras se cumpla una condición. 
+El bucle `do while` es una estructura de control de flujo que nos permite ejecutar un bloque de código al menos una vez, y luego repetirlo mientras se cumpla una condición.
 
 Es similar al bucle `while`, pero la diferencia es que el bloque de código se ejecuta al menos una vez, incluso si la condición es falsa.
 
@@ -100,7 +100,7 @@ do {
 } while (condición);
 ```
 
-Por ejemplo: 
+Por ejemplo:
 
 > Supongamos que quieres probar gratis una aplicación de música y pagar un mes después. Usando el bucle `do while` sería así: "Ejecuta primero la app de música, luego comprueba el pago".
 > Pero si usamos el bucle `while`, el código necesitará comprobar primero la condición (en este caso el pago), lo que significa que no puedes obtener una prueba gratuita ya que necesitas pagar primero.
