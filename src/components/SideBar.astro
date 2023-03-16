@@ -11,13 +11,12 @@
       </a>
     </div>
     <ul class="grow shrink">
-      <!-- Sidebar content here -->
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/proyectos">Proyectos</a></li>
-      <li><a href="/cv">CV</a></li>
-      <li><a href="/cursos">Cursos</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="mailto:jord7as@gmail.com">Contacto</a></li>
+      <li class="rounded-md"><a id="inicio" href="/">Inicio</a></li>
+      <li class="rounded-md"><a id="proyectos" href="/proyectos">Proyectos</a></li>
+      <li class="rounded-md"><a id="cv" href="/cv">CV</a></li>
+      <li class="rounded-md"><a id="cursos" href="/cursos">Cursos</a></li>
+      <li class="rounded-md"><a id="blog" href="/blog/">Blog</a></li>
+      <li class="rounded-md"><a href="mailto:jord7as@gmail.com">Contacto</a></li>
     </ul>
     <div class="grow"></div>
     <div class="social-icons px-4 my-2 flex self-center">
@@ -87,3 +86,26 @@
     </div>
   </div>
 </div>
+<script>
+  const homeLink = document.getElementById('inicio');
+  const projectsLink = document.getElementById('proyectos');
+  const cvLink = document.getElementById('cv');
+  const coursesLink = document.getElementById('cursos');
+  const blogLink = document.getElementById('blog');
+  var isHome = true;
+  const url = window.location.href;
+  const pages = [ projectsLink, cvLink, coursesLink, blogLink ];
+  pages.forEach( (elem) => {
+    if (url.includes(elem.id)) {
+      isHome = false;
+      elem.classList.add('bg-neutral');
+      elem.classList.add('text-white');
+      homeLink.classList.remove('bg-neutral');
+      homeLink.classList.remove('text-white');
+    }
+    if (isHome == true) {
+      homeLink.classList.add('bg-neutral');
+      homeLink.classList.add('text-white');
+    }
+  })
+</script>
