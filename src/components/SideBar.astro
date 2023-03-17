@@ -87,22 +87,26 @@
   </div>
 </div>
 <script>
-  const homeLink = document.getElementById('inicio');
-  const projectsLink = document.getElementById('proyectos');
-  const cvLink = document.getElementById('cv');
-  const coursesLink = document.getElementById('cursos');
-  const blogLink = document.getElementById('blog');
-  var isHome = true;
+  const homeLink = document.getElementById("inicio");
+  const projectsLink = document.getElementById("proyectos");
+  const cvLink = document.getElementById("cv");
+  const coursesLink = document.getElementById("cursos");
+  const blogLink = document.getElementById("blog");
+
+	let isHome = true;
+
   const url = window.location.href;
+
   const pages = [ projectsLink, cvLink, coursesLink, blogLink ];
-  pages.forEach( (elem) => {
+
+	pages.forEach((elem) => {
     if (url.includes(elem.id)) {
       isHome = false;
-      elem.classList.add('active');
-      homeLink.classList.remove('active');
+      elem.classList.add("bg-base-300");
     }
-    if (isHome == true) {
-      homeLink.classList.add('active');
-    }
-  })
+  });
+
+  if (isHome) {
+    homeLink.classList.add("bg-base-300");
+  }
 </script>
