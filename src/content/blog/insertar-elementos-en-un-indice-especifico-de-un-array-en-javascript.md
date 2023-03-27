@@ -3,6 +3,7 @@ title: "Insertar elementos en un índice específico de un array en JavaScript"
 description: "Insertar elementos en un índice específico de un array en JavaScript"
 pubDate: "March 29 23"
 heroImage: "/blog/images/post31/cover.webp"
+badge: "JS"
 ---
 
 En este post vamos a ver como insertar elementos en un índice específico de un array en JavaScript. Para ello vamos a utilizar el método [splice()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).

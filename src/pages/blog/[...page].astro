@@ -4,7 +4,7 @@ import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
-  
+
   const posts = (await getCollection('blog'));
 
   return paginate(posts, { pageSize: 10 });
@@ -25,6 +25,7 @@ const { page } = Astro.props;
             desc={post.data.description}
             url={"/blog/" + post.slug}
             target="_self"
+						badge={post.data.badge}
           />
           <div class="divider my-0" />
         </>
