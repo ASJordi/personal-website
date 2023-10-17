@@ -29,15 +29,15 @@ const displayDate = dayjs(updatedDate).format("ll");
     <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
 			{
         heroImage && (
-          <Image
-						aspectRatio={"16:9"}
-            width={750}
-            height={422}
-            format="webp"
-            src={heroImage}
-            alt={title}
-            class="w-full mb-6"
-          />
+				<Image
+						aspectRatio="16:9"
+						width={750}
+						height={422}
+						format="webp"
+						src={heroImage}
+						alt={title}
+						class="w-full mb-6"
+					/>
         )
       }
       <div class="">
