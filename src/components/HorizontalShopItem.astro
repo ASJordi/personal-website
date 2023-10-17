@@ -12,16 +12,16 @@ const {
   custom_link = false,
   custom_link_label = "",
 } = Astro.props;
-import { Picture } from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 ---
 
 <div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
   <div class="hero-content flex-col md:flex-row">
 		{
       img && (
-        <Picture
+        <Image
           aspectRatio="16:9"
-          widths={[210, 400]}
+          width={416}
           format={"webp"}
           sizes="(max-width: 750px) 100vw, 300px"
           src={img}
