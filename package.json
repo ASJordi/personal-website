@@ -2,7 +2,7 @@
   "name": "personal_website_asjordi",
   "description": "Personal website and blog built with Astro, deployed on Firebase using GitHub Actions.",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -12,29 +12,29 @@
     "astro": "astro",
     "prepare": "husky install"
   },
-	"engines": {
+  "engines": {
     "node": ">=18.0.0"
   },
-	"author": "Jordi Ayala",
+  "author": "Jordi Ayala",
   "license": "ISC",
-	"homepage": "https://asjordi.dev",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ASJordi/personal-website"
-	},
-	"bugs": {
-		"url": "https://github.com/ASJordi/personal-website/issues"
-	},
-	"keywords": [
-		"astro",
-		"tailwind",
-		"portfolio",
-		"blog",
-		"personal",
-		"website"
-	],
+  "homepage": "https://asjordi.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ASJordi/personal-website"
+  },
+  "bugs": {
+    "url": "https://github.com/ASJordi/personal-website/issues"
+  },
+  "keywords": [
+    "astro",
+    "tailwind",
+    "portfolio",
+    "blog",
+    "personal",
+    "website"
+  ],
   "dependencies": {
-		"@astrojs/image": "^0.16.5",
+    "@astrojs/image": "^0.16.5",
     "@astrojs/mdx": "^0.11.1",
     "@astrojs/rss": "^1.0.1",
     "@astrojs/sitemap": "^1.0.0",
@@ -44,7 +44,7 @@
     "dayjs": "^1.11.7",
     "path-browserify": "^1.0.1",
     "zod": "^3.20.2",
-		"sharp": "^0.31.3"
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.3",
