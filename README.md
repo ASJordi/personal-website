@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is my personal website, where I share my portfolio and blog. Built with Astro, TailwindCSS, daisyUI and deployed with Firebase. 
+This is my personal website, where I share my portfolio and blog. Built with Astro, TailwindCSS, daisyUI and deployed with Firebase.
 
 [![Product Name Screen Shot][product-screenshot]](https://asjordi.dev)
 
@@ -71,6 +71,6 @@ Template by [https://github.com/manuelernestog/astro-modern-personal-website](ht
 [deploy-shield]: https://img.shields.io/github/deployments/asjordi/personal-website/production?label=deploy
 [deploy-url]: https://asjordi.dev
 [version-shield]: https://img.shields.io/github/v/release/asjordi/personal-website?label=Version
-[version-url]: https://github.com/ASJordi/personal-website/releases/tag/v1.0.0
+[version-url]: https://github.com/ASJordi/personal-website/releases/tag/v2.0.0
 [size-shield]: https://img.shields.io/github/repo-size/asjordi/personal-website
 [product-screenshot]: public/screenshot.png
