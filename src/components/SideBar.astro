@@ -1,3 +1,7 @@
+---
+import { Picture } from "@astrojs/image/components";
+---
+
 <div class="drawer-side bg-base-200">
   <label for="my-drawer" class="drawer-overlay bg-base-200"></label>
   <div class="menu flex flex-col flex-nowrap p-4 overflow-y-auto w-[21rem] bg-base-200 text-base-content">
@@ -5,7 +9,15 @@
       <a href="/">
         <div class="avatar transition ease-in-out w-1/2 hover:scale-[102%] block m-auto mt-3 mb-6">
           <div>
-            <img class="mask mask-circle" src="/profile.webp" alt="profile image" />
+            <Picture
+              class="mask mask-circle"
+              aspectRatio="1:1"
+              widths={[152,304]}
+              format={"webp"}
+              sizes="(max-width: 750px) 100vw, 300px"
+              src="/profile.jpg"
+              alt="profile image"
+            />
           </div>
         </div>
       </a>
@@ -20,7 +32,7 @@
     </ul>
     <div class="grow"></div>
     <div class="social-icons px-4 my-2 flex self-center">
-      <a href="https://github.com/ASJordi" target="_blank" class="mx-3" aria-label="Github">
+      <a href="https://github.com/ASJordi" target="_blank" class="mx-3" aria-label="Github" title="Github">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -34,7 +46,7 @@
           ></path>
         </svg>
       </a>
-      <a href="https://twitter.com/asjordi" target="_blank" class="mx-3" aria-label="Twitter">
+      <a href="https://twitter.com/asjordi" target="_blank" class="mx-3" aria-label="Twitter" title="Twitter">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -46,7 +58,7 @@
           ></path>
         </svg>
       </a>
-      <a href="https://t.me/asjordi" target="_blank" class="mx-3" aria-label="Telegram">
+      <a href="https://t.me/asjordi" target="_blank" class="mx-3" aria-label="Telegram" title="Telegram">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -58,8 +70,7 @@
           ></path>
         </svg>
       </a>
-
-      <a href="https://www.linkedin.com/in/asjordi" target="_blank" class="mx-3" aria-label="Linkedin">
+      <a href="https://www.linkedin.com/in/asjordi" target="_blank" class="mx-3" aria-label="Linkedin" title="Linkedin">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -71,8 +82,7 @@
           ></path>
         </svg>
       </a>
-
-      <a href="/rss.xml" target="_blank" class="mx-3" aria-label="RSS Feed">
+      <a href="/rss.xml" target="_blank" class="mx-3" aria-label="RSS Feed" title="RSS Feed">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -102,13 +112,13 @@
 	// const activeClass = "bg-base-300";
 
 	pages.forEach((elem) => {
-    if (url.includes(elem.id)) {
+    if (elem?.id && url.includes(elem.id)) {
       isHome = false;
-      elem.classList.add("active");
+      elem?.classList.add("active");
     }
   });
 
   if (isHome) {
-    homeLink.classList.add("active");
+    homeLink?.classList.add("active");
   }
 </script>

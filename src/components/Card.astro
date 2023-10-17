@@ -1,11 +1,21 @@
 ---
-const { title, img, desc, url, badge, tags, target = '_blank' } = Astro.props;
+const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
+import { Picture } from "@astrojs/image/components";
 ---
 
 <div class="md:w-1/3 w-full">
   <a href={url} target={target}>
-    <div class="card bg-base-100 transition ease-in-out hover:shadow-xl mx-6 my-2 hover:scale-[102%]">
-      <figure><img src={img} alt="Shoes" /></figure>
+		<div class="card bg-base-100 transition ease-in-out hover:shadow-xl mx-6 my-2 hover:scale-[102%]">
+			<figure>
+        <Picture
+          aspectRatio="16:9"
+          widths={[1500,2500]}
+          format={"webp"}
+          sizes="(max-width: 1500px) 100vw, 2500px"
+          src={img}
+          alt="Description of the image"
+        />
+      </figure>
       <div class="card-body">
         <h2 class="card-title">
           {title}
@@ -13,7 +23,9 @@ const { title, img, desc, url, badge, tags, target = '_blank' } = Astro.props;
         </h2>
         <p>{desc}</p>
         <div class="card-actions justify-end">
-          {tags && tags.map((tag) => <div class="badge badge-outline">{tag}</div>)}
+          { tags &&
+        		tags.map((tag) => <div class="badge badge-outline">{tag}</div>)
+          }
         </div>
       </div>
     </div>
