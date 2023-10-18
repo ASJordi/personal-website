@@ -11,7 +11,7 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Jordi Eduardo Ayala Soto | Tienda">
+<BaseLayout title="Jordi Eduardo Ayala Soto | Tienda" sideBarActiveItemID="tienda">
   <ul>
     {
       page.data.map((item) => (

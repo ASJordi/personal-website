@@ -10,7 +10,7 @@ const posts = (await getCollection('blog')).sort(
 const last_posts = posts.slice(0, 3);
 ---
 
-<BaseLayout>
+<BaseLayout sideBarActiveItemID="inicio">
 
 	<div class="pb-12 mt-5">
 		<div class="text-xl py-1">Hola 👋</div>
