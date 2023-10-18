@@ -7,21 +7,21 @@
 <script>
 	const containerIcon = document.querySelector("#themeIcon");
 	let theme = window.localStorage.getItem("data-theme");
-	
+
 	if(theme === null) {
 		updateTheme("business");
 		theme = window.localStorage.getItem("data-theme");
 	}
-	
+
 	if (theme === "business") {
-		updateTheme(theme); 
+		updateTheme(theme);
 		setIconTheme("business");
 	}
 	else {
-		updateTheme("light"); 
-		setIconTheme("light");
+		updateTheme("lofi");
+		setIconTheme("lofi");
 	}
-	
+
 	containerIcon!.addEventListener("click", () => {
 		changeThemeIcon();
   });
@@ -34,7 +34,7 @@
 
 	function changeThemeIcon() {
 		const currentTheme = window.localStorage.getItem("data-theme");
-		const newTheme = currentTheme === "business" ? "light" : "business";
+		const newTheme = currentTheme === "business" ? "lofi" : "business";
 		updateTheme(newTheme);
 		setIconTheme(newTheme);
 	}
