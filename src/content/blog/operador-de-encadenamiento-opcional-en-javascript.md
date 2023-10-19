@@ -3,7 +3,7 @@ title: "Operador de encadenamiento opcional en JavaScript"
 description: "Cómo utilizar el operador de encadenamiento opcional en JavaScript"
 pubDate: "April 03 23"
 heroImage: "/blog/images/post32/cover.webp"
-badge: "JS"
+tags: ["JS"]
 ---
 
 El encadenamiento opcional es una funcionalidad introducida en ES2020. Permite leer el valor de una propiedad ubicada dentro de una cadena de objetos sin tener que validar que cada referencia de la cadena exista. El operador de encadenamiento opcional es `?.` y se puede utilizar en cualquier lugar donde se pueda utilizar el operador de acceso a propiedades `.`.

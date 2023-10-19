@@ -4,14 +4,15 @@ import { BlogSchema } from '../../content/config';
 import PostLayout from '../../layouts/PostLayout.astro';
 
 export async function getStaticPaths() {
-    const postEntries = await getCollection('blog');
-    return postEntries.map(entry => ( {
-        params: { slug: entry.slug }, props: { entry },
-    } ));
+	const postEntries = await getCollection("blog");
+  return postEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 interface Props {
-    entry: CollectionEntry<"blog">;
+	entry: CollectionEntry<"blog">;
 }
 
 const { entry } = Astro.props;
@@ -25,6 +26,7 @@ const { Content } = await entry.render();
 	pubDate={post.pubDate}
 	heroImage={post.heroImage}
 	updatedDate={post.updatedDate}
-	badge={post.badge}>
+	badge={post.badge}
+	tags={post.tags}>
   <Content/>
 </PostLayout>
