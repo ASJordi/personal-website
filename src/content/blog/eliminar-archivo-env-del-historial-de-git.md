@@ -3,7 +3,7 @@ title: "Eliminar archivo .env del historial de Git"
 description: "Cómo eliminar un archivo .env del historial de Git"
 pubDate: "April 17 23"
 heroImage: "/blog/images/post34/cover.webp"
-badge: "Git"
+tags: ["Git", "GitHub"]
 ---
 
 Cuando trabajamos con Git, es muy común que se tengan archivos que no queremos incluir en el repositorio, como por ejemplo, archivos de configuración de entornos, como el archivo `.env`. En caso de que ya se hayan añadido al repositorio, e incluso subido a un repositorio remoto, es posible que queramos eliminarlos completamente del historial de Git.

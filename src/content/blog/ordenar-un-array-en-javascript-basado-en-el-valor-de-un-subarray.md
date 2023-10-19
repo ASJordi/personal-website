@@ -3,7 +3,7 @@ title: "Ordenar un array en JavaScript basado en el valor de un subarray"
 description: "Cómo ordenar un array en JavaScript basado en el valor de un subarray"
 pubDate: "April 05 23"
 heroImage: "/blog/images/post33/cover.webp"
-badge: "JS"
+tags: ["JS", "Arrays"]
 ---
 
 Anteriormente hablamos de [cómo obtener el valor mínimo y máximo de un array de arrays en JavaScript](https://asjordi.dev/blog/obtener-el-valor-minimo-y-maximo-de-un-array-de-arrays-en-javascript/), en este artículo vamos a ver cómo ordenar un array en JavaScript basado en el valor de un subarray.
