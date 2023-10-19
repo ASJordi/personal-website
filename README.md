@@ -20,7 +20,7 @@
     <img src="public/favicon.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center"><a href="https://asjordi.dev">Personal Website </a></h3>
+  <h3 align="center"><a href="https://asjordi.dev">Personal Website</a></h3>
 
   <p align="center">
     Personal Website | Portfolio & Blog
@@ -34,29 +34,48 @@
   </p>
 </div>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project :computer:
 
-This is my personal website, where I share my portfolio and blog. Built with Astro, TailwindCSS, daisyUI and deployed with Firebase.
+Personal website | Portfolio & Blog built with Astro and TailwindCSS.
 
 [![Product Name Screen Shot][product-screenshot]](https://asjordi.dev)
 
-<!-- LICENSE -->
-## License
+## Built With :hammer_and_wrench:
+
+* [Astro](https://astro.build/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [daisyUI](https://daisyui.com/)
+
+## Installation :gear:
+
+- Clone the repo
+```sh
+git clone https://github.com/ASJordi/personal-website.git
+```
+
+- Install NPM packages
+```sh
+npm install
+```
+
+- Run the project
+```sh
+npm run dev
+```
+
+## License :page_facing_up:
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
-## Contact
+## Contact :email:
 
 Jordi Ayala - [@ASJordi](https://twitter.com/ASJordi)
 
 Project Link: [https://github.com/ASJordi/personal-website](https://github.com/ASJordi/personal-website)
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+## Acknowledgements :clap:
 
-Template by [https://github.com/manuelernestog/astro-modern-personal-website](https://github.com/manuelernestog/astro-modern-personal-website)
+Template by [https://github.com/manuelernestog/astrofy](https://github.com/manuelernestog/astrofy)
 
 [contributors-shield]: https://img.shields.io/github/contributors/asjordi/personal-website
 [contributors-url]: https://github.com/ASJordi/personal-website/graphs/contributors
