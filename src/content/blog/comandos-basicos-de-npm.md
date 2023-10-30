@@ -3,6 +3,7 @@ title: "Comandos básicos de NPM"
 description: "Comandos básicos y shortcuts de NPM"
 pubDate: "Feb 20 2023"
 heroImage: "/blog/images/post20/cover.webp"
+tags: ["NodeJS", "NPM"]
 ---
 
 Si estás empezando a trabajar con JavaScript, probablemente en algún momento tendrás que utilizar Node.js y NPM. La mayoría de los proyectos de JavaScript utilizan NPM para instalar dependencias y paquetes de terceros, y para ejecutar scripts de desarrollo.
@@ -47,7 +48,7 @@ Al utilizar Node.js, las dependencias de un proyecto se dividen en dos tipos:
 - **Dependencias del proyecto**: Son paquetes que son necesarios para que el proyecto funcione correctamente. Por ejemplo, si se está desarrollando un servidor web, se debe instalar el paquete `express` para poder crear un servidor web. Estos se registran en la sección `dependencies` del archivo `package.json`.
 
 - **Dependencias de desarrollo**: Son paquetes que son necesarios para el desarrollo del proyecto, pero no son necesarios para que el proyecto funcione correctamente en un ambiente de producción. Por ejemplo, si se instala nodemon con el comando `npm install -D nodemon`, para reiniciar el servidor cada vez que se guardan cambios en el código. Estos se registran en la sección `devDependencies` del archivo `package.json`.
-  
+
 ### Instalar paquetes por versión
 
 Cuando instalamos un paquete con NPM, por defecto se instala la última versión disponible. Sin embargo, podemos instalar una versión específica de un paquete utilizando el comando `npm install` seguido del nombre del paquete y la versión que queremos instalar. La versión del paquete es declarada en el archivo `package.json` y tiene la siguiente estructura:

@@ -3,6 +3,7 @@ title: "Icono de la Bandeja del Sistema en Python"
 description: "Icono de la Bandeja del Sistema en Python"
 pubDate: "Nov 28 2022"
 heroImage: "/blog/images/post8/cover.webp"
+tags: ["Python"]
 ---
 
 En este artículo se explica cómo crear y utilizar iconos en la bandeja del sistema con Python, básicamente, es poder tener en la parte inferior derecha de la barra de tareas un icono que permita una serie de interacciones y de esta manear proveer funcionalidades extra para una aplicación.

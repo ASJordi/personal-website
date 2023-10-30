@@ -3,6 +3,7 @@ title: "Cómo desplegar un sitio web a Firebase"
 description: "Cómo desplegar un sitio web a Firebase"
 pubDate: "Oct 17 2022"
 heroImage: "/blog/images/post5/cover.webp"
+tags: ["Firebase"]
 ---
 
 Firebase Hosting es un servicio de hosting rápido y seguro para aplicaciones web con contenido estático o dinámico. Entre sus principales características se encuentran la facilidad de despliegue, un plan gratis de alojamiento, dominio con certificado SSL gratis y una visualización previa del contenido antes de su publicación.
@@ -67,7 +68,7 @@ npm install -g firebase-tools
 firebase login
 ```
 
-* Una vez iniciada la sesión, se debe inicializar un proyecto de Firebase con el siguiente comando. 
+* Una vez iniciada la sesión, se debe inicializar un proyecto de Firebase con el siguiente comando.
 
 ```sh
 firebase init

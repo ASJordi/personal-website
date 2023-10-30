@@ -3,6 +3,7 @@ title: "Configurar llave SSH en GitHub desde Windows"
 description: "Configurar llave SSH en GitHub desde Windows"
 pubDate: "Oct 24 2022"
 heroImage: "/blog/images/post7/cover.webp"
+tags: ["SSH", "GitHub", "Git"]
 ---
 
 Al trabajar con repositorios de manera local y remota utilizando GitHub, habitualmente cuando insertamos cambios (git push), obtenemos nuevos cambios (git pull) o simplemente al clonar (git clone) un repositorio, se realiza a través de internet y el protocolo HTTPS.
@@ -120,7 +121,7 @@ Generating public/private ed25519 key pair.
 Enter file in which to save the key (C:\Users\user/.ssh/id_ed25519):
 ```
 
-En seguida, se debe definir una frase de contraseña para la llave, es opcional, pero brinda mayor seguridad el utilizarla. 
+En seguida, se debe definir una frase de contraseña para la llave, es opcional, pero brinda mayor seguridad el utilizarla.
 
 ```powershell
 Enter passphrase (empty for no passphrase):

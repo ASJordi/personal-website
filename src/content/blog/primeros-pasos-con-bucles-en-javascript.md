@@ -3,6 +3,7 @@ title: "Primeros pasos con bucles en JavaScript"
 description: "Primeros pasos con loops en JavaScript"
 pubDate: "Feb 08 2023"
 heroImage: "/blog/images/post17/cover.webp"
+tags: ["JS"]
 ---
 
 Los bucles o loops son una parte fundamental de JavaScript y cualquier otro lenguaje de programación, estos pueden mejorar la eficiencia y simplicidad de nuestro código sin importar el tamaño del proyecto.

@@ -3,6 +3,7 @@ title: "Cómo comprobar si el usuario está en línea con JavaScript"
 description: "Comprobar si el usuario está en línea o no mientras navega por un sitio web."
 pubDate: "Feb 27 2023"
 heroImage: "/blog/images/post22/cover.webp"
+tags: ["JS"]
 ---
 
 En ocasiones, es posible que se desee comprobar si el usuario está en línea o ha perdido la conexión a internet mientras navega por un sitio web. Por ejemplo, si el usuario está en línea, se puede mostrar un mensaje de bienvenida, pero si no está en línea, se puede mostrar un mensaje de error.

@@ -3,6 +3,7 @@ title: "¿Cómo comparar el contenido de dos repositorios usando Git?"
 description: "Entendiendo el comando git diff"
 pubDate: "Feb 13 2023"
 heroImage: "/blog/images/post18/cover.webp"
+tags: ["Git", "GitHub"]
 ---
 
 Cuando estamos trabajando con Git, a veces nos encontramos con la necesidad de comparar el contenido de dos repositorios. Por ejemplo, para comparar el contenido de dos ramas, dos commits o dos archivos.

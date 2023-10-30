@@ -3,6 +3,7 @@ title: "Instalar Node.js en Windows"
 description: "Cómo instalar Node.js en Windows"
 pubDate: "Oct 05 2022"
 heroImage: "/blog/images/post3/cover.webp"
+tags: ["NodeJS"]
 ---
 
 Node.js es un entorno de tiempo de ejecución de JavaScript. Es de código abierto y multiplataforma. Node.js se ejecuta del lado del servidor o backend. Su desarrollo permitió la ejecución de código de JavaScript fuera de un navegador web.

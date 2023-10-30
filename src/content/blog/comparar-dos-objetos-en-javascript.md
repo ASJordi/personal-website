@@ -3,6 +3,7 @@ title: "Comparar dos Objetos en JavaScript"
 description: "Cómo comparar dos Objetos en JavaScript"
 pubDate: "Dec 14 2022"
 heroImage: "/blog/images/post12/cover.webp"
+tags: ["JS"]
 ---
 
 En ocasiones es necesario comparar dos objetos en JavaScript, por ejemplo, para saber si son iguales o no. En este artículo veremos cómo hacerlo.

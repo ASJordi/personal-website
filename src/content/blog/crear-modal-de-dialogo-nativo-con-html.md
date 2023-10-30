@@ -3,6 +3,7 @@ title: "Crear modal de diálogo nativo con HTML"
 description: "Cómo crear un modal de diálogo nativo utilizando solo HTML"
 pubDate: "March 08 23"
 heroImage: "/blog/images/post25/cover.webp"
+tags: ["HTML"]
 ---
 
 Generalmente para crear un modal se utiliza JavaScript, pero actualmente se puede crear un modal de diálogo nativo utilizando solo HTML, por lo que resulta interesante conocerlo.

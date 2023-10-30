@@ -3,6 +3,7 @@ title: "Comandos esenciales de Git"
 description: "Comandos esenciales para comenzar a usar Git"
 pubDate: "Feb 15 2023"
 heroImage: "/blog/images/post19/cover.webp"
+tags: ["Git"]
 ---
 
 El control de versiones es una herramienta muy útil para el desarrollo de software, y Git es uno de los sistemas de control de versiones más populares. Este permite que los desarrolladores puedan trabajar en equipo en un mismo proyecto, y que puedan realizar cambios en el código sin temor a perderlo, o simplemente para trabajar en proyectos personales.

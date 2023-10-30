@@ -3,6 +3,7 @@ title: "Instalar Visual Studio Code en Windows"
 description: "Cómo instalar Visual Studio Code en Windows paso a paso"
 pubDate: "Oct 03 2022"
 heroImage: "/blog/images/post1/cover.webp"
+tags: ["VSCode"]
 ---
 
 Visual Studio Code o comúnmente conocido como VS Code es un editor de código multiplataforma desarrollado por Microsoft. En la actualidad es uno de los editores mas populares en el mundo del desarrollo de software debido a su flexibilidad y facilidad de uso.

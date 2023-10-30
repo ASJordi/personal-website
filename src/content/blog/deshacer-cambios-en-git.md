@@ -3,6 +3,7 @@ title: "Deshacer cambios en Git"
 description: "Cómo deshacer cambios en Git utilizando la línea de comandos"
 pubDate: "March 15 23"
 heroImage: "/blog/images/post27/cover.webp"
+tags: ["Git"]
 ---
 
 En caso de que se hayan realizado cambios dentro de un repositorio de Git y se deseen deshacer, se puede realizar tanto con la línea de comandos como con una interfaz gráfica. En este artículo se explicará cómo deshacer cambios en Git utilizando la línea de comandos.

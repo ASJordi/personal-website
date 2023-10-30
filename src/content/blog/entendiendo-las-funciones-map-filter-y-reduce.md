@@ -3,6 +3,7 @@ title: "Entendiendo las funciones Map, Filter & Reduce"
 description: "Las funciones Map, Filter & Reduce en JavaScript"
 pubDate: "Feb 06 2023"
 heroImage: "/blog/images/post16/cover.webp"
+tags: ["JS"]
 ---
 
 Las funciones Map, Filter y Reduce tienen una cosa en común: todas se conocen como **Funciones de Orden Superior**.

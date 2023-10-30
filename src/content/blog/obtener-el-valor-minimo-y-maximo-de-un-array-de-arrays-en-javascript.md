@@ -3,6 +3,7 @@ title: "Obtener el valor mínimo y máximo de un array de arrays en JavaScript"
 description: "Cómo obtener el valor mínimo y máximo de un array de arrays en JavaScript"
 pubDate: "March 06 23"
 heroImage: "/blog/images/post24/cover.webp"
+tags: ["JS"]
 ---
 
 Cuando se tiene un array de arrays con múltiples elementos, puede ser necesario que se tenga que obtener el valor mínimo o máximo de todos los elementos. En este artículo se mostrará cómo hacerlo utilizando el método `reduce()`.

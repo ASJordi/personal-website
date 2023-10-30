@@ -3,6 +3,7 @@ title: "Condicionales sin else en JavaScript"
 description: "Cómo utilizar condicionales sin else en JavaScript"
 pubDate: "March 27 23"
 heroImage: "/blog/images/post30/cover.webp"
+tags: ["JS"]
 ---
 
 Al utilizar JavaScript es muy común que en algun momento se necesite utilizar el [operador ternario](https://asjordi.dev/blog/aprende-a-utilizar-el-operador-ternario-en-javascript), que no es más que una forma de escribir un condicional if-else en una sola línea.

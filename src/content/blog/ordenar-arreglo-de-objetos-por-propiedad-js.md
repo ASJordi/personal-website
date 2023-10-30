@@ -3,6 +3,7 @@ title: "Ordenar un arreglo de objetos por propiedad en JavaScript"
 description: "Cómo ordenar un arreglo de objetos por propiedad en JavaScript"
 pubDate: "Dec 12 2022"
 heroImage: "/blog/images/post11/cover.webp"
+tags: ["JS"]
 ---
 
 Ordenar un arreglo de objetos a partir de una propiedad en JavaScript es una tarea muy común y relativamente sencilla. En este artículo veremos cómo hacerlo.

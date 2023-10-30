@@ -3,6 +3,7 @@ title: "Instalar y Configurar Git en Windows"
 description: "Cómo instalar y configurar Git en Windows"
 pubDate: "Oct 01 2022"
 heroImage: "/blog/images/post2/cover.webp"
+tags: ["Git"]
 ---
 
 Git es un sistema de control de versiones distribuido. Actualmente es el más popular dentro del mundo de desarrollo de software. Fue creado por Linux Torvalds y el equipo de desarrollo del Kernel de Linux como una alternativa de código abierto.

@@ -3,6 +3,7 @@ title: "Cómo Instalar WordPress en Hostinger"
 description: "Cómo Instalar WordPress en Hostinger"
 pubDate: "Oct 12 2022"
 heroImage: "/blog/images/post4/cover.webp"
+tags: ["WordPress", "Hostinger"]
 ---
 
 WordPress es un sistema de gestión de contenidos o CMS gratuito y de código abierto. Permite construir, modificar y mantener diversos tipos de sitios web, por ejemplo, un blog, portafolio o tiendas online.

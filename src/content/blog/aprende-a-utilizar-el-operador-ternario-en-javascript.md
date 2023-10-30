@@ -3,6 +3,7 @@ title: "Aprende a utilizar el operador ternario en JavaScript"
 description: "Aprende a utilizar el operador ternario en JavaScript"
 pubDate: "March 22 23"
 heroImage: "/blog/images/post29/cover.webp"
+tags: ["JS"]
 ---
 
 Al momento de trabajar con JavaScript es muy común que nos encontremos con la necesidad de realizar una condición, lo más común es utilizar if y else, pero en ocasiones podemos utilizar el operador ternario, ya sea para simplificar el código o para hacerlo más legible.

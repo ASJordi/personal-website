@@ -3,6 +3,7 @@ title: "Cómo desplegar aplicación Node.js en Railway"
 description: "Cómo desplegar aplicación Node.js en Railway"
 pubDate: "Oct 19 2022"
 heroImage: "/blog/images/post6/cover.webp"
+tags: ["NodeJS"]
 ---
 
 ## ¿Qué es Railway?

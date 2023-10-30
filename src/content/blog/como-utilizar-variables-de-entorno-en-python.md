@@ -3,6 +3,7 @@ title: "Cómo Utilizar Variables de Entorno en Python"
 description: "Cómo Utilizar Variables de Entorno en Python"
 pubDate: "Dec 19 2022"
 heroImage: "/blog/images/post13/cover.webp"
+tags: ["Python"]
 ---
 
 La mayoria de las aplicaciones que desarrollamos tiene como objetivo ser desplegadas en un servidor, por lo que es necesario que estas puedan ser configuradas de manera dinámica. Para esto, es común que utilicemos variables de entorno para almacenar información sensible como credenciales de acceso a bases de datos, claves de API, etc.

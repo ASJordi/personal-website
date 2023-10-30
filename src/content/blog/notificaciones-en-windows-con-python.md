@@ -3,6 +3,7 @@ title: "Notificaciones de Windows con Python"
 description: "Cómo mostrar notificaciones de Windows con Python"
 pubDate: "Nov 30 2022"
 heroImage: "/blog/images/post9/cover.webp"
+tags: ["Python"]
 ---
 
 En este artículo se explica cómo crear y mostrar notificaciones de Windows utilizando Python. Para ello se utiliza el módulo ``winotify``, el cual permite mostrar notificaciones personalizables en Windows 10 y Windows 11.

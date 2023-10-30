@@ -3,6 +3,7 @@ title: "Cómo cambiar el último mensaje de commit"
 description: "Cómo cambiar el último mensaje de commit en Git"
 pubDate: "March 13 23"
 heroImage: "/blog/images/post26/cover.webp"
+tags: ["Git"]
 ---
 
 Al momento de hacer un commit en Git, es posible que nos equivoquemos al escribir el mensaje de commit, ya sea por un error de tipeo o por escribir un mensaje que no es el correcto para el commit que se está realizando.

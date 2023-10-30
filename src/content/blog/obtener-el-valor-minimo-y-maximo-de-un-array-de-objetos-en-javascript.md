@@ -3,6 +3,7 @@ title: "Obtener el valor mínimo y máximo de un array de objetos en JavaScript"
 description: "Cómo obtener el valor mínimo y máximo de un array de objetos en JavaScript"
 pubDate: "March 01 23"
 heroImage: "/blog/images/post23/cover.webp"
+tags: ["JS"]
 ---
 
 Cuando se tiene un array de objetos con múltiples propiedades, es posible que necesitemos obtener el valor mínimo o máximo de uno de ellos a partir de una propiedad, y de esta forma devolver el objeto completo.

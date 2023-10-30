@@ -3,6 +3,7 @@ title: "Desestructurar objetos en JavaScript "
 description: "Desestructuración de objetos en JavaScript"
 pubDate: "Feb 22 2023"
 heroImage: "/blog/images/post21/cover.webp"
+tags: ["JS"]
 ---
 
 Al trabajar con JavaScript, es posible que se necesite trabajar con objetos que contienen muchos datos, por lo que es posible que desee extraer solo algunos de ellos. Con la desestructuración de objetos, puede extraer los datos que necesita de un objeto y almacenarlos en variables de forma rápida y sencilla.
