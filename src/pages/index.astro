@@ -2,6 +2,9 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
+import project1 from "../assets/projects/porfolio.webp";
+import project2 from "../assets/projects/urls.webp";
+import project3 from "../assets/projects/weather.webp";
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -33,7 +36,7 @@ const last_posts = posts.slice(0, 3);
 
 	<HorizontalCard
 		title="Portfolio"
-		img="/projects/porfolio.webp"
+		img={project1}
 		desc="Sitio web personal que permite mostrar información sobre mi persona, mis proyectos y habilidades. Esta desarrollado utilizando Astro y TailwindCSS. El proyecto está desplegado en Firebase utilizando CI."
 		url="https://asjordi.dev"
 		badge=""
@@ -44,7 +47,7 @@ const last_posts = posts.slice(0, 3);
 	<div class="divider my-0"></div>
 	<HorizontalCard
     title="URL Shortener"
-    img="/projects/urls.webp"
+    img={project2}
     desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. Cuenta con un backend desarrollado en NodeJS y Express, y una base de datos MongoDB. El frontend está desarrollado en HTML, CSS y JS. El proyecto está desplegado en Netlify y Railway."
     url="https://link-shortly.netlify.app"
     badge=""
@@ -55,7 +58,7 @@ const last_posts = posts.slice(0, 3);
 	<div class="divider my-0"></div>
 	<HorizontalCard
     title="Weather App"
-    img="/projects/weather.webp"
+    img={project3}
     desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather. Cuenta con un backend desarrollado en NodeJS y Express. El frontend está desarrollado en HTML, CSS y JS. El proyecto está desplegado en Netlify y Railway."
     url="https://weather-app-nodejs.netlify.app"
 		badge=""
