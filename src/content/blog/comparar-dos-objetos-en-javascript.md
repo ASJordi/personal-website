@@ -2,7 +2,7 @@
 title: "Comparar dos Objetos en JavaScript"
 description: "Cómo comparar dos Objetos en JavaScript"
 pubDate: "Dec 14 2022"
-heroImage: "/blog/images/post12/cover.webp"
+heroImage: "../../assets/blog/images/post12/cover.webp"
 tags: ["JS"]
 ---
 

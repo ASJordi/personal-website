@@ -2,7 +2,7 @@
 title: "Remover vocales de un String con JavaScript"
 description: "Cómo remover todas las vocales de un String con JavaScript"
 pubDate: "March 20 23"
-heroImage: "/blog/images/post28/cover.webp"
+heroImage: "../../assets/blog/images/post28/cover.webp"
 tags: ["JS"]
 ---
 

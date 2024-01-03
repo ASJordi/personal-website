@@ -2,7 +2,7 @@
 title: "Notificaciones de Windows con Python"
 description: "Cómo mostrar notificaciones de Windows con Python"
 pubDate: "Nov 30 2022"
-heroImage: "/blog/images/post9/cover.webp"
+heroImage: "../../assets/blog/images/post9/cover.webp"
 tags: ["Python"]
 ---
 
@@ -56,7 +56,7 @@ toast.show()
 
 Con esto, se mostrará la notificación en el sistema y posteriormente se cerrará, de acuerdo con la duración definida.
 
-![Notificacion simple](/blog/images/post9/1.webp)
+![Notificacion simple](../../assets/blog/images/post9/1.webp)
 
 ### Agregar Sonido
 
@@ -74,11 +74,11 @@ Para agregar botones a la notificación, se debe utilizar el método ``add_actio
 toast.add_actions(label="Google", launch="https://google.com")
 ```
 
-![Notificacion con botones](/blog/images/post9/2.webp)
+![Notificacion con botones](../../assets/blog/images/post9/2.webp)
 
 Como se mencionó anteriormente, las notificaciones permanecen en el centro de notificaciones del sistema.
 
-![Notificacion en el centro de notificaciones](/blog/images/post9/3.webp)
+![Notificacion en el centro de notificaciones](../../assets/blog/images/post9/3.webp)
 
 A continuación se muestra el codigo completo utilizado para mostrar la notificación:
 

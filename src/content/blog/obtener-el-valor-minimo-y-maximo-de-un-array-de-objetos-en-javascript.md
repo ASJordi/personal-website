@@ -2,7 +2,7 @@
 title: "Obtener el valor mínimo y máximo de un array de objetos en JavaScript"
 description: "Cómo obtener el valor mínimo y máximo de un array de objetos en JavaScript"
 pubDate: "March 01 23"
-heroImage: "/blog/images/post23/cover.webp"
+heroImage: "../../assets/blog/images/post23/cover.webp"
 tags: ["JS"]
 ---
 

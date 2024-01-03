@@ -2,7 +2,7 @@
 title: "Insertar elementos en un índice específico de un array en JavaScript"
 description: "Insertar elementos en un índice específico de un array en JavaScript"
 pubDate: "March 29 23"
-heroImage: "/blog/images/post31/cover.webp"
+heroImage: "../../assets/blog/images/post31/cover.webp"
 tags: ["JS", "Arrays"]
 ---
 

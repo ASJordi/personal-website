@@ -2,7 +2,7 @@
 title: "Primeros pasos con bucles en JavaScript"
 description: "Primeros pasos con loops en JavaScript"
 pubDate: "Feb 08 2023"
-heroImage: "/blog/images/post17/cover.webp"
+heroImage: "../../assets/blog/images/post17/cover.webp"
 tags: ["JS"]
 ---
 

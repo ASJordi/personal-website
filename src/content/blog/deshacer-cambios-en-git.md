@@ -2,7 +2,7 @@
 title: "Deshacer cambios en Git"
 description: "Cómo deshacer cambios en Git utilizando la línea de comandos"
 pubDate: "March 15 23"
-heroImage: "/blog/images/post27/cover.webp"
+heroImage: "../../assets/blog/images/post27/cover.webp"
 tags: ["Git"]
 ---
 
@@ -32,7 +32,7 @@ Con el comando `git status` se puede verificar que el archivo se encuentra en la
 
 A continuación se ejecuta el comando `git checkout main.js` para deshacer los cambios.
 
-![git status](/blog/images/post27/1.webp)
+![git status](../../assets/blog/images/post27/1.webp)
 
 De esta manera, el archivo `main.js` volverá a su estado anterior.
 
@@ -60,7 +60,7 @@ Por ejemplo, se han realizado 2 commits y se desean deshacer los cambios antes d
 
 Se ejecuta `git status` para verificar los cambios. A continuación se ejecuta el comando `git reset --soft HEAD~2` para deshacer los últimos 2 commits. De esta manera los cambios se deshacen y se vuelven a la sección de `Changes to be committed`.
 
-![git reset](/blog/images/post27/2.webp)
+![git reset](../../assets/blog/images/post27/2.webp)
 
 ## Deshacer cambios publicados
 
@@ -70,9 +70,9 @@ El primer paso es asegurarse de que el directorio de trabajo se encuentra limpio
 
 Después es necesario obtener el hash del commit que se desea deshacer. Para esto se puede utilizar el comando `git log --oneline`, o mediante la interfaz gráfica de Github.
 
-![hash cli](/blog/images/post27/3.webp)
+![hash cli](../../assets/blog/images/post27/3.webp)
 
-![hash github](/blog/images/post27/4.webp)
+![hash github](../../assets/blog/images/post27/4.webp)
 
 Dentro de la terminal, se ejecuta el siguiente comando para deshacer los cambios:
 
@@ -87,7 +87,7 @@ git revert a3da15f --no-edit
 
 Una vez ejecutado el comando, se puede verificar que se ha creado un nuevo commit que deshace los cambios, y por lo tanto los archivos modificados vuelven a su estado anterior.
 
-![git revert](/blog/images/post27/5.webp)
+![git revert](../../assets/blog/images/post27/5.webp)
 
 Solo resta publicar los cambios en el repositorio remoto. Para esto se puede utilizar el comando `git push`.
 
@@ -95,6 +95,6 @@ Solo resta publicar los cambios en el repositorio remoto. Para esto se puede uti
 git push origin <nombre-rama>
 ```
 
-![git push](/blog/images/post27/6.webp)
+![git push](../../assets/blog/images/post27/6.webp)
 
 En conclusión, se ha visto cómo deshacer cambios con Git en 3 escenarios distintos, que forman parte de la rutina de un desarrollador, y conocer los comandos que se deben utilizar para cada uno de ellos resulta muy útil. Cabe mencionar que si se utiliza una interfaz gráfica, se puede realizar de manera más sencilla.

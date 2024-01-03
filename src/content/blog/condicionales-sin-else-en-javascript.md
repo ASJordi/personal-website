@@ -2,7 +2,7 @@
 title: "Condicionales sin else en JavaScript"
 description: "Cómo utilizar condicionales sin else en JavaScript"
 pubDate: "March 27 23"
-heroImage: "/blog/images/post30/cover.webp"
+heroImage: "../../assets/blog/images/post30/cover.webp"
 tags: ["JS"]
 ---
 

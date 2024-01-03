@@ -2,7 +2,7 @@
 title: "Operador de encadenamiento opcional en JavaScript"
 description: "Cómo utilizar el operador de encadenamiento opcional en JavaScript"
 pubDate: "April 03 23"
-heroImage: "/blog/images/post32/cover.webp"
+heroImage: "../../assets/blog/images/post32/cover.webp"
 tags: ["JS"]
 ---
 

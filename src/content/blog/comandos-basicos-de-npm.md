@@ -2,7 +2,7 @@
 title: "Comandos básicos de NPM"
 description: "Comandos básicos y shortcuts de NPM"
 pubDate: "Feb 20 2023"
-heroImage: "/blog/images/post20/cover.webp"
+heroImage: "../../assets/blog/images/post20/cover.webp"
 tags: ["NodeJS", "NPM"]
 ---
 

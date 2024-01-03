@@ -2,7 +2,7 @@
 title: "Cómo Utilizar Variables de Entorno en Python"
 description: "Cómo Utilizar Variables de Entorno en Python"
 pubDate: "Dec 19 2022"
-heroImage: "/blog/images/post13/cover.webp"
+heroImage: "../../assets/blog/images/post13/cover.webp"
 tags: ["Python"]
 ---
 

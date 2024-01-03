@@ -2,7 +2,7 @@
 title: "Aprende a utilizar el operador ternario en JavaScript"
 description: "Aprende a utilizar el operador ternario en JavaScript"
 pubDate: "March 22 23"
-heroImage: "/blog/images/post29/cover.webp"
+heroImage: "../../assets/blog/images/post29/cover.webp"
 tags: ["JS"]
 ---
 

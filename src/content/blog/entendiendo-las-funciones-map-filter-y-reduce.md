@@ -2,7 +2,7 @@
 title: "Entendiendo las funciones Map, Filter & Reduce"
 description: "Las funciones Map, Filter & Reduce en JavaScript"
 pubDate: "Feb 06 2023"
-heroImage: "/blog/images/post16/cover.webp"
+heroImage: "../../assets/blog/images/post16/cover.webp"
 tags: ["JS"]
 ---
 

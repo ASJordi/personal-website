@@ -2,7 +2,7 @@
 title: "Cómo evitar bucles anidados en JavaScript"
 description: "Cómo evitar bucles anidados en JavaScript"
 pubDate: "Dec 21 2022"
-heroImage: "/blog/images/post14/cover.webp"
+heroImage: "../../assets/blog/images/post14/cover.webp"
 tags: ["JS"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Cómo comprobar si el usuario está en línea con JavaScript"
 description: "Comprobar si el usuario está en línea o no mientras navega por un sitio web."
 pubDate: "Feb 27 2023"
-heroImage: "/blog/images/post22/cover.webp"
+heroImage: "../../assets/blog/images/post22/cover.webp"
 tags: ["JS"]
 ---
 
@@ -130,4 +130,4 @@ Utilizando el código anterior, se inicializa el estado de la conexión del usua
 
 ## Demo
 
-![Demo](/blog/images/post22/ejemplo.gif)
+![Demo](../../assets/blog/images/post22/ejemplo.gif)

@@ -2,7 +2,7 @@
 title: "Comandos esenciales de Git"
 description: "Comandos esenciales para comenzar a usar Git"
 pubDate: "Feb 15 2023"
-heroImage: "/blog/images/post19/cover.webp"
+heroImage: "../../assets/blog/images/post19/cover.webp"
 tags: ["Git"]
 ---
 

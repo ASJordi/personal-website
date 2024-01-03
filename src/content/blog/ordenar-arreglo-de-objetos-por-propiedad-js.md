@@ -2,7 +2,7 @@
 title: "Ordenar un arreglo de objetos por propiedad en JavaScript"
 description: "Cómo ordenar un arreglo de objetos por propiedad en JavaScript"
 pubDate: "Dec 12 2022"
-heroImage: "/blog/images/post11/cover.webp"
+heroImage: "../../assets/blog/images/post11/cover.webp"
 tags: ["JS"]
 ---
 
@@ -29,7 +29,7 @@ let computadoras = [
 
 Al hacer un `console.table(computadoras);` obtenemos un arreglo de objetos tal y como se define, y sin ordenar:
 
-![Arreglo de objetos original](/blog/images/post11/1.webp)
+![Arreglo de objetos original](../../assets/blog/images/post11/1.webp)
 
 ## Ordenar un arreglo de objetos por propiedad
 
@@ -45,9 +45,9 @@ computadoras.sort((a, b) => a.precio - b.precio);
 computadoras.sort((a, b) => b.precio - a.precio);
 ```
 
-![Arreglo de objetos ordenado por precio](/blog/images/post11/2.webp)
+![Arreglo de objetos ordenado por precio](../../assets/blog/images/post11/2.webp)
 
-![Arreglo de objetos ordenado por precio descendente](/blog/images/post11/3.webp)
+![Arreglo de objetos ordenado por precio descendente](../../assets/blog/images/post11/3.webp)
 
 Para ordenar nuestro arreglo de objetos por marca, podemos usar la función `(a, b) => a.marca.localeCompare(b.marca)`, considerando un orden ascendente. Si queremos un orden descendente, podemos usar la función `(a, b) => b.marca.localeCompare(a.marca)`.
 
@@ -57,9 +57,9 @@ computadoras.sort((a, b) => a.marca.localeCompare(b.marca));
 computadoras.sort((a, b) => b.marca.localeCompare(a.marca));
 ```
 
-![Arreglo de objetos ordenado por marca](/blog/images/post11/4.webp)
+![Arreglo de objetos ordenado por marca](../../assets/blog/images/post11/4.webp)
 
-![Arreglo de objetos ordenado por marca descendente](/blog/images/post11/5.webp)
+![Arreglo de objetos ordenado por marca descendente](../../assets/blog/images/post11/5.webp)
 
 De esta manera ya hemos ordenado un arreglo de objetos por distintas propiedades, tanto numéricas como alfabéticas, y de forma ascendente y descendente.
 

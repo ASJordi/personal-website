@@ -2,7 +2,7 @@
 title: "Cómo configurar un entorno virtual en Python"
 description: "Cómo configurar un entorno virtual en Python"
 pubDate: "Dec 05 2022"
-heroImage: "/blog/images/post10/cover.webp"
+heroImage: "../../assets/blog/images/post10/cover.webp"
 tags: ["Python"]
 ---
 

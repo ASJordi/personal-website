@@ -2,7 +2,7 @@
 title: "¿Cómo comparar el contenido de dos repositorios usando Git?"
 description: "Entendiendo el comando git diff"
 pubDate: "Feb 13 2023"
-heroImage: "/blog/images/post18/cover.webp"
+heroImage: "../../assets/blog/images/post18/cover.webp"
 tags: ["Git", "GitHub"]
 ---
 

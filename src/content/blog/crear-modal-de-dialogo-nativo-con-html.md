@@ -2,7 +2,7 @@
 title: "Crear modal de diálogo nativo con HTML"
 description: "Cómo crear un modal de diálogo nativo utilizando solo HTML"
 pubDate: "March 08 23"
-heroImage: "/blog/images/post25/cover.webp"
+heroImage: "../../assets/blog/images/post25/cover.webp"
 tags: ["HTML"]
 ---
 
@@ -18,7 +18,7 @@ La estructura del elemento `dialog` es la siguiente, considerando que puede tene
 
 El código anterior renderiza el modal de diálogo con el texto "Hola! Soy un modal de diálogo" y el estado abierto por defecto.
 
-![Ejemplo modal de diálogo](/blog/images/post25/modal.webp)
+![Ejemplo modal de diálogo](../../assets/blog/images/post25/modal.webp)
 
 ## Abrir dinámicamente el modal
 
@@ -81,7 +81,7 @@ dialog::backdrop {
 
 Ahora se debería ver de la siguiente manera.
 
-![Ejemplo modal de diálogo](/blog/images/post25/demo.gif)
+![Ejemplo modal de diálogo](../../assets/blog/images/post25/demo.gif)
 
 El elemento `dialog` tiene un soporte muy bueno, por lo que no debería haber problemas para utilizarlo. Se puede consultar en el sitio [caniuse.com](https://caniuse.com/#feat=dialog).
 

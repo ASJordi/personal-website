@@ -2,7 +2,7 @@
 title: "Icono de la Bandeja del Sistema en Python"
 description: "Icono de la Bandeja del Sistema en Python"
 pubDate: "Nov 28 2022"
-heroImage: "/blog/images/post8/cover.webp"
+heroImage: "../../assets/blog/images/post8/cover.webp"
 tags: ["Python"]
 ---
 
@@ -74,11 +74,11 @@ icon.run()
 
 Ahora solo es necesario ejecutar el archivo principal y se mostrará el icono en la bandeja del sistema.
 
-![Icono del sistema](/blog/images/post8/1.webp)
+![Icono del sistema](../../assets/blog/images/post8/1.webp)
 
 Al hacer clic derecho sobre el icono, se mostrará el menú con los elementos definidos.
 
-![Elementos del menú](/blog/images/post8/2.webp)
+![Elementos del menú](../../assets/blog/images/post8/2.webp)
 
 ## Agregar Submenús
 
@@ -96,7 +96,7 @@ icon = pystray.Icon('Windows Menu', image, 'Windows Menu', menu=pystray.Menu(
 ```
 Una vez ejecutado el archivo principal, se mostrará el icono en la bandeja del sistema con el nuevo submenú.
 
-![Elementos del submenú](/blog/images/post8/3.webp)
+![Elementos del submenú](../../assets/blog/images/post8/3.webp)
 
 Al hacer clic sobre el elemento del submenú, se ejecutará la función definida en el paso anterior.
 
@@ -151,4 +151,4 @@ icon.run()
 
 Para mas información sobre la biblioteca pystray, se puede consultar la documentación oficial haciendo [clic aquí.](https://pystray.readthedocs.io/en/latest/)
 
-![Ejemplo menú](/blog/images/post8/example.gif)
+![Ejemplo menú](../../assets/blog/images/post8/example.gif)

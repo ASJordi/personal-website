@@ -2,7 +2,7 @@
 title: "Eliminar archivo .env del historial de Git"
 description: "Cómo eliminar un archivo .env del historial de Git"
 pubDate: "April 17 23"
-heroImage: "/blog/images/post34/cover.webp"
+heroImage: "../../assets/blog/images/post34/cover.webp"
 tags: ["Git", "GitHub"]
 ---
 
@@ -19,7 +19,7 @@ En este post, vamos a ver cómo eliminar un archivo .env del historial de Git, y
 
 En el siguiente ejemplo, accidentalmente añadimos el archivo `.env` a nuestro repositorio, y lo subimos a un repositorio remoto.
 
-![Subir archivo .env](/blog/images/post34/1.webp)
+![Subir archivo .env](../../assets/blog/images/post34/1.webp)
 
 > **Nota:** En caso de que este escenario suceda, es importante actualizar las keys de acceso a los servicios que tengamos configurados en el archivo `.env`.
 
@@ -39,7 +39,7 @@ En mi caso lo añado al final del archivo `.gitignore`:
 
 A continuación, se realiza un commit con la modificación realizada en el archivo `.gitignore`.
 
-![Commit con la modificación del archivo .gitignore](/blog/images/post34/2.webp)
+![Commit con la modificación del archivo .gitignore](../../assets/blog/images/post34/2.webp)
 
 Como podemos ver, el archivo `.env` aún sigue apareciendo en el historial de Git, incluso después de haberlo añadido al archivo `.gitignore`. Por lo tanto, se puede ver que el archivo `.gitignore` no deshace los cambios que ya se han realizado en el repositorio. Entonces ¿Cómo podemos eliminar el archivo `.env` del historial de Git?
 
@@ -53,11 +53,11 @@ git rm -r --cached .env
 
 Si realizamos un commit con este cambio, el archivo `.env` ya no aparecerá en Github.
 
-![Commit con la eliminación del archivo .env](/blog/images/post34/3.webp)
+![Commit con la eliminación del archivo .env](../../assets/blog/images/post34/3.webp)
 
 Sin embargo, esto no resuelve completamente el problema. Si revisamos el historial de Git, podemos ver que el archivo `.env` sigue apareciendo con todo su contenido.
 
-![Historial de Git](/blog/images/post34/4.webp)
+![Historial de Git](../../assets/blog/images/post34/4.webp)
 
 ## Eliminar completamente un archivo del historial de Git
 
@@ -77,7 +77,7 @@ git push --force origin main
 
 Si revisamos el historial nuevamente, podemos ver los commits que incluyen el archivo `.env`, pero no podemos ver el contenido del archivo, por lo que el archivo `.env` ya no aparece en el historial de Git.
 
-![Historial de Git](/blog/images/post34/5.webp)
+![Historial de Git](../../assets/blog/images/post34/5.webp)
 
 Listo! Ya hemos eliminado el archivo `.env` del historial de Git, y ahora podemos seguir trabajando con Git sin tener que preocuparnos por este archivo.
 

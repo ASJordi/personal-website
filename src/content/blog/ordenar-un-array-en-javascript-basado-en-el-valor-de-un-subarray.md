@@ -2,7 +2,7 @@
 title: "Ordenar un array en JavaScript basado en el valor de un subarray"
 description: "Cómo ordenar un array en JavaScript basado en el valor de un subarray"
 pubDate: "April 05 23"
-heroImage: "/blog/images/post33/cover.webp"
+heroImage: "../../assets/blog/images/post33/cover.webp"
 tags: ["JS", "Arrays"]
 ---
 

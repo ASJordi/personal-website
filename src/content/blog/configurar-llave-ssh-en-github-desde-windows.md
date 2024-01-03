@@ -2,7 +2,7 @@
 title: "Configurar llave SSH en GitHub desde Windows"
 description: "Configurar llave SSH en GitHub desde Windows"
 pubDate: "Oct 24 2022"
-heroImage: "/blog/images/post7/cover.webp"
+heroImage: "../../assets/blog/images/post7/cover.webp"
 tags: ["SSH", "GitHub", "Git"]
 ---
 
