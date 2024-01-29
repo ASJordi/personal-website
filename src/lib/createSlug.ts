@@ -1,4 +1,6 @@
-export default function (title: string) {
+import { GENERATE_SLUG_FROM_TITLE } from "../config.ts";
+
+export default function (title: string, staticSlug: string) {
     const accentsMap = {
         'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
         'à': 'a', 'è': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u',
@@ -7,7 +9,7 @@ export default function (title: string) {
     };
 
     return (
-        title
+        !GENERATE_SLUG_FROM_TITLE ? staticSlug : title
             // remove leading & trailing whitespace
             .trim()
             // replace accented characters
