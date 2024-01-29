@@ -92,4 +92,4 @@ Template by [https://github.com/manuelernestog/astrofy](https://github.com/manue
 [version-shield]: https://img.shields.io/github/v/release/asjordi/personal-website?label=Version
 [version-url]: https://github.com/ASJordi/personal-website/releases/tag/v2.0.0
 [size-shield]: https://img.shields.io/github/repo-size/asjordi/personal-website
-[product-screenshot]: public/screenshot.png
+[product-screenshot]: public/screenshot.webp
