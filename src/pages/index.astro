@@ -5,6 +5,7 @@ import { getCollection } from "astro:content";
 import project1 from "../assets/projects/porfolio.webp";
 import project2 from "../assets/projects/urls.webp";
 import project3 from "../assets/projects/weather.webp";
+import createSlug from "../lib/createSlug";
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -77,7 +78,9 @@ const last_posts = posts.slice(0, 3);
 				title={post.data.title}
 				img={post.data.heroImage}
 				desc={post.data.description}
-				url={"/blog/" + post.slug}
+				// Switch commented code in ...page and ...slug to turn off auto slug generation
+				// url={"/blog/" + post.slug}
+				url={"/blog/" + createSlug(post.data.title)}
 				target="_self"
 				badge={post.data.badge}
 				tags={post.data.tags}
