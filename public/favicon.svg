@@ -1,20 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#010101;}
-	.st1{fill:#282727;}
-</style>
-<path class="st0" d="M224.02,511.87c-7.23-2.31-14.85-2.4-22.23-3.95c-30.51-6.41-58.21-18.9-83.21-37.51
-	c-2.67-1.98-2.91-3.09-0.6-5.6c22.39-24.42,44.71-48.9,66.85-73.54c2.4-2.68,3.65-1.37,5.59-0.09
-	c24.21,15.98,50.37,22.06,78.69,14.1c22.19-6.24,33.91-22.72,39.81-43.99c2.67-9.63,4.09-19.52,4.09-29.54
-	c0.05-110.06,0.06-220.12,0.08-330.18c0-0.5-0.07-0.99-0.11-1.49c38.32,0,76.63,0,114.95,0c2.11,2.61,1.45,5.72,1.45,8.66
-	c0.04,57.12,0.03,114.23,0.03,171.35c0,48.46,0.34,96.92-0.13,145.37c-0.26,27.5-2.58,54.82-11.78,81.16
-	c-11.68,33.4-31.63,60.36-61.62,79.26c-23.01,14.51-48.25,23-75.55,25.08c-4.11,0.31-8.29-0.28-12.33,0.9c-2.67,0-5.33,0-8,0
-	c-2-0.82-4-0.82-6,0C244.01,511.87,234.01,511.87,224.02,511.87z"/>
-<path class="st1" d="M254.01,511.87c2-1.49,4-1.55,6,0C258,511.87,256,511.87,254.01,511.87z"/>
-<path class="st0" d="M99.69,453.64c-1.4-1.33-2.13-1.97-2.8-2.68c-3.08-3.26-5.98-6.72-9.26-9.76c-2.64-2.43-2.66-3.99-0.15-6.75
-	c20.85-22.83,41.51-45.84,62.24-68.78c5.06-5.6,5.18-5.66,10.42-0.04c3.12,3.34,9.02,6.05,8.87,9.9c-0.13,3.45-5.36,6.73-8.37,10.06
-	c-19.4,21.45-38.82,42.9-58.21,64.36C101.47,451.04,100.69,452.3,99.69,453.64z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">favicon</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:lockguides="false"
+     showguides="true"
+     guidecolor="#e50000"
+     guideopacity="0.6"
+     inkscape:zoom="1"
+     inkscape:cx="206"
+     inkscape:cy="277.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="8"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jordi Ayala</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:title>favicon</dc:title>
+        <dc:source>https://asjordi.dev</dc:source>
+        <dc:date>9/2/24</dc:date>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="bg">
+    <rect
+       style="fill:#1c4e80;stroke-width:6.74619;fill-opacity:1"
+       id="rect1"
+       width="512"
+       height="512"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="initial"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:585.143px;font-family:'Public Pixel';-inkscape-font-specification:'Public Pixel';fill:#ffffff;fill-opacity:1;stroke-width:4.38859"
+       x="2.645917e-14"
+       y="512.00006"
+       id="text487"><tspan
+         sodipodi:role="line"
+         id="tspan487"
+         x="2.645917e-14"
+         y="512.00006"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:585.143px;font-family:'Public Pixel';-inkscape-font-specification:'Public Pixel';fill:#ffffff;stroke-width:4.38859">J</tspan></text>
+  </g>
 </svg>
