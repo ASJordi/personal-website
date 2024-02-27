@@ -13,6 +13,7 @@ const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSideba
 <!DOCTYPE html>
 <html lang="es" data-theme="business">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
     <BaseHead title={title} description={description} image={image} ogType={ogType} />
     {TRANSITION_API && <ViewTransitions />}
   </head>

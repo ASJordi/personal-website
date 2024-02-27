@@ -38,4 +38,27 @@ const displayDate = dayjs(pubDate).format("ll");
       <slot />
     </article>
   </main>
+
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://waline.asjordi.dev',
+      lang: 'en-US',
+      dark: true,
+      reaction: [
+        "https://res.cloudinary.com/asjordi/image/upload/v1709055577/waline/good.png",
+        "https://res.cloudinary.com/asjordi/image/upload/v1709056075/waline/bad.png",
+        "https://res.cloudinary.com/asjordi/image/upload/v1709056079/waline/happy.png",
+        "https://res.cloudinary.com/asjordi/image/upload/v1709056078/waline/color.png",
+        "https://res.cloudinary.com/asjordi/image/upload/v1709056079/waline/confuse.png",
+        "https://res.cloudinary.com/asjordi/image/upload/v1709056079/waline/heart.png",
+        "https://res.cloudinary.com/asjordi/image/upload/v1709056078/waline/rocket.png",
+        "https://res.cloudinary.com/asjordi/image/upload/v1709056079/waline/eyes.png",
+      ],
+    });
+  </script>
+
 </BaseLayout>
