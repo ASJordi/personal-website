@@ -2,9 +2,10 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import project1 from "../assets/projects/porfolio.webp";
-import project2 from "../assets/projects/urls.webp";
-import project3 from "../assets/projects/weather.webp";
-import project4 from "../assets/projects/links.webp";
+import project2 from "../assets/projects/appcotizador.webp";
+import project3 from "../assets/projects/urls.webp";
+import project4 from "../assets/projects/weather.webp";
+import project5 from "../assets/projects/links.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -12,9 +13,9 @@ import project4 from "../assets/projects/links.webp";
     <div class="text-3xl w-full font-bold mb-5">Proyectos</div>
   </div>
 	<HorizontalCard
-		title="Portfolio"
+		title="Portafolio"
 		img={project1}
-		desc="Sitio web personal que permite mostrar información sobre mi persona, mis proyectos y habilidades. Esta desarrollado utilizando Astro y TailwindCSS. El proyecto está desplegado en Firebase utilizando CI."
+		desc="Sitio web personal que contiene información sobre mi, mis proyectos y mi blog."
 		url="https://asjordi.dev"
 		badge=""
 		tags={["Astro", "TailwindCSS", "Firebase"]}
@@ -22,10 +23,21 @@ import project4 from "../assets/projects/links.webp";
 		deployUrl="https://asjordi.dev"
 	/>
 	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="App Cotizaciones"
+		img={project2}
+		desc="Aplicación de escritorio para la creación y administración de cotizaciones. Permite configurar datos de la empresa, clientes, productos y servicios, y generar cotizaciones en formato PDF."
+		url="https://github.com/ASJordi/app-cotizaciones-java"
+		badge=""
+		tags={["Java", "Java Swing", "JDBC", "MySQL", "JasperReports"]}
+		repoUrl="https://github.com/ASJordi/app-cotizaciones-java"
+
+	/>
+	<div class="divider my-0"></div>
   <HorizontalCard
     title="URL Shortener"
-    img={project2}
-    desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. Cuenta con un backend desarrollado en NodeJS y Express, y una base de datos MongoDB. El frontend está desarrollado en HTML, CSS y JS. El proyecto está desplegado en Netlify y Railway."
+    img={project3}
+    desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. El proyecto está desplegado en Netlify y Railway."
     url="https://link-shortly.netlify.app"
     badge=""
 		tags={["HTML", "CSS", "JS", "NodeJS", "Express", "MongoDB"]}
@@ -35,8 +47,8 @@ import project4 from "../assets/projects/links.webp";
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Weather App"
-    img={project3}
-    desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather. Cuenta con un backend desarrollado en NodeJS y Express. El frontend está desarrollado en HTML, CSS y JS. El proyecto está desplegado en Netlify y Railway."
+    img={project4}
+    desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather."
     url="https://weather-app-nodejs.netlify.app"
 		badge=""
 		tags={["HTML", "CSS", "JS", "NodeJS", "Express"]}
@@ -46,11 +58,11 @@ import project4 from "../assets/projects/links.webp";
 	<div class="divider my-0"></div>
 	<HorizontalCard
     title="Multi-link Website"
-    img={project4}
-    desc="Página web que permite mostrar múltiples enlaces a páginas web. Esta desarrollada utilizando HTML y CSS. El proyecto está desplegado en Github Pages."
+    img={project5}
+    desc="Página web que permite mostrar múltiples enlaces a redes sociales y otros sitios web."
     url="https://links.asjordi.dev/"
 		badge=""
-		tags={["HTML", "CSS"]}
+		tags={["HTML", "CSS", "Github Pages"]}
 		repoUrl="https://github.com/ASJordi/asjordi-links"
 		deployUrl="https://links.asjordi.dev/"
   />
