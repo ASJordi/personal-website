@@ -8,6 +8,7 @@ import project2 from "../assets/projects/appcotizador.webp";
 import project3 from "../assets/projects/urls.webp";
 import project4 from "../assets/projects/weather.webp";
 import project5 from "../assets/projects/links.webp";
+import project6 from "../assets/projects/todoapp.webp";
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -49,6 +50,17 @@ const last_posts = posts.slice(0, 3);
 	/>
 	<div class="divider my-0"></div>
 	<HorizontalCard
+		title="TODO App"
+		img={project6}
+		desc="Aplicación web para la creación y administración de tareas y usuarios. Permite registrar, editar y eliminar tareas, y asignarlas al usuario que inició sesión. Cuenta con un sistema de autenticación."
+		url="https://github.com/ASJordi/webapp-todo"
+		badge=""
+		tags={["Java", "Jakarta EE", "Servlet", "JSP", "MySQL"]}
+		repoUrl="https://github.com/ASJordi/webapp-todo"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
 		title="App Cotizaciones"
 		img={project2}
 		desc="Aplicación de escritorio para la creación y administración de cotizaciones. Permite configurar datos de la empresa, clientes, productos y servicios, y generar cotizaciones en formato PDF."
@@ -68,28 +80,6 @@ const last_posts = posts.slice(0, 3);
 		tags={["HTML", "CSS", "JS", "NodeJS", "Express", "MongoDB"]}
 		repoUrl="https://github.com/ASJordi/urlshortener"
 		deployUrl="https://link-shortly.netlify.app/"
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
-		title="Weather App"
-		img={project4}
-		desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather."
-		url="https://weather-app-nodejs.netlify.app"
-		badge=""
-		tags={["HTML", "CSS", "JS", "NodeJS", "Express"]}
-		repoUrl="https://github.com/ASJordi/simple-weather-app"
-		deployUrl="https://weather-app-nodejs.netlify.app/"
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
-		title="Multi-link Website"
-		img={project5}
-		desc="Página web que permite mostrar múltiples enlaces a redes sociales y otros sitios web."
-		url="https://links.asjordi.dev/"
-		badge=""
-		tags={["HTML", "CSS", "Github Pages"]}
-		repoUrl="https://github.com/ASJordi/asjordi-links"
-		deployUrl="https://links.asjordi.dev/"
 	/>
 
 	<div>

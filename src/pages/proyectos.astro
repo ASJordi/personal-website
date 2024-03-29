@@ -6,6 +6,7 @@ import project2 from "../assets/projects/appcotizador.webp";
 import project3 from "../assets/projects/urls.webp";
 import project4 from "../assets/projects/weather.webp";
 import project5 from "../assets/projects/links.webp";
+import project6 from "../assets/projects/todoapp.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -21,6 +22,17 @@ import project5 from "../assets/projects/links.webp";
 		tags={["Astro", "TailwindCSS", "Firebase"]}
 		repoUrl="https://github.com/ASJordi/personal-website"
 		deployUrl="https://asjordi.dev"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="TODO App"
+		img={project6}
+		desc="Aplicación web para la creación y administración de tareas y usuarios. Permite registrar, editar y eliminar tareas, y asignarlas al usuario que inició sesión. Cuenta con un sistema de autenticación."
+		url="https://github.com/ASJordi/webapp-todo"
+		badge=""
+		tags={["Java", "Jakarta EE", "Servlet", "JSP", "MySQL"]}
+		repoUrl="https://github.com/ASJordi/webapp-todo"
+
 	/>
 	<div class="divider my-0"></div>
 	<HorizontalCard
