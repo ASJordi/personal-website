@@ -7,7 +7,7 @@ import project1 from "../assets/projects/porfolio.webp";
 import project2 from "../assets/projects/appcotizador.webp";
 import project3 from "../assets/projects/urls.webp";
 import project4 from "../assets/projects/weather.webp";
-import project5 from "../assets/projects/links.webp";
+import project5 from "../assets/projects/urlshortener.webp";
 import project6 from "../assets/projects/todoapp.webp";
 
 const posts = (await getCollection('blog')).sort(
@@ -57,6 +57,17 @@ const last_posts = posts.slice(0, 3);
 		badge=""
 		tags={["Java", "Jakarta EE", "Servlet", "JSP", "MySQL"]}
 		repoUrl="https://github.com/ASJordi/webapp-todo"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="URL Shortener"
+		img={project5}
+		desc="Aplicación web para acortar URL's con un alias personalizado utilizando un código de verificación para su creación. El redireccionamiento de las URL's acortadas es realizado por el servidor de forma automática."
+		url="https://github.com/ASJordi/url-shortener-java"
+		badge=""
+		tags={["Java", "Jakarta EE", "Servlet", "JSP", "MySQL"]}
+		repoUrl="https://github.com/ASJordi/url-shortener-java"
 
 	/>
 	<div class="divider my-0"></div>
