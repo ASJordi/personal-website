@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import project1 from "../assets/projects/porfolio.webp";
-import project2 from "../assets/projects/appcotizador.webp";
-import project3 from "../assets/projects/urls.webp";
-import project4 from "../assets/projects/weather.webp";
-import project5 from "../assets/projects/links.webp";
-import project6 from "../assets/projects/todoapp.webp";
-import project7 from "../assets/projects/urlshortener.webp";
+import portfolioImg from "../assets/projects/porfolio.webp";
+import cotizadorJavaImg from "../assets/projects/appcotizador.webp";
+import shortUrlJsImg from "../assets/projects/urls.webp";
+import weatherAppImg from "../assets/projects/weather.webp";
+import linksAppImg from "../assets/projects/links.webp";
+import todoAppJakartaImg from "../assets/projects/todoapp.webp";
+import shortUrlJakartaImg from "../assets/projects/urlshortener.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -16,7 +16,7 @@ import project7 from "../assets/projects/urlshortener.webp";
   </div>
 	<HorizontalCard
 		title="Portafolio"
-		img={project1}
+		img={portfolioImg}
 		desc="Sitio web personal que contiene información sobre mi, mis proyectos y mi blog."
 		url="https://asjordi.dev"
 		badge=""
@@ -27,7 +27,7 @@ import project7 from "../assets/projects/urlshortener.webp";
 	<div class="divider my-0"></div>
 	<HorizontalCard
 		title="TODO App"
-		img={project6}
+		img={todoAppJakartaImg}
 		desc="Aplicación web para la creación y administración de tareas y usuarios. Permite registrar, editar y eliminar tareas, y asignarlas al usuario que inició sesión. Cuenta con un sistema de autenticación."
 		url="https://github.com/ASJordi/webapp-todo"
 		badge=""
@@ -38,7 +38,7 @@ import project7 from "../assets/projects/urlshortener.webp";
 	<div class="divider my-0"></div>
 	<HorizontalCard
 		title="URL Shortener"
-		img={project7}
+		img={shortUrlJakartaImg}
 		desc="Aplicación web para acortar URL's con un alias personalizado utilizando un código de verificación para su creación. El redireccionamiento de las URL's acortadas es realizado por el servidor de forma automática."
 		url="https://github.com/ASJordi/url-shortener-java"
 		badge=""
@@ -49,7 +49,7 @@ import project7 from "../assets/projects/urlshortener.webp";
 	<div class="divider my-0"></div>
 	<HorizontalCard
 		title="App Cotizaciones"
-		img={project2}
+		img={cotizadorJavaImg}
 		desc="Aplicación de escritorio para la creación y administración de cotizaciones. Permite configurar datos de la empresa, clientes, productos y servicios, y generar cotizaciones en formato PDF."
 		url="https://github.com/ASJordi/app-cotizaciones-java"
 		badge=""
@@ -60,7 +60,7 @@ import project7 from "../assets/projects/urlshortener.webp";
 	<div class="divider my-0"></div>
   <HorizontalCard
     title="URL Shortener"
-    img={project3}
+    img={shortUrlJsImg}
     desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. El proyecto está desplegado en Netlify y Railway."
     url="https://link-shortly.netlify.app"
     badge=""
@@ -71,7 +71,7 @@ import project7 from "../assets/projects/urlshortener.webp";
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Weather App"
-    img={project4}
+    img={weatherAppImg}
     desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather."
     url="https://weather-app-nodejs.netlify.app"
 		badge=""
@@ -82,7 +82,7 @@ import project7 from "../assets/projects/urlshortener.webp";
 	<div class="divider my-0"></div>
 	<HorizontalCard
     title="Multi-link Website"
-    img={project5}
+    img={linksAppImg}
     desc="Página web que permite mostrar múltiples enlaces a redes sociales y otros sitios web."
     url="https://links.asjordi.dev/"
 		badge=""
