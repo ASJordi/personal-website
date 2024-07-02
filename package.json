@@ -36,10 +36,10 @@
   "dependencies": {
     "@astrojs/mdx": "^2.3.1",
     "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.1.5",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.10.1",
-    "daisyui": "^4.12.2",
+    "astro": "^4.11.3",
+    "daisyui": "^4.12.10",
     "dayjs": "^1.11.11",
     "markdown-it": "^14.1.0",
     "path-browserify": "^1.0.1",
