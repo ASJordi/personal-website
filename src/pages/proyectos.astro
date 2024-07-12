@@ -9,7 +9,8 @@ import linksAppImg from "../assets/projects/links.webp";
 import todoAppJakartaImg from "../assets/projects/todoapp.webp";
 import shortUrlJakartaImg from "../assets/projects/urlshortener.webp";
 import javaBlockchainImg from "../assets/projects/blockchain-java.webp";
-import passwordGeneratorJava from "../assets/projects/password-generator-java.webp";
+import passwordGeneratorJavaImg from "../assets/projects/password-generator-java.webp";
+import javawcImg from "../assets/projects/javawc.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -62,7 +63,7 @@ import passwordGeneratorJava from "../assets/projects/password-generator-java.we
 	<div class="divider my-0"></div>
 	<HorizontalCard
 		title="Password Generator"
-		img={passwordGeneratorJava}
+		img={passwordGeneratorJavaImg}
 		desc="Generador de passwords y passphrases aleatorias y seguras. Permite configurar la longitud, el uso de caracteres especiales, números, letras mayúsculas y minúsculas. Así como mantener un historial de las mismas."
 		url="https://github.com/ASJordi/PasswordGenerator"
 		badge=""
@@ -79,6 +80,17 @@ import passwordGeneratorJava from "../assets/projects/password-generator-java.we
 		badge=""
 		tags={["Java", "Cryptography", "Algorithms"]}
 		repoUrl="https://github.com/ASJordi/BasicJavaBlockchain"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="javawc command"
+		img={javawcImg}
+		desc="Implementación del comando wc de Unix en Java. Permite contar el número de líneas, palabras y caracteres de un archivo de texto o de la entrada estándar."
+		url="https://github.com/ASJordi/javawc"
+		badge=""
+		tags={["Java", "Java IO"]}
+		repoUrl="https://github.com/ASJordi/javawc"
 
 	/>
 	<div class="divider my-0"></div>
