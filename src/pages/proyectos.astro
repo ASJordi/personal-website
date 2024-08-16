@@ -11,6 +11,8 @@ import shortUrlJakartaImg from "../assets/projects/urlshortener.webp";
 import javaBlockchainImg from "../assets/projects/blockchain-java.webp";
 import passwordGeneratorJavaImg from "../assets/projects/password-generator-java.webp";
 import javawcImg from "../assets/projects/javawc.webp";
+import ghUserActivityImg from "../assets/projects/gh-user-activity-cli.webp";
+import taskTrackerCliImg from "../assets/projects/task-tracker-cli.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -94,36 +96,58 @@ import javawcImg from "../assets/projects/javawc.webp";
 
 	/>
 	<div class="divider my-0"></div>
-  <HorizontalCard
-    title="URL Shortener"
-    img={shortUrlJsImg}
-    desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. El proyecto está desplegado en Netlify y Railway."
-    url="https://link-shortly.netlify.app"
-    badge=""
+	<HorizontalCard
+		title="GitHub User Activity CLI"
+		img={ghUserActivityImg}
+		desc="CLI que permite consultar la actividad de un usuario de GitHub. Muestra la cantidad de commits, issues, pull requests, forks, stars, entre otros datos."
+		url="https://github.com/ASJordi/gh-user-activity-cli"
+		badge=""
+		tags={["Java", "GSON", "GitHub API"]}
+		repoUrl="https://github.com/ASJordi/gh-user-activity-cli"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Task Tracker CLI"
+		img={taskTrackerCliImg}
+		desc="CLI para la administración de tareas. Permite crear, editar, eliminar y listar tareas. Las tareas se almacenan en un archivo JSON en el sistema de archivos."
+		url="https://github.com/ASJordi/task-tracker-cli"
+		badge=""
+		tags={["Java", "Jackson Databind"]}
+		repoUrl="https://github.com/ASJordi/task-tracker-cli"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+	title="URL Shortener"
+	img={shortUrlJsImg}
+	desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. El proyecto está desplegado en Netlify y Railway."
+	url="https://link-shortly.netlify.app"
+	badge=""
 		tags={["HTML", "CSS", "JS", "NodeJS", "Express", "MongoDB"]}
 		repoUrl="https://github.com/ASJordi/urlshortener"
 		deployUrl="https://link-shortly.netlify.app/"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Weather App"
-    img={weatherAppImg}
-    desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather."
-    url="https://weather-app-nodejs.netlify.app"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+	title="Weather App"
+	img={weatherAppImg}
+	desc="Aplicación web que permite consultar el clima de cualquier ciudad del mundo utilizando la API de OpenWeather."
+	url="https://weather-app-nodejs.netlify.app"
 		badge=""
 		tags={["HTML", "CSS", "JS", "NodeJS", "Express"]}
 		repoUrl="https://github.com/ASJordi/simple-weather-app"
 		deployUrl="https://weather-app-nodejs.netlify.app/"
-  />
+	/>
 	<div class="divider my-0"></div>
 	<HorizontalCard
-    title="Multi-link Website"
-    img={linksAppImg}
-    desc="Página web que permite mostrar múltiples enlaces a redes sociales y otros sitios web."
-    url="https://links.asjordi.dev/"
+	title="Multi-link Website"
+	img={linksAppImg}
+	desc="Página web que permite mostrar múltiples enlaces a redes sociales y otros sitios web."
+	url="https://links.asjordi.dev/"
 		badge=""
 		tags={["HTML", "CSS", "Github Pages"]}
 		repoUrl="https://github.com/ASJordi/asjordi-links"
 		deployUrl="https://links.asjordi.dev/"
-  />
+	/>
 </BaseLayout>
