@@ -8,6 +8,7 @@ import cotizadorJavaImg from "../assets/projects/appcotizador.webp";
 import shortUrlJsImg from "../assets/projects/urls.webp";
 import shortUrlJakartaImg from "../assets/projects/urlshortener.webp";
 import todoAppJakartaImg from "../assets/projects/todoapp.webp";
+import HorizontalCardBlog from "../components/HorizontalCardBlog.astro";
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -87,7 +88,7 @@ const last_posts = posts.slice(0, 3);
 
 	{
 		last_posts.map((post) => (
-			<HorizontalCard
+			<HorizontalCardBlog
 				title={post.data.title}
 				img={post.data.heroImage}
 				desc={post.data.description}
