@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Files system
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Build directory
+dist
+.astro
+
+# Cache
+.cache
+
+# IDE
+.vscode
+.idea
+
+#Test files
+__tests__
+*.spec.js
+*.test.js
+
+# Git
+.git
+.github
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Other files
+README.md
+CHANGELOG.md
