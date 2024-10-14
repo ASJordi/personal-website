@@ -7,14 +7,14 @@ import { ViewTransitions } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
 
-const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSidebar = true, sideBarActiveItemID, ogType } = Astro.props;
+const { image, title = SITE_TITLE, description = SITE_DESCRIPTION, includeSidebar = true, sideBarActiveItemID, ogType, postImage } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="es" data-theme="business">
   <head>
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
-    <BaseHead title={title} description={description} image={image} ogType={ogType} />
+    <BaseHead title={title} description={description} image={image} ogType={ogType} postImage={postImage} />
     {TRANSITION_API && <ViewTransitions />}
   </head>
   <body>
