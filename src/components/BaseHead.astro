@@ -9,9 +9,11 @@ export interface Props {
 	description: string;
 	image?: string;
     ogType?: string;
+    postImage?: string;
 }
 
-const { title, description, image = '/screenshot.webp', ogType = 'website' } = Astro.props;
+const { title, description, image = '/screenshot.webp', ogType = 'website', postImage } = Astro.props;
+const postImageUrl = postImage ? new URL(postImage, Astro.url).toString() : new URL(image, Astro.url).toString();
 ---
 
 <!-- Global Metadata -->
@@ -40,7 +42,8 @@ const { title, description, image = '/screenshot.webp', ogType = 'website' } = A
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<!--<meta property="twitter:image" content={new URL(image, Astro.url)} />-->
+<meta property="twitter:image" content={postImageUrl} />
 
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
