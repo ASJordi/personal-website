@@ -1,12 +1,12 @@
 ---
-title: "El bloque finally en Java"
-description: "¿Qué es el bloque finally en Java y cómo se utiliza?"
+title: "¿Qué es el bloque finally en Java y cómo se utiliza?"
+description: "El bloque finally en Java"
 pubDate: "Nov 11 24"
 heroImage: "../../assets/blog/images/post43/cover.webp"
 tags: ["Java", "Exceptions"]
 ---
 
-Cuando se trabaja con excepciones en Java, es común encontrase con la necesidad de utilizar un bloque `try-catch` para manejarlas y no solo delegar su manejo a quien llame a esta parte del código. Sin embargo, en ocasiones es necesario realizar ciertas acciones, independientemente de si se lanzó o no una excepción, o si el flujo de ejecución del programa se completó con éxito, por ejemplo, cerrar un archivo, una conexión a una base de datos, etc.
+Cuando se trabaja con excepciones en Java, es común encontrarse con la necesidad de utilizar un bloque `try-catch` para manejarlas y no solo delegar su manejo a quien llame a esta parte del código. Sin embargo, en ocasiones es necesario realizar ciertas acciones, independientemente de si se lanzó o no una excepción, o si el flujo de ejecución del programa se completó con éxito, por ejemplo, cerrar un archivo, una conexión a una base de datos, etc.
 
 Para estos casos es que se utiliza el bloque `finally`. Este bloque se coloca después del bloque `catch`, o incluso después del bloque `try` si no se utiliza un bloque `catch`. El código que se coloque dentro del bloque `finally` se ejecutará en dos escenarios:
 
@@ -49,7 +49,7 @@ En este caso, se lanzó una excepción, por lo que el flujo de ejecución se int
 
 ## Ejemplo 2
 
-La principal utilidad del bloque `finally` es para liberar recursos que se hayan adquirido en el bloque `try`, como por ejemplo, cerrar un archivo, una conexión a una base de datos, o una conexión de red. Para ejemplificar esto, consideremos un método `readFile` que lee el contenido de un archivo y retorna la primera línea. En este se utiliza un bloque `try-catch` para manejar la excepción que se lanza si no se puede leer el archivo, así como un bloque `finally` para cerrar el archivo.
+La principal utilidad del bloque `finally` es para liberar recursos que se hayan utilizado en el bloque `try`, como por ejemplo, cerrar un archivo, una conexión a una base de datos, o una conexión de red. Para ejemplificar esto, consideremos un método `readFile` que lee el contenido de un archivo y retorna la primera línea. En este se utiliza un bloque `try-catch` para manejar la excepción que se lanza si no se puede leer el archivo, así como un bloque `finally` para cerrar el archivo.
 
 ```java
 public static String readFile() throws IOException {
@@ -83,7 +83,7 @@ Hello world!
 Algunos aspectos a tener en cuenta en este ejemplo son:
 
 - Se declaró la variable `reader` fuera del bloque `try` para que pueda ser accedida desde el bloque `finally`, es decir, este dentro del scope de ambos bloques.
-- Se verificó si la variable `reader` es diferente de `null` antes de intentar cerrar el archivo, ya que si no se pudo abrir el archivo, esta variable seguirá siendo `null` y lanzará una excepción al intentar cerrarla.
+- Se verificó si la variable `reader` es diferente de `null` antes de intentar cerrar el archivo, ya que si no se puede abrir el archivo, esta variable seguirá siendo `null` y lanzará una excepción al intentar cerrarla.
 - La posible excepción que puede lanzar el método `close` al intentar cerrar el archivo dentro del bloque `finally` no se maneja y se propaga en la firma del método, en caso de que se quiera manejar, se puede envolver en un bloque `try-catch` dentro del bloque `finally`.
 
 ## Conclusión
