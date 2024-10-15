@@ -8,7 +8,7 @@ tags: ["Java", "Exceptions"]
 
 Al trabajar con recursos en Java, como archivos, conexiones a bases de datos, sockets, etc., es importante cerrarlos correctamente una vez que ya no se necesitan, de lo contrario se pueden producir algunos problemas como fugas de memoria o bloqueos de recursos. 
 
-En Java, la forma tradicional de cerrar recursos es utilizando bloques `try-catch-finally`, donde dentro del bloque `finally` se cierran los recursos, siempre y cuando estos tengan un método `close()`, para más información sobre este bloque puedes consultar el siguiente [post](https://asjordi.dev/blog/el-bloque-finally-en-java).
+En Java, la forma tradicional de cerrar recursos es utilizando bloques `try-catch-finally`, donde dentro del bloque `finally` se cierran los recursos, siempre y cuando estos tengan un método `close()`, para más información sobre este bloque puedes consultar el siguiente [post](https://asjordi.dev/blog/que-es-el-bloque-finally-en-java-y-como-se-utiliza).
 
 El bloque `try-with-resources` es una alternativa al bloque `try-catch-finally` cuando se trabaja con recursos que se pueden cerrar automáticamente, siendo necesario que estos implementen la interfaz `AutoCloseable` o `Closeable`, siendo esta la única condición para que un determinado recurso pueda ser utilizado en este bloque. Considerando que los recursos se cerrarán automáticamente sin importar si se lanzan excepciones o no en el flujo de ejecución.
 
