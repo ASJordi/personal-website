@@ -3,7 +3,7 @@ title: "Sealed Classes en Java"
 description: "¿Qué son las sealed classes en Java y cómo se utilizan?"
 pubDate: "Oct 28 24"
 heroImage: "../../assets/blog/images/post39/cover.webp"
-tags: ["Java"]
+tags: ["Java", "Fundamentos"]
 ---
 
 Las **sealed classes** son una característica que se introdujo de manera previa en el JDK 15 y formalmente en el JDK 17. Una **sealed class** es una clase que no puede ser extendida por clases que no estén permitidas explícitamente (en la declaración de la clase), por lo que el número de subclases es limitado y conocido de antemano.
