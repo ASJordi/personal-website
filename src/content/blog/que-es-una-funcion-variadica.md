@@ -3,7 +3,7 @@ title: "Funciones variádicas en Java"
 description: "¿Funciones que aceptan un número indefinido de argumentos?"
 pubDate: "Nov 18 24"
 heroImage: "../../assets/blog/images/post45/cover.webp"
-tags: ["Java"]
+tags: ["Java", "Fundamentos"]
 ---
 
 > Una función variádica es aquella que acepta un número indefinido de parámetros.
