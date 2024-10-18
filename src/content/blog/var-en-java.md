@@ -3,7 +3,7 @@ title: "var en Java"
 description: "¿Cómo se usa var en Java?"
 pubDate: "Oct 23 24"
 heroImage: "../../assets/blog/images/post38/cover.webp"
-tags: ["Java"]
+tags: ["Java", "Fundamentos"]
 ---
 
 `var` es una construcción que se introdujo en el JDK 10, se utiliza para crear variables en las cuales no se especifica el tipo de dato, sino que se deja que el compilador infiera el tipo de dato de la variable. Esto es algo que se conoce como **inferencia de tipos**.
