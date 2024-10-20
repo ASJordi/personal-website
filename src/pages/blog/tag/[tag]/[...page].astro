@@ -5,16 +5,18 @@ import createSlug from "../../../../lib/createSlug";
 import HorizontalCardBlog from "../../../../components/HorizontalCardBlog.astro";
 
 export async function getStaticPaths({ paginate }) {
-	const all_posts = await getCollection("blog");
-  const all_tags = all_posts.flatMap((post) => {
-    return post.data.tags || [];
-  });
+	const all_posts = (await getCollection('blog')).sort(
+		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	);
+	const all_tags = all_posts.flatMap((post) => {
+    	return post.data.tags || [];
+  	});
 
 	return all_tags.flatMap((tag) => {
-		const filtred_posts = all_posts.filter((post) => {
+		const filtered_posts = all_posts.filter((post) => {
 			return post.data.tags?.includes(tag);
 		});
-		return paginate(filtred_posts, {
+		return paginate(filtered_posts, {
 			params: { tag },
 			pageSize: 10,
 		});
