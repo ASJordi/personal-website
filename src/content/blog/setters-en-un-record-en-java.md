@@ -6,7 +6,7 @@ heroImage: "../../assets/blog/images/post37/cover.webp"
 tags: ["Java", "Record"]
 ---
 
-Un **record* es una estructura que se caracteriza por ser inmutable, es decir, una vez que se ha creado un objeto de tipo **record**, no se pueden modificar sus atributos, es lo equivalente a lo que otros lenguajes de programación denominan *data-class* o DTO (Data Transfer Object). Sin embargo, si se requiere modificar algún atributo mediante un método **setter** y considerando que cada atributo dentro del record es de tipo `final`, ¿cómo se puede lograr esto?
+Un **record** es una estructura que se caracteriza por ser inmutable, es decir, una vez que se ha creado un objeto de tipo **record**, no se pueden modificar sus atributos, es lo equivalente a lo que otros lenguajes de programación denominan *data-class* o DTO (Data Transfer Object). Sin embargo, si se requiere modificar algún atributo mediante un método **setter** y considerando que cada atributo dentro del record es de tipo `final`, ¿cómo se puede lograr esto?
 
 Para mostrar si esto es posible, vamos a crear un record `Product` que tiene dos atributos `name` y `price`, y los respectivos métodos que se crean automáticamente al definir un record en Java:
 
