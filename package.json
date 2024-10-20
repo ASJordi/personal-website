@@ -34,7 +34,7 @@
     "website"
   ],
   "dependencies": {
-    "@astrojs/mdx": "3.1.5",
+    "@astrojs/mdx": "3.1.8",
     "@astrojs/partytown": "^2.1.2",
     "@astrojs/rss": "4.0.7",
     "@astrojs/sitemap": "3.1.6",
