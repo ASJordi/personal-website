@@ -231,9 +231,11 @@ Para verificar que la carpeta compartida se ha montado correctamente, podemos ab
 
 ![Carpeta compartida](../../assets/blog/images/post60/9.png)
 
-## Apagar pantalla del servidor
+## Configuraciones Adicionales
 
-En caso de que el equipo sea una laptop podemos apagar remotamente la pantalla accediendo mediante `SSH` y con el paquete `brightnessctl`.
+### Bajar brillo de la pantalla
+
+En caso de que el equipo sea una laptop podemos bajar el brillo de la pantalla remotamente accediendo mediante `SSH` y con el paquete `brightnessctl`.
 
 ```bash
 ssh usuario@ip
@@ -242,19 +244,45 @@ ssh usuario@ip
 ssh jordi@192.168.0.64
 ```
 
-Una vez dentro del servidor, ejecutamos el siguiente comando para apagar la pantalla:
+Una vez dentro del servidor, ejecutamos el siguiente comando:
 
 ```bash
 brightnessctl s 0
 ```
 
-Para encender la pantalla, ejecutamos el comando anterior con el valor `100`:
+Para subir el brillo de la pantalla, ejecutamos el comando anterior con el valor `100`:
 
 ```bash
 brightnessctl s 100
 ```
 
 En caso de que sea un equipo de escritorio, basta con apagar el monitor manualmente, o también este proceso es válido, todo depende de nuestras necesidades.
+
+### Modificar política de suspensión
+
+Una vez que el brillo está al mínimo, podemos modificar algunas configuraciones de energía para evitar que se suspenda al bajar la pantalla o al presionar el botón de encendido. Para ello, ejecutamos el siguiente comando:
+
+Abrimos con permisos de superusuario el archivo `/etc/systemd/logind.conf`:
+
+```bash
+sudo nano /etc/systemd/logind.conf
+```
+
+Buscamos las siguientes líneas, eliminamos el símbolo `#` al inicio de la línea y cambiamos el valor a `ignore`, en caso de que no existan, las agregamos al final del archivo:
+
+```text
+HandleLidSwitch=ignore
+HandleLidSwitchDocked=ignore
+HandlePowerKey=ignore
+```
+
+Presionamos `Ctrl + O` seguido de `Enter` para guardar los cambios y `Ctrl + X` para salir. Reiniciamos el servicio de `systemd-logind` con el siguiente comando:
+
+```bash
+sudo systemctl restart systemd-logind
+```
+
+Con esto evitamos que el sistema se suspenda al bajar la pantalla o al presionar el botón de encendido.
 
 ## Conclusión
 
