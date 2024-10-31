@@ -296,6 +296,34 @@ Si tienes alguna duda, puedes consultar la [documentación oficial de Certbot](h
 
 ![Sitio web seguro](../../assets/blog/images/post62/7.png)
 
+## Configurar ufw
+
+Para finalizar, podemos configurar `ufw` para permitir el tráfico en los puertos necesarios, en este caso solo necesitamos permitir el tráfico en los puertos 80 y 443, que son los puertos por defecto para HTTP y HTTPS, y el puerto 22 para SSH.
+
+```bash
+sudo ufw allow ssh
+```
+
+```bash
+sudo ufw allow 80
+```
+
+```bash
+sudo ufw allow 443
+```
+
+Ahora habilitamos `ufw`.
+
+```bash
+sudo ufw enable
+```
+
+Podemos verificar el estado de `ufw` con el siguiente comando.
+
+```bash
+sudo ufw status
+```
+
 ## Conclusión
 
 Ya tenemos configurado un servidor con Docker, Nginx y Certbot, hemos desplegado un contenedor con un sitio web, configurado un dominio, agregado un certificado SSL y configurado la autorrenovación del certificado, todo con el objetivo de poder desplegar un servicio web en nuestro propio servidor y exponerlo a internet de manera segura. Este es solo un ejemplo de cómo se puede configurar un servidor, podemos desplegar más contenedores con diferentes servicios, agregar más dominios o subdominios, configurar más certificados SSL, entre otras cosas, todo depende de nuestras necesidades.
