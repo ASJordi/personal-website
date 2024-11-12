@@ -25,7 +25,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         id: firebase-deploy-preview
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONAL_WEBSITE_ASJORDI }}'
           expires: 30d
           projectId: "${{ secrets.FIREBASE_PROJECT_ID }}"
