@@ -110,7 +110,7 @@ Este paso puede tardar unos minutos, dependiendo del tamaño de la imagen y la v
 
 ## Listar imágenes en el registro
 
-Para mostrar las imágenes en el registro desde el Portal de Azure, ir a la sección de **Configuración > Repositorios** y se mostrará la imagen subida.
+Para mostrar las imágenes en el registro desde el Portal de Azure, dirigirse al panel lateral izquierdo y seleccionar **Servicios > Repositorios** y se mostrarán las imágenes que se han subido.
 
 ![Repositorios](../../assets/blog/images/post54/4.png)
 
