@@ -1,7 +1,7 @@
 ---
 title: "Proyecto Lombok en Java"
 description: "Lombok en Java"
-pubDate: "Jan 08 25"
+pubDate: "Jan 06 25"
 heroImage: "../../assets/blog/images/post59/cover.webp"
 tags: ["Java", "Lombok", "Fundamentos"]
 ---
