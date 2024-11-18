@@ -1,7 +1,7 @@
 ---
 title: "Desplegar un contenedor de Docker desde Azure Container Registry en una WebApp"
 description: "Desplegar contenedores de Docker en Azure"
-pubDate: "Jan 06 25"
+pubDate: "Jan 01 25"
 heroImage: "../../assets/blog/images/post58/cover.webp"
 tags: ["Azure", "Docker", "Container", "WebApp"]
 ---
