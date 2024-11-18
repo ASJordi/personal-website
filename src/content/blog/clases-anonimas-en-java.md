@@ -1,7 +1,7 @@
 ---
 title: "Clases anónimas en Java"
 description: "Clases de un solo uso en Java"
-pubDate: "Jan 15 25"
+pubDate: "Jan 20 25"
 heroImage: "../../assets/blog/images/post61/cover.webp"
 tags: ["Java", "Fundamentos"]
 ---
