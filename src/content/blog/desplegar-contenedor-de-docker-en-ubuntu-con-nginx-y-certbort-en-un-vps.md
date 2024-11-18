@@ -1,7 +1,7 @@
 ---
 title: "Desplegar contenedores de Docker en un VPS con Ubuntu, Nginx y Certbot"
 description: "Desplegar contenedores de Docker en un VPS"
-pubDate: "Jan 20 25"
+pubDate: "Jan 27 25"
 heroImage: "../../assets/blog/images/post62/cover.webp"
 tags: ["Servidores", "Docker", "Linux", "Nginx", "Certbot"]
 ---
