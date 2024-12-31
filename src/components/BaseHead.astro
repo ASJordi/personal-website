@@ -44,13 +44,3 @@ const postImageUrl = postImage ? new URL(postImage, Astro.url).toString() : new 
 <meta property="twitter:description" content={description} />
 <!--<meta property="twitter:image" content={new URL(image, Astro.url)} />-->
 <meta property="twitter:image" content={postImageUrl} />
-
-<!-- Google tag -->
-<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-6KVCGRNW7P"></script>
-<script type="text/partytown">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-6KVCGRNW7P');
-</script>
