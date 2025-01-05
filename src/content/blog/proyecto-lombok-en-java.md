@@ -84,7 +84,7 @@ public class Persona {
 }
 ```
 
-# @Getter y @Setter
+## @Getter y @Setter
 
 Estas anotaciones nos permiten generar los métodos `getter` y `setter` de forma automática para todos los atributos de la clase, o solo para los que sean marcados con la anotación correspondiente, es decir, pueden ser utilizadas a nivel de clase o atributo.
 
@@ -109,7 +109,7 @@ public class Persona {
 }
 ```
 
-# @ToString
+## @ToString
 
 Esta anotación genera el método `toString()` de forma automática, el cual retorna una representación en forma de cadena de la clase y sus atributos con el siguiente formato: `NombreClase(atributo1=valor1, atributo2=valor2, ...)`. Por defecto todos los atributos no estáticos de la clase son incluidos en el resultado, pero se pueden excluir atributos específicos mediante el atributo `@ToString.Exclude`. En caso de que solo se quiera mostrar el valor del atributo y no el nombre tal cúal se declara, se puede usar `@ToString(includeFieldNames = false)`.
 
@@ -127,7 +127,7 @@ public class Persona {
 // Output: Persona(nombre=Maria)
 ```
 
-# @EqualsAndHashCode
+## @EqualsAndHashCode
 
 Permite generar los métodos `equals()` y `hashCode()` a partir de todos los atributos de la clase, en caso de que se quiera excluir o incluir algún atributo se puede hacer mediante la anotación `@EqualsAndHashCode.Exclude` y `@EqualsAndHashCode.Include` respectivamente.
 
@@ -144,7 +144,7 @@ public class Persona {
 }
 ```
 
-# @Value
+## @Value
 
 Anteriormente en Java para crear una clase inmutable era necesario realizar una serie de pasos, como hacer que la clase y/o atributos fueran del tipo `final`, y que no se generarán los métodos `setter`. Lombok nos facilita la creación de clases inmutables mediante la anotación `@Value`, la cual combina las anotaciones `@Getter`, `@ToString`, `@EqualsAndHashCode` y `@AllArgsConstructor` para generar una clase inmutable. Todos los atributos son marcados del tipo `private final` y no se generan los métodos `setter`. Es la variante inmutable de `@Data`.
 
@@ -165,7 +165,7 @@ En versiones recientes de Java esta anotación pierde sentido frente al uso de `
 public record Persona(String nombre, String apellido, int edad) {}
 ```
 
-# @val
+## @val
 
 Esta anotación nos permite declarar una variable como `final` y automáticamente inferir su tipo de dato, es decir, no es necesario especificar el tipo de dato de la variable, Lombok se encarga de inferirlo. Es útil en caso de que el tipo de dato de la variable sea muy largo o complejo, de esta manera se evita repetirlo.
 
@@ -185,7 +185,7 @@ public static void main(String[] args) {
 }
 ```
 
-# @var
+## @var
 
 Funciona exactamente igual que `@val`, pero no declara la variable como `final`, simplemente infiere su tipo. Es necesario considerar el concepto de inferencia de tipos, ya que no se puede declarar algo del tipo `String` y por el hecho de que no sea `final` querer asignarle un valor de tipo `int`. Nuevamente, esta anotación es sustituida por `var` en versiones recientes de Java.
 
@@ -196,7 +196,7 @@ public static void main(String[] args) {
 }
 ```
 
-# @NonNull
+## @NonNull
 
 Esta anotación se puede utilizar en atributos de clase y parámetros de un método, básicamente indica que el valor de un atributo no puede ser nulo, en caso de que se intente asignar un valor `null` a un atributo marcado con `@NonNull` se lanzará una excepción `NullPointerException`, es decir, se utiliza `if (param == null) throw new NullPointerException("param is marked non-null but is null");`. Independientemente de la excepción que genera, su uso es más visible dentro del propio IDE, dado que este nos indicará de alguna manera que este valor no puede ser nulo.
 
@@ -213,7 +213,7 @@ public class Persona {
 }
 ```
 
-# @Cleanup
+## @Cleanup
 
 Esta anotación permite asegurarnos de que cualquier recurso que la utilice en caso de tener un método `close()` o que implemente las interfaces `AutoCloseable` o `Closeable` se cierre de forma automática al finalizar el bloque de código en el que se encuentra. Es útil en caso de trabajar con recursos que necesiten ser liberados, como archivos, conexiones a bases de datos, etc.
 
@@ -253,7 +253,7 @@ public class Main {
 }
 ```
 
-# @Builder
+## @Builder
 
 Esta anotación nos permite generar un patrón de diseño _Builder_ de forma automática, es decir, un objeto que nos permite construir objetos complejos paso a paso, de forma que se puedan configurar diferentes atributos de un objeto sin tener que llamar a un constructor con muchos parámetros. Es útil en caso de que una clase tenga muchos atributos y no queramos tener un constructor con muchos parámetros.
 
@@ -268,7 +268,7 @@ public class Persona {
 }
 ```
 
-# @With
+## @With
 
 Esta anotación nos permite crear un método que nos devuelve una copia del objeto actual con un atributo modificado, es decir, genera un método `withNombreAtributo(Object object)` que nos permite crear una copia del objeto actual con el atributo `object` modificado por el valor que le pasemos como argumento. Es útil en caso de que queramos modificar un atributo de un objeto sin modificar el objeto original.
 
