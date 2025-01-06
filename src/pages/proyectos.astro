@@ -15,6 +15,7 @@ import ghUserActivityImg from "../assets/projects/gh-user-activity-cli.webp";
 import taskTrackerCliImg from "../assets/projects/task-tracker-cli.webp";
 import apiWordsJs from "../assets/projects/api-words-js.webp";
 import codewarsImg from "../assets/projects/codewars.webp";
+import exchangeRateImg from "../assets/projects/exchange-rate-mx.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -78,13 +79,13 @@ import codewarsImg from "../assets/projects/codewars.webp";
 	/>
 	<div class="divider my-0"></div>
 	<HorizontalCard
-		title="Java Blockchain"
-		img={javaBlockchainImg}
-		desc="Implementación de una blockchain en Java que permite la creación y mineria de bloques, transacciones, wallets, validación de cadenas y la verificación de la integridad de los datos dentro de la red."
-		url="https://github.com/ASJordi/BasicJavaBlockchain"
+		title="Exchange Rate MX"
+		img={exchangeRateImg}
+		desc="Aplicación de consola que permite consultar el tipo de cambio por día del Peso Mexicano (MXN) en relación con el Dólar Estadounidense (USD) usando la API de banxico.org.mx, y almacenar la información en un archivo con formato JSON."
+		url="https://github.com/ASJordi/exchange-rate-mx-usd"
 		badge=""
-		tags={["Java", "Cryptography", "Algorithms"]}
-		repoUrl="https://github.com/ASJordi/BasicJavaBlockchain"
+		tags={["Java", "Jackson Databind", "GitHub Actions"]}
+		repoUrl="https://github.com/ASJordi/exchange-rate-mx-usd"
 
 	/>
 	<div class="divider my-0"></div>
@@ -129,6 +130,17 @@ import codewarsImg from "../assets/projects/codewars.webp";
 		badge=""
 		tags={["Java", "Jackson Databind"]}
 		repoUrl="https://github.com/ASJordi/task-tracker-cli"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Java Blockchain"
+		img={javaBlockchainImg}
+		desc="Implementación de una blockchain en Java que permite la creación y mineria de bloques, transacciones, wallets, validación de cadenas y la verificación de la integridad de los datos dentro de la red."
+		url="https://github.com/ASJordi/BasicJavaBlockchain"
+		badge=""
+		tags={["Java", "Cryptography", "Algorithms"]}
+		repoUrl="https://github.com/ASJordi/BasicJavaBlockchain"
 
 	/>
 	<div class="divider my-0"></div>
