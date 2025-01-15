@@ -9,6 +9,7 @@ import shortUrlJsImg from "../assets/projects/urls.webp";
 import shortUrlJakartaImg from "../assets/projects/urlshortener.webp";
 import todoAppJakartaImg from "../assets/projects/todoapp.webp";
 import HorizontalCardBlog from "../components/HorizontalCardBlog.astro";
+import weatherBotImg from "../assets/projects/weather-bot.webp";
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -38,17 +39,6 @@ const last_posts = posts.slice(0, 3);
 		<div class="text-3xl w-full font-bold mb-2">Últimos Proyectos {"</>"}</div>
 	</div>
 
-	<HorizontalCard
-		title="Portafolio"
-		img={portfolioImg}
-		desc="Sitio web personal que contiene información sobre mi, mis proyectos y mi blog."
-		url="https://asjordi.dev"
-		badge=""
-		tags={["Astro", "TailwindCSS", "Firebase"]}
-		repoUrl="https://github.com/ASJordi/personal-website"
-		deployUrl="https://asjordi.dev"
-	/>
-	<div class="divider my-0"></div>
 	<HorizontalCard
 		title="URL Shortener"
 		img={shortUrlJakartaImg}
@@ -80,6 +70,17 @@ const last_posts = posts.slice(0, 3);
 		badge=""
 		tags={["Java", "Java Swing", "JDBC", "MySQL", "JasperReports"]}
 		repoUrl="https://github.com/ASJordi/app-cotizaciones-java"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Telegram Weather Bot"
+		img={weatherBotImg}
+		desc="Aplicación que permite consultar periódicamente el clima de una ciudad de forma automática a través de un bot de Telegram. Se utiliza el API de OpenWeather para obtener los datos. Los datos son procesados usando Jackson Databind y son enviados por medio de Telegram Bots API. La aplicación se ejecuta automáticamente cada 4 horas usando GitHub Actions."
+		url="https://github.com/ASJordi/telegram-weather-bot"
+		badge=""
+		tags={["Java", "Jackson Databind", "GitHub Actions", "OpenWeather", "Telegram"]}
+		repoUrl="https://github.com/ASJordi/telegram-weather-bot"
 
 	/>
 

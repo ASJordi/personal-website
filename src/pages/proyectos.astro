@@ -16,6 +16,7 @@ import taskTrackerCliImg from "../assets/projects/task-tracker-cli.webp";
 import apiWordsJs from "../assets/projects/api-words-js.webp";
 import codewarsImg from "../assets/projects/codewars.webp";
 import exchangeRateImg from "../assets/projects/exchange-rate-mx.webp";
+import weatherBotImg from "../assets/projects/weather-bot.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -64,6 +65,17 @@ import exchangeRateImg from "../assets/projects/exchange-rate-mx.webp";
 		badge=""
 		tags={["Java", "Java Swing", "JDBC", "MySQL", "JasperReports"]}
 		repoUrl="https://github.com/ASJordi/app-cotizaciones-java"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Telegram Weather Bot"
+		img={weatherBotImg}
+		desc="Aplicación que permite consultar periódicamente el clima de una ciudad de forma automática a través de un bot de Telegram. Se utiliza el API de OpenWeather para obtener los datos. Los datos son procesados usando Jackson Databind y son enviados por medio de Telegram Bots API. La aplicación se ejecuta automáticamente cada 4 horas usando GitHub Actions."
+		url="https://github.com/ASJordi/telegram-weather-bot"
+		badge=""
+		tags={["Java", "Jackson Databind", "GitHub Actions", "OpenWeather", "Telegram"]}
+		repoUrl="https://github.com/ASJordi/telegram-weather-bot"
 
 	/>
 	<div class="divider my-0"></div>
