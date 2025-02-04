@@ -1,0 +1,62 @@
+---
+---
+
+<button id="back-to-top" aria-label="Back to top button" class="btn btn-circle btn-primary fixed bottom-8 right-8 z-50 opacity-100 transition-all duration-300 hover:-translate-y-1 hidden">
+    <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+    >
+        <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 15l7-7 7 7"
+        />
+    </svg>
+</button>
+
+<script>
+
+    function setupBackToTop() {
+        const backToTopButton = document.getElementById("back-to-top");
+
+        const checkScroll = () => {
+            if (window.scrollY > 100) {
+                backToTopButton?.classList.remove("hidden");
+                backToTopButton?.classList.add("flex", "items-center", "justify-center");
+            } else {
+                backToTopButton?.classList.add('hidden');
+                backToTopButton?.classList.remove("flex", "items-center", "justify-center");
+            }
+        };
+
+        const scrollToTop = () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+
+        window.removeEventListener("scroll", checkScroll);
+        backToTopButton?.removeEventListener("click", scrollToTop);
+
+        window.addEventListener("scroll", checkScroll);
+        backToTopButton?.addEventListener("click", scrollToTop);
+
+        checkScroll();
+    }
+
+    setupBackToTop();
+    document.addEventListener("astro:page-load", setupBackToTop);
+    document.addEventListener("astro:after-swap", setupBackToTop)
+
+    document.addEventListener("astro:before-preparation", () => {
+        const backToTopButton = document.getElementById("back-to-top");
+        backToTopButton?.removeEventListener("click", () => {});
+        window.removeEventListener("scroll", () => {});
+    });
+
+</script>
