@@ -39,26 +39,4 @@ const displayDate = dayjs(pubDate).format("ll");
     </article>
   </main>
 
-  <div id="waline"></div>
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-    init({
-      el: '#waline',
-      serverURL: 'https://waline.asjordi.dev',
-      lang: 'en-US',
-      dark: true,
-      reaction: [
-        "https://cdn.asjordi.dev/waline/good.png",
-        "https://cdn.asjordi.dev/waline/bad.png",
-        "https://cdn.asjordi.dev/waline/happy.png",
-        "https://cdn.asjordi.dev/waline/color.png",
-        "https://cdn.asjordi.dev/waline/confuse.png",
-        "https://cdn.asjordi.dev/waline/heart.png",
-        "https://cdn.asjordi.dev/waline/rocket.png",
-        "https://cdn.asjordi.dev/waline/eyes.png",
-      ],
-    });
-  </script>
-
 </BaseLayout>
