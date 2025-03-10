@@ -8,7 +8,11 @@ export default defineConfig({
   site: 'https://asjordi.dev',
   integrations: [
     mdx(),
-    sitemap(),
+    sitemap({
+      filter: (page) =>
+          !page.startsWith('https://asjordi.dev/tienda') &&
+          !page.startsWith('https://asjordi.dev/services'),
+    }),
     tailwind(),
   ]
 });
