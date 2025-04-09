@@ -4,113 +4,128 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | CV" sideBarActiveItemID="cv">
-  <div class="mb-5 flex items-start justify-start">
-    <div class="text-3xl font-bold">Perfil</div>
-		<div class="ml-2 flex items-center justify-center mt-1">
-			<a href="/cv.pdf" target="_blank" rel="noopener" aria-label="Descargar CV" class="transition ease-in-out hover:scale-[110%]">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="icon icon-tabler icon-tabler-download"
-					width="28"
-					height="28"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round">
-					<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-					<path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-					<polyline points="7 11 12 16 17 11" />
-					<line x1="12" y1="4" x2="12" y2="16" />
-				</svg>
-			</a>
-		</div>
-  </div>
+    <div class="mb-5 flex items-start justify-start">
+        <div class="text-3xl font-bold">Perfil</div>
+        <div class="ml-2 flex items-center justify-center mt-1">
+            <a href="/cv.pdf" target="_blank" rel="noopener" aria-label="Descargar CV" class="transition ease-in-out hover:scale-[110%]">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-download"
+                        width="28"
+                        height="28"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                    <polyline points="7 11 12 16 17 11" />
+                    <line x1="12" y1="4" x2="12" y2="16" />
+                </svg>
+            </a>
+        </div>
+    </div>
 
-  <div class="mb-10 text-left">
-		Ingeniero en Sistemas Computacionales recién egresado y actualmente en búsqueda de trabajo como desarrollador FullStack. Tengo experiencia Académica/Laboral en proyectos web y de escritorio con tecnologías como Java, Python y JavaScript, así como, HTML, CSS, Tailwind CSS y React. Además de manejo de base de datos MySQL, SQL Server y MongoDB. Me apasiona la tecnología y estar en constante aprendizaje.
-  </div>
+    <div class="mb-10 text-left">
+        Ingeniero en Sistemas Computacionales recién egresado y actualmente en búsqueda de trabajo como desarrollador FullStack. Tengo experiencia Académica/Laboral en proyectos web y de escritorio con tecnologías como Java, Python y JavaScript, así como, HTML, CSS, Tailwind CSS y React. Además de manejo de base de datos MySQL, SQL Server y MongoDB. Me apasiona la tecnología y estar en constante aprendizaje.
+    </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experiencia</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Experiencia</div>
+    </div>
 
-  <div class="time-line-container mb-10">
-		<TimeLineElement
-      title="Desarrollador de Software (Freelance)"
-      subtitle="2022 - 2023. México"
-    >
-			Desarrollo de sitios web para negocios locales, utilizando tecnologías como HTML, CSS, JavaScript, SASS, Hostinger, entre otras. Desarrollo de una aplicación de escritorio para la gestión de un gimnasio con la implentación de un sensor de huella digital para el control de acceso, utilizando C#, SQL Server, Git y Github.
-		</TimeLineElement>
-		<TimeLineElement
-			title="Proyecto de investigación: Optimización de medida de similitud ortográfica para detectar nombres de medicamentos LASA (Tesis)"
-      subtitle="Agosto 2020 - Enero 2022. Tecnológico de Estudios Superiores de Villa Guerrero"
-    >
-			Proyecto de investigación para la obtención del título de Ingeniero en Sistemas Computacionales. El proyecto consiste en la optimización la medida de distancia de edición para la detección de nombres confusos de medicamentos por su parecido ortográfico mediante la implementación de un algoritmo genético. Para lo cual se realizo la parametrización de la medida de distancia de edición, la implementación de un algoritmo genético para la optimización de los parámetros y la configuración de un sistema de evaluación de los resultados obtenidos. Utilizando tecnologías como Java, Maven, Máquinas virtuales en Azure y programación en componentes.
-		</TimeLineElement>
-    <TimeLineElement
-      title="Grupo Florecer S.A. de C.V."
-      subtitle="Septiembre 2021 - Enero 2022. Edo. de México"
-    >
-			Periodo de residencia profesional como Ingeniero en Sistemas Computacionales. Durante este periodo realice el desarrollo de una aplicación de escritorio para la gestión de procesos de producción de la empresa, utilizando tecnologías como C#, SQL Server, Git, GitHub, entre otras. Además de tareas de mantenimiento y soporte a la infraestructura de la empresa.
-		</TimeLineElement>
-  </div>
+    <div class="time-line-container mb-10">
+        <TimeLineElement
+                title="Desarrollador de Software (Freelance)"
+                subtitle="2022 - 2023. México"
+        >
+            Desarrollo de sitios web para negocios locales, utilizando tecnologías como HTML, CSS, JavaScript, SASS, Hostinger, entre otras. Desarrollo de una aplicación de escritorio para la gestión de un gimnasio con la implentación de un sensor de huella digital para el control de acceso, utilizando C#, SQL Server, Git y Github.
+        </TimeLineElement>
+        <TimeLineElement
+                title="Proyecto de investigación: Optimización de medida de similitud ortográfica para detectar nombres de medicamentos LASA (Tesis)"
+                subtitle="Agosto 2020 - Enero 2022. Tecnológico de Estudios Superiores de Villa Guerrero"
+        >
+            Proyecto de investigación para la obtención del título de Ingeniero en Sistemas Computacionales. El proyecto consiste en la optimización la medida de distancia de edición para la detección de nombres confusos de medicamentos por su parecido ortográfico mediante la implementación de un algoritmo genético. Para lo cual se realizo la parametrización de la medida de distancia de edición, la implementación de un algoritmo genético para la optimización de los parámetros y la configuración de un sistema de evaluación de los resultados obtenidos. Utilizando tecnologías como Java, Maven, Máquinas virtuales en Azure y programación en componentes.
+        </TimeLineElement>
+        <TimeLineElement
+                title="Grupo Florecer S.A. de C.V."
+                subtitle="Septiembre 2021 - Enero 2022. Edo. de México"
+        >
+            Periodo de residencia profesional como Ingeniero en Sistemas Computacionales. Durante este periodo realice el desarrollo de una aplicación de escritorio para la gestión de procesos de producción de la empresa, utilizando tecnologías como C#, SQL Server, Git, GitHub, entre otras. Además de tareas de mantenimiento y soporte a la infraestructura de la empresa.
+        </TimeLineElement>
+    </div>
 
-	<div class="mb-5">
-    <div class="text-3xl w-full font-bold">Educación</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Educación</div>
+    </div>
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Ingeniero en Sistemas Computacionales "
-      subtitle="2017 - 2022. Tecnológico de Estudios Superiores de Villa Guerrero"
-    />
-    <TimeLineElement
-      title="Técnico en Informática"
-      subtitle="2014 - 2017. CBT CALMECAC Ixtapan de la Sal"
-    />
-  </div>
+    <div class="time-line-container grid gap-4 mb-10">
+        <TimeLineElement
+                title="Ingeniero en Sistemas Computacionales "
+                subtitle="2017 - 2022. Tecnológico de Estudios Superiores de Villa Guerrero"
+        />
+        <TimeLineElement
+                title="Técnico en Informática"
+                subtitle="2014 - 2017. CBT CALMECAC Ixtapan de la Sal"
+        />
+    </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certificaciones</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Certificaciones</div>
+    </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="https://www.credly.com/badges/b1a3c559-3446-4cc3-8fd5-ac277d552806/public_url" target="_blank"> Microsoft Azure Fundamentals</a>
-    </li>
-  </ul>
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/asjordi/7A800ECEF474894F?sharingId=CF624A4F1EA35C1A" target="_blank">Microsoft Certified: Azure Data Fundamentals</a>
+        </li>
+        <li>
+            <a href="https://learn.microsoft.com/api/credentials/share/es-mx/asjordi/7C48D5BF6F17A611?sharingId=CF624A4F1EA35C1A" target="_blank">Microsoft 365 Certified: Fundamentals</a>
+        </li>
+        <li>
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/asjordi/F3141A620BFC1634?sharingId=CF624A4F1EA35C1A" target="_blank">Microsoft Certified: Azure Fundamentals</a>
+        </li>
+    </ul>
 
-	<div class="mb-5">
-    <div class="text-3xl w-full font-bold">Idiomas</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Idiomas</div>
+    </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>Español (Nativo)</li>
-		<li>Inglés (B2)</li>
-  </ul>
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Español (Nativo)</li>
+        <li>Inglés (B2)</li>
+    </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Tecnologías</div>
-  </div>
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Tecnologías</div>
+    </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Java</li>
-    <li>JavaScript</li>
-    <li>C#</li>
-    <li>Python</li>
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>React</li>
-		<li>Tailwind CSS</li>
-		<li>NodeJS</li>
-		<li>MySQL</li>
-		<li>SQL Server</li>
-		<li>MongoDB</li>
-		<li>Azure</li>
-		<li>Git</li>
-		<li>GitHub</li>
-		<li>Linux</li>
-  </ul>
+    <ul class="list-disc md:columns-5 columns-2 mx-6">
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SpringBoot</li>
+        <li>JUnit</li>
+        <li>Hibernate</li>
+        <li>Astro</li>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>SQL Server</li>
+        <li>Redis</li>
+        <li>Azure</li>
+        <li>Cloudflare</li>
+        <li>DigitalOcean</li>
+        <li>Vercel</li>
+        <li>GitHub Actions</li>
+        <li>Docker</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Tomcat</li>
+        <li>Nginx</li>
+        <li>Linux</li>
+    </ul>
 </BaseLayout>
