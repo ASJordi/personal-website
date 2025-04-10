@@ -9,7 +9,7 @@ on:
       - 'v*.*.*'
 
 env:
-  IMAGE_NAME: asjordi/web
+  IMAGE_NAME: asjordi/personal-website
   REGISTRY: ghcr.io
 
 jobs:
