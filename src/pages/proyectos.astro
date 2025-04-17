@@ -17,6 +17,7 @@ import apiWordsJs from "../assets/projects/api-words-js.webp";
 import codewarsImg from "../assets/projects/codewars.webp";
 import exchangeRateImg from "../assets/projects/exchange-rate-mx.webp";
 import weatherBotImg from "../assets/projects/weather-bot.webp";
+import tmdbCliImg from "../assets/projects/tmdb-cli.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -124,17 +125,6 @@ import weatherBotImg from "../assets/projects/weather-bot.webp";
 	/>
 	<div class="divider my-0"></div>
 	<HorizontalCard
-		title="Soluciones Codewars"
-		img={codewarsImg}
-		desc="Colección de +500 soluciones a problemas de programación de la plataforma Codewars. Los problemas están resueltos en Java y se encuentran organizados por nivel de dificultad."
-		url="https://github.com/ASJordi/codewars"
-		badge=""
-		tags={["Java"]}
-		repoUrl="https://github.com/ASJordi/codewars"
-
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
 		title="Task Tracker CLI"
 		img={taskTrackerCliImg}
 		desc="CLI para la administración de tareas. Permite crear, editar, eliminar y listar tareas. Las tareas se almacenan en un archivo JSON en el sistema de archivos."
@@ -142,6 +132,28 @@ import weatherBotImg from "../assets/projects/weather-bot.webp";
 		badge=""
 		tags={["Java", "Jackson Databind"]}
 		repoUrl="https://github.com/ASJordi/task-tracker-cli"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="TMDB CLI Tool"
+		img={tmdbCliImg}
+		desc="CLI que permite obtener información sobre películas usando el API de The Movie Database (TMDB). "
+		url="https://github.com/ASJordi/tmdb-cli-tool"
+		badge=""
+		tags={["Java", "Jackson Databind", "Lombok"]}
+		repoUrl="https://github.com/ASJordi/tmdb-cli-tool"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Soluciones Codewars"
+		img={codewarsImg}
+		desc="Colección de +500 soluciones a problemas de programación de la plataforma Codewars. Los problemas están resueltos en Java y se encuentran organizados por nivel de dificultad."
+		url="https://github.com/ASJordi/codewars"
+		badge=""
+		tags={["Java"]}
+		repoUrl="https://github.com/ASJordi/codewars"
 
 	/>
 	<div class="divider my-0"></div>
@@ -169,6 +181,17 @@ import weatherBotImg from "../assets/projects/weather-bot.webp";
 	/>
 	<div class="divider my-0"></div>
 	<HorizontalCard
+		title="Multi-link Website"
+		img={linksAppImg}
+		desc="Página web que permite mostrar múltiples enlaces a redes sociales y otros sitios web."
+		url="https://links.asjordi.dev/"
+		badge=""
+		tags={["HTML", "CSS", "Github Pages"]}
+		repoUrl="https://github.com/ASJordi/asjordi-links"
+		deployUrl="https://links.asjordi.dev/"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
 	title="URL Shortener"
 	img={shortUrlJsImg}
 	desc="Acortador de URL's que permite crear enlaces cortos a partir de una URL larga. El proyecto está desplegado en Netlify y Railway."
@@ -188,16 +211,5 @@ import weatherBotImg from "../assets/projects/weather-bot.webp";
 		tags={["HTML", "CSS", "JS", "NodeJS", "Express"]}
 		repoUrl="https://github.com/ASJordi/simple-weather-app"
 		deployUrl="https://weather-app-nodejs.netlify.app/"
-	/>
-	<div class="divider my-0"></div>
-	<HorizontalCard
-	title="Multi-link Website"
-	img={linksAppImg}
-	desc="Página web que permite mostrar múltiples enlaces a redes sociales y otros sitios web."
-	url="https://links.asjordi.dev/"
-		badge=""
-		tags={["HTML", "CSS", "Github Pages"]}
-		repoUrl="https://github.com/ASJordi/asjordi-links"
-		deployUrl="https://links.asjordi.dev/"
 	/>
 </BaseLayout>
