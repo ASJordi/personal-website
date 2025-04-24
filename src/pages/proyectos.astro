@@ -18,6 +18,7 @@ import codewarsImg from "../assets/projects/codewars.webp";
 import exchangeRateImg from "../assets/projects/exchange-rate-mx.webp";
 import weatherBotImg from "../assets/projects/weather-bot.webp";
 import tmdbCliImg from "../assets/projects/tmdb-cli.webp";
+import whoisMcpImg from "../assets/projects/whois-mcp.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -99,6 +100,17 @@ import tmdbCliImg from "../assets/projects/tmdb-cli.webp";
 		badge=""
 		tags={["Java", "Jackson Databind", "GitHub Actions", "JFreeChart"]}
 		repoUrl="https://github.com/ASJordi/exchange-rate-mx-usd"
+
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="Whois MCP"
+		img={whoisMcpImg}
+		desc="Servidor MCP que permite realizar consultas utilizando el protocolo WHOIS sobre dominios de internet. Implementa una base de datos sobre los servidores WHOIS para realizar las consultas. Es compatible con clientes que soporten el protocolo MCP."
+		url="https://github.com/ASJordi/whois-mcp"
+		badge=""
+		tags={["Java", "MCP", "SLF4J", "Apache Commons"]}
+		repoUrl="https://github.com/ASJordi/whois-mcp"
 
 	/>
 	<div class="divider my-0"></div>
