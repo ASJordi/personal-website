@@ -19,6 +19,7 @@ import exchangeRateImg from "../assets/projects/exchange-rate-mx.webp";
 import weatherBotImg from "../assets/projects/weather-bot.webp";
 import tmdbCliImg from "../assets/projects/tmdb-cli.webp";
 import whoisMcpImg from "../assets/projects/whois-mcp.webp";
+import qrGeneratorImg from "../assets/projects/qr-generator.webp";
 ---
 
 <BaseLayout title = "Jordi Eduardo Ayala Soto | Proyectos" sideBarActiveItemID="proyectos">
@@ -192,6 +193,17 @@ import whoisMcpImg from "../assets/projects/whois-mcp.webp";
 
 	/>
 	<div class="divider my-0"></div>
+    <HorizontalCard
+            title="QR Code Generator"
+            img={qrGeneratorImg}
+            desc="Generador de códigos QR moderno y responsivo construido con Next.js, React y TypeScript. Genera códigos QR para varios tipos de contenido, como texto, URL, correos electrónicos, números de teléfono, credenciales WiFi y mucho más."
+            url="https://qr.asjordi.dev/"
+            badge=""
+            tags={["NextJS", "TailwindCSS", "Vercel"]}
+            repoUrl="https://github.com/ASJordi/qr-generator"
+            deployUrl="https://qr.asjordi.dev/"
+    />
+    <div class="divider my-0"></div>
 	<HorizontalCard
 		title="Multi-link Website"
 		img={linksAppImg}
